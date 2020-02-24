@@ -11,8 +11,8 @@
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
-  border: $card-border-width solid $card-border-color;
-  @include border-radius($card-border-radius);
+  border: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
   > hr {
     margin-right: 0;
@@ -44,12 +44,25 @@
 }
 
 .card-title {
+  font-family: $font-family-base;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: $body-color;
+  line-height: 1.125rem;
   margin-bottom: $card-spacer-y;
 }
 
 .card-subtitle {
   margin-top: -$card-spacer-y / 2;
   margin-bottom: 0;
+}
+
+.card-text {
+  font-family: $font-family-base;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: $body-color;
 }
 
 .card-text:last-child {
@@ -131,17 +144,6 @@
   flex-shrink: 0; // For IE: https://github.com/twbs/bootstrap/issues/29396
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
 }
-
-.card-img,
-.card-img-top {
-  @include border-top-radius($card-inner-border-radius);
-}
-
-.card-img,
-.card-img-bottom {
-  @include border-bottom-radius($card-inner-border-radius);
-}
-
 
 // Card deck
 
