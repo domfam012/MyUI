@@ -6,9 +6,10 @@
 
 .btn {
   display: inline-block;
+  min-width: 80px;
   font-family: $btn-font-family;
-  font-weight: $btn-font-weight;
-  color: $body-color;
+  font-weight: 500;
+  color: $white;
   text-align: center;
   white-space: $btn-white-space;
   vertical-align: middle;
@@ -20,14 +21,13 @@
   @include transition($btn-transition);
 
   @include hover() {
-    color: $body-color;
+    color: $white;
     text-decoration: none;
   }
 
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: $btn-focus-box-shadow;
   }
 
   // Disabled comes first so active can properly restyle
@@ -35,15 +35,6 @@
   &:disabled {
     opacity: $btn-disabled-opacity;
     @include box-shadow(none);
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
-    @include box-shadow($btn-active-box-shadow);
-
-    &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
-    }
   }
 }
 
@@ -105,6 +96,9 @@ fieldset:disabled a.btn {
 //
 // Button Sizes
 //
+.btn-xs {
+  @include button-size($btn-padding-y-xs, $btn-padding-x-xs, $btn-font-size-xs, $btn-line-height-xs, $btn-border-radius-xs);
+}
 
 .btn-lg {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
@@ -114,6 +108,9 @@ fieldset:disabled a.btn {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
 
+.btn-xl {
+  @include button-size($btn-padding-y-xl, $btn-padding-x-xl, $btn-font-size-xl, $btn-line-height-xl, $btn-border-radius-xl);
+}
 
 //
 // Block button
