@@ -67,12 +67,12 @@ fieldset:disabled a.btn {
 
 // Make a button look and behave like a link
 .btn-link {
-  font-weight: $font-weight-normal;
-  color: $link-color;
+  //font-weight: $font-weight-normal;
+  color: #333;
   text-decoration: $link-decoration;
 
   @include hover() {
-    color: $link-hover-color;
+    //color: $link-hover-color;
     text-decoration: $link-hover-decoration;
   }
 

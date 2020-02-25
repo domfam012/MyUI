@@ -44,10 +44,28 @@
 @mixin form-validation-state($state, $color, $icon) {
   .#{$state}-feedback {
     display: none;
+    position: absolute;
+    background: #c50156;
+    color: #fff;
+    font-size: .75rem;
     width: 100%;
-    margin-top: $form-feedback-margin-top;
-    @include font-size($form-feedback-font-size);
-    color: $color;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 100;
+    top: 117%;
+    word-break: break-word;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 96%;
+      top: auto;
+      left: 50%;
+      right: auto;
+      margin-left: -10px;
+      border-width: 7px;
+      border-style: solid;
+      border-color: transparent transparent #C50156 transparent;
+    }
   }
 
   .#{$state}-tooltip {
@@ -77,11 +95,14 @@
       border-color: $color;
 
       @if $enable-validation-icons {
-        padding-right: $input-height-inner;
-        background-image: escape-svg($icon);
-        background-repeat: no-repeat;
-        background-position: right $input-height-inner-quarter center;
-        background-size: $input-height-inner-half $input-height-inner-half;
+        //padding-right: $input-height-inner;
+        //background-image: escape-svg($icon);
+        //background-repeat: no-repeat;
+        //background-position: right $input-height-inner-quarter center;
+        //background-size: $input-height-inner-half $input-height-inner-half;
+        &::placeholder {
+          color: #333;
+        }
       }
 
       &:focus {

@@ -38,7 +38,7 @@ $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #cc1e03 !default;
+$red:     #c50156 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
@@ -93,7 +93,8 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "error":      $error
   ),
   $theme-colors
 );
@@ -296,7 +297,7 @@ $font-size-sm:                $font-size-base * .875 !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
+$font-weight-normal:          normal !default;
 $font-weight-bold:            bold !default;
 $font-weight-bolder:          bolder !default;
 
@@ -312,7 +313,7 @@ $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
-$headings-font-weight:        500 !default;
+$headings-font-weight:        bold !default;
 $headings-line-height:        1.125 !default;
 $headings-color:              null !default;
 
@@ -394,11 +395,11 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         0 !default;
+$input-btn-padding-x:         .3125rem !default;
 $input-btn-font-family:       $font-family-base !default;
-$input-btn-font-size:         $font-size-base !default;
-$input-btn-line-height:       1.25rem !default;
+$input-btn-font-size:         .875rem !default;
+$input-btn-line-height:       1.125rem !default;
 
 $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
@@ -406,7 +407,7 @@ $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-colo
 
 $input-btn-padding-y-sm:      .25rem !default;
 $input-btn-padding-x-sm:      .5rem !default;
-$input-btn-font-size-sm:      0.875rem !default;
+$input-btn-font-size-sm:      .875rem !default;
 $input-btn-line-height-sm:    1.125rem !default;
 
 $input-btn-padding-y-lg:      .5rem !default;
