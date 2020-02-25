@@ -4406,7 +4406,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  border-bottom: 2px solid;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4501,6 +4501,7 @@ input[type="button"].btn-block {
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  margin-right: 90px;
 }
 
 .navbar-nav .dropdown-menu {
@@ -4524,7 +4525,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0;
   font-size: 1.5rem;
   line-height: 1;
   background-color: transparent;
@@ -4534,6 +4535,7 @@ input[type="button"].btn-block {
 
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;
+  outline: none;
 }
 
 .navbar-toggler-icon {
@@ -4564,6 +4566,7 @@ input[type="button"].btn-block {
   .navbar-expand-sm .navbar-nav {
     -ms-flex-direction: row;
     flex-direction: row;
+    margin: 0 auto;
   }
   .navbar-expand-sm .navbar-nav .dropdown-menu {
     position: absolute;
@@ -4606,6 +4609,7 @@ input[type="button"].btn-block {
   .navbar-expand-md .navbar-nav {
     -ms-flex-direction: row;
     flex-direction: row;
+    margin: 0 auto;
   }
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
@@ -4648,6 +4652,7 @@ input[type="button"].btn-block {
   .navbar-expand-lg .navbar-nav {
     -ms-flex-direction: row;
     flex-direction: row;
+    margin: 0 auto;
   }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
@@ -4690,6 +4695,7 @@ input[type="button"].btn-block {
   .navbar-expand-xl .navbar-nav {
     -ms-flex-direction: row;
     flex-direction: row;
+    margin: 0 auto;
   }
   .navbar-expand-xl .navbar-nav .dropdown-menu {
     position: absolute;
@@ -4730,6 +4736,7 @@ input[type="button"].btn-block {
 .navbar-expand .navbar-nav {
   -ms-flex-direction: row;
   flex-direction: row;
+  margin: 0 auto;
 }
 
 .navbar-expand .navbar-nav .dropdown-menu {
@@ -4787,7 +4794,7 @@ input[type="button"].btn-block {
 
 .navbar-light .navbar-toggler {
   color: #04bcde;
-  border-color: none;
+  border-color: transparent;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -4830,12 +4837,13 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
+  border-bottom: 2px solid;
   color: #fff;
 }
 
 .navbar-dark .navbar-toggler {
   color: #fff;
-  border-color: none;
+  border-color: transparent;
 }
 
 .navbar-dark .navbar-toggler-icon {
