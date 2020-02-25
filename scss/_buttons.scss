@@ -9,19 +9,17 @@
   min-width: 80px;
   font-family: $btn-font-family;
   font-weight: 500;
-  color: $white;
+  color: $body-color;
   text-align: center;
   white-space: $btn-white-space;
   vertical-align: middle;
   cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
   user-select: none;
   background-color: transparent;
-  border: $btn-border-width solid transparent;
+  border: none;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
-
   @include hover() {
-    color: $white;
     text-decoration: none;
   }
 
@@ -40,6 +38,7 @@
 
 // Future-proof disabling of clicks on `<a>` elements
 a.btn.disabled,
+button.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
 }

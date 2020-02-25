@@ -41,7 +41,7 @@
 
   // Placeholder
   &::placeholder {
-    color: #aaaaaa;
+    color: #aaa;
     // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
     opacity: 1;
   }
@@ -54,18 +54,18 @@
   &:disabled {
     color: #d4d4d4;
     border: solid 1px #e0e0e0;
-    background-color: #ffffff;
+    background-color: #fff;
   }
   &[readonly] {
-    color: #333333;
+    color: #333;
     background: #f4f4f4;
     border: 1px solid #e6e6e6;
   }
   &:focus {
-    color: #333333;
-    border-color: #666666;
+    color: #333;
+    border-color: #666;
     &::placeholder {
-      color: #333333;
+      color: #333;
     }
   }
 }
@@ -77,8 +77,8 @@ select.form-control {
     // in IE and (under certain conditions) Edge, as it looks bad and cannot be made to
     // match the appearance of the native widget.
     // See https://github.com/twbs/bootstrap/issues/19398.
-    color: #333333;
-    background-color: #ffffff;
+    color: #333;
+    background-color: #fff;
   }
 }
 
