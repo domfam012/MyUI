@@ -219,28 +219,26 @@
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: $custom-select-height;
-  padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
+  height: 40px;
+  padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y 10px;
   font-family: $custom-select-font-family;
   @include font-size($custom-select-font-size);
   font-weight: $custom-select-font-weight;
   line-height: $custom-select-line-height;
   color: $custom-select-color;
   vertical-align: middle;
-  background: $custom-select-bg $custom-select-background;
+  background: url("https://img.icons8.com/material-rounded/48/000000/sort-down.png") no-repeat right 0.3125rem center/12px 13px;
   border: $custom-select-border-width solid $custom-select-border-color;
-  @include border-radius($custom-select-border-radius, 0);
-  @include box-shadow($custom-select-box-shadow);
   appearance: none;
 
   &:focus {
-    border-color: $custom-select-focus-border-color;
+    border-color: #666;
     outline: 0;
-    @if $enable-shadows {
-      box-shadow: $custom-select-box-shadow, $custom-select-focus-box-shadow;
-    } @else {
-      box-shadow: $custom-select-focus-box-shadow;
-    }
+    //@if $enable-shadows {
+    //  box-shadow: $custom-select-box-shadow, $custom-select-focus-box-shadow;
+    //} @else {
+    //  box-shadow: $custom-select-focus-box-shadow;
+    //}
 
     &::-ms-value {
       // For visual consistency with other platforms/browsers,
@@ -278,7 +276,7 @@
 }
 
 .custom-select-sm {
-  height: $custom-select-height-sm;
+  height: 30px;
   padding-top: $custom-select-padding-y-sm;
   padding-bottom: $custom-select-padding-y-sm;
   padding-left: $custom-select-padding-x-sm;
