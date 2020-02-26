@@ -673,7 +673,11 @@
 			var height = this.component ? this.component.outerHeight(true) : this.element.outerHeight(false);
 			var width = this.component ? this.component.outerWidth(true) : this.element.outerWidth(false);
 			var left = offset.left - appendOffset.left;
-			var top = offset.top - appendOffset.top;
+			var top = offset.top - appendOffset.top + 20;
+			/*
+			  작성자 : 이주연
+			  수정 사항: top값 변경
+			* */
 
 			if (this.o.container !== 'body') {
 				top += scrollTop;
@@ -1675,7 +1679,7 @@
 
 	var defaults = $.fn.datepicker.defaults = {
 		assumeNearbyYear: false,
-		autoclose: false,
+		autoclose: true,
 		beforeShowDay: $.noop,
 		beforeShowMonth: $.noop,
 		beforeShowYear: $.noop,
