@@ -5239,7 +5239,7 @@ input[type=search]:disabled + .btn-search {
   text-align: center;
   color: #04bcde;
   background-color: #fff;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #b8b8b8;
   border-radius: 4px;
   margin-right: 10px;
 }
@@ -5277,7 +5277,7 @@ input[type=search]:disabled + .btn-search {
 }
 
 .page-item.disabled .page-link {
-  color: #757575;
+  color: #d2d2d2;
   pointer-events: none;
   cursor: auto;
   background-color: #fff;
