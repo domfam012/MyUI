@@ -3773,6 +3773,7 @@ input[type="button"].btn-block {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .input-group > .custom-file:not(:last-child) .custom-file-label,
@@ -5230,12 +5231,17 @@ input[type=search]:disabled + .btn-search {
 .page-link {
   position: relative;
   display: block;
-  padding: 0.5rem 0.75rem;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 5px;
   margin-left: -1px;
-  line-height: 1.25;
+  line-height: 29px;
+  text-align: center;
   color: #04bcde;
   background-color: #fff;
   border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
 .page-link:hover {

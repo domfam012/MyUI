@@ -7,12 +7,17 @@
 .page-link {
   position: relative;
   display: block;
-  padding: $pagination-padding-y $pagination-padding-x;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 5px;
   margin-left: -$pagination-border-width;
   line-height: $pagination-line-height;
+  text-align: center;
   color: $pagination-color;
   background-color: $pagination-bg;
   border: $pagination-border-width solid $pagination-border-color;
+  border-radius: 4px;
+  margin-right: 10px;
 
   &:hover {
     z-index: 2;

@@ -50,6 +50,7 @@
   > .custom-file {
     display: flex;
     align-items: center;
+    overflow: hidden;
 
     &:not(:last-child) .custom-file-label,
     &:not(:last-child) .custom-file-label::after { @include border-right-radius(0); }
