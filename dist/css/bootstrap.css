@@ -2157,6 +2157,7 @@ pre code {
 .form-control:focus {
   color: #333;
   border-color: #666;
+  outline: none;
 }
 
 select.form-control:focus::-ms-value {
@@ -2215,7 +2216,6 @@ select.form-control:focus::-ms-value {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.125rem;
-  border-radius: 0.2rem;
 }
 
 .form-control-lg {
@@ -2223,7 +2223,6 @@ select.form-control:focus::-ms-value {
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   line-height: 1.5;
-  border-radius: 0.3rem;
 }
 
 select.form-control[size], select.form-control[multiple] {
@@ -3285,6 +3284,22 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
+}
+
+.btn-search {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  min-width: auto;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  z-index: 10;
+}
+
+.btn-search.btn-search-sm {
+  width: 26px;
+  height: 26px;
 }
 
 .fade {
@@ -4374,6 +4389,34 @@ input[type="button"].btn-block {
   .custom-select {
     transition: none;
   }
+}
+
+input[type=search] {
+  padding-right: 39px;
+}
+
+input[type=search]:disabled::-webkit-input-placeholder {
+  color: #d4d4d4;
+}
+
+input[type=search]:disabled::-moz-placeholder {
+  color: #d4d4d4;
+}
+
+input[type=search]:disabled:-ms-input-placeholder {
+  color: #d4d4d4;
+}
+
+input[type=search]:disabled::-ms-input-placeholder {
+  color: #d4d4d4;
+}
+
+input[type=search]:disabled::placeholder {
+  color: #d4d4d4;
+}
+
+input[type=search]:disabled + .btn-search {
+  color: #e0e0e0;
 }
 
 .nav {

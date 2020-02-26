@@ -133,3 +133,21 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+//
+// Button Search
+//
+.btn-search {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  min-width: auto;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  z-index: 10;
+  &.btn-search-sm {
+    width: 26px;
+    height: 26px;
+  }
+}

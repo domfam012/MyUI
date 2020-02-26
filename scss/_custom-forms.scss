@@ -537,3 +537,16 @@
 .custom-select {
   @include transition($custom-forms-transition);
 }
+
+//input[type=search]
+input[type=search] {
+  padding-right: 39px;
+  &:disabled {
+    &::placeholder {
+      color: #d4d4d4;
+    }
+  }
+  &:disabled + .btn-search {
+    color: #e0e0e0;
+  }
+}
