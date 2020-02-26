@@ -4135,8 +4135,6 @@ input[type="button"].btn-block {
 }
 
 .custom-file.custom-file-sm .custom-file-label::after {
-  top: 2px;
-  left: 2px;
   height: 24px;
   line-height: 20px;
 }
@@ -4173,27 +4171,44 @@ input[type="button"].btn-block {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
   height: 40px;
-  padding: 0 0.3125rem 0 4.8rem;
+  padding: 0 0.3125rem 0 5.5rem;
   font-family: "Noto Sans CJK KR Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: normal;
   line-height: 38px;
   color: #aaa;
   border: 1px solid #ced4da;
+  cursor: pointer;
+}
+
+.custom-file-label:hover::after, .custom-file-label:focus::after {
+  color: #212529;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  outline: none;
+}
+
+.custom-file-label:active::after {
+  color: #212529;
+  background-color: #dbdbdb;
+  border-color: #dbdbdb;
 }
 
 .custom-file-label::after {
   position: absolute;
-  top: 3px;
-  left: 3px;
+  min-width: 80px;
+  top: 2px;
+  left: 2px;
   bottom: 0;
   z-index: 3;
   display: block;
-  height: 32px;
+  height: 34px;
+  font-size: 14px;
   padding: 0 0.3125rem;
   line-height: 30px;
-  color: #495057;
+  text-align: center;
+  color: #C2C2C2;
   content: "파일선택";
   border: 1px solid #c2c2c2;
   border-radius: 4px;
