@@ -15,7 +15,6 @@
   text-align: center;
   color: $pagination-color;
   background-color: $pagination-bg;
-  border: $pagination-border-width solid $pagination-border-color;
   border-radius: 4px;
   margin-right: 10px;
 
@@ -31,6 +30,11 @@
     z-index: 3;
     outline: $pagination-focus-outline;
     box-shadow: $pagination-focus-box-shadow;
+  }
+  &.page-arrow {
+    color: #666;
+    border: 1px solid $pagination-border-color;
+    font-size: 19px;
   }
 }
 

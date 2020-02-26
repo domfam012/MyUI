@@ -5239,7 +5239,6 @@ input[type=search]:disabled + .btn-search {
   text-align: center;
   color: #04bcde;
   background-color: #fff;
-  border: 1px solid #b8b8b8;
   border-radius: 4px;
   margin-right: 10px;
 }
@@ -5256,6 +5255,12 @@ input[type=search]:disabled + .btn-search {
   z-index: 3;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(4, 188, 222, 0.25);
+}
+
+.page-link.page-arrow {
+  color: #666;
+  border: 1px solid #b8b8b8;
+  font-size: 19px;
 }
 
 .page-item:first-child .page-link {
