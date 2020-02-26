@@ -99,26 +99,28 @@
 
 .input-group-text {
   display: flex;
+  width: fit-content;
   align-items: center;
-  padding: $input-padding-y $input-padding-x;
-  margin-bottom: 0; // Allow use of <label> elements by overriding our default margin-bottom
-  @include font-size($input-font-size); // Match inputs
+  font-size: 18px;
   font-weight: $font-weight-normal;
-  line-height: $input-line-height;
+  line-height: 38px;
   color: $input-group-addon-color;
   text-align: center;
   white-space: nowrap;
-  background-color: $input-group-addon-bg;
-  border: $input-border-width solid $input-group-addon-border-color;
-  @include border-radius($input-border-radius);
+  margin-right: 10px;
 
   // Nuke default margins from checkboxes and radios to vertically center within.
   input[type="radio"],
   input[type="checkbox"] {
     margin-top: 0;
   }
+  &.disabled {
+    color: #d7d7d7;
+  }
 }
-
+.input-group-text-sm {
+  line-height: 30px;
+}
 
 // Sizing
 //

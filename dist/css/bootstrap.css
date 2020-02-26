@@ -2370,7 +2370,6 @@ textarea.form-control {
 
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #28a745;
-  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
@@ -2504,7 +2503,6 @@ textarea.form-control {
 
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: #c50156;
-  box-shadow: 0 0 0 0.2rem rgba(197, 1, 86, 0.25);
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
@@ -3824,24 +3822,31 @@ input[type="button"].btn-block {
 .input-group-text {
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 0.3125rem;
-  margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 18px;
   font-weight: normal;
-  line-height: 1.125rem;
+  line-height: 38px;
   color: #495057;
   text-align: center;
   white-space: nowrap;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  margin-right: 10px;
 }
 
 .input-group-text input[type="radio"],
 .input-group-text input[type="checkbox"] {
   margin-top: 0;
+}
+
+.input-group-text.disabled {
+  color: #d7d7d7;
+}
+
+.input-group-text-sm {
+  line-height: 30px;
 }
 
 .input-group-lg > .form-control:not(textarea),
@@ -4094,8 +4099,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select:disabled {
-  color: #757575;
-  background-color: #e9ecef;
+  color: #d4d4d4;
 }
 
 .custom-select::-ms-expand {

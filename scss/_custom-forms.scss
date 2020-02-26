@@ -259,8 +259,7 @@
   }
 
   &:disabled {
-    color: $custom-select-disabled-color;
-    background-color: $custom-select-disabled-bg;
+    color: #d4d4d4;
   }
 
   // Hides the default caret in IE11
