@@ -22,46 +22,47 @@
 .custom-control-input {
   position: absolute;
   left: 0;
-  z-index: -1; // Put the input behind the label so it doesn't overlay text
-  width: $custom-control-indicator-size;
-  height: ($font-size-base * $line-height-base + $custom-control-indicator-size) / 2;
+  //z-index: -1; // Put the input behind the label so it doesn't overlay text
+  width: 18px;
+  height: 18px;
   opacity: 0;
 
   &:checked ~ .custom-control-label::before {
-    color: $custom-control-indicator-checked-color;
+    //color: $custom-control-indicator-checked-color;
     border-color: $custom-control-indicator-checked-border-color;
-    @include gradient-bg($custom-control-indicator-checked-bg);
-    @include box-shadow($custom-control-indicator-checked-box-shadow);
+    //@include gradient-bg($custom-control-indicator-checked-bg);
+    //@include box-shadow($custom-control-indicator-checked-box-shadow);
   }
 
-  &:focus ~ .custom-control-label::before {
-    // the mixin is not used here to make sure there is feedback
-    @if $enable-shadows {
-      box-shadow: $input-box-shadow, $input-focus-box-shadow;
-    } @else {
-      box-shadow: $custom-control-indicator-focus-box-shadow;
-    }
-  }
+  //&:focus ~ .custom-control-label::before {
+  //  // the mixin is not used here to make sure there is feedback
+  //  @if $enable-shadows {
+  //    box-shadow: $input-box-shadow, $input-focus-box-shadow;
+  //  } @else {
+  //    box-shadow: $custom-control-indicator-focus-box-shadow;
+  //  }
+  //}
 
-  &:focus:not(:checked) ~ .custom-control-label::before {
-    border-color: $custom-control-indicator-focus-border-color;
-  }
-
-  &:not(:disabled):active ~ .custom-control-label::before {
-    color: $custom-control-indicator-active-color;
-    background-color: $custom-control-indicator-active-bg;
-    border-color: $custom-control-indicator-active-border-color;
-    @include box-shadow($custom-control-indicator-active-box-shadow);
-  }
+  //&:focus:not(:checked) ~ .custom-control-label::before {
+  //  border-color: $custom-control-indicator-focus-border-color;
+  //}
+  //
+  //&:not(:disabled):active ~ .custom-control-label::before {
+  //  color: $custom-control-indicator-active-color;
+  //  background-color: $custom-control-indicator-active-bg;
+  //  border-color: $custom-control-indicator-active-border-color;
+  //  //@include box-shadow($custom-control-indicator-active-box-shadow);
+  //}
 
   // Use [disabled] and :disabled to work around https://github.com/twbs/bootstrap/issues/28247
   &[disabled],
   &:disabled {
     ~ .custom-control-label {
-      color: $custom-control-label-disabled-color;
+      color: #C2C2C2;
 
       &::before {
-        background-color: $custom-control-indicator-disabled-bg;
+        border-color: #c2c2c2;
+        background-color: #fff;
       }
     }
   }
@@ -84,13 +85,12 @@
     top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
     left: -($custom-control-gutter + $custom-control-indicator-size);
     display: block;
-    width: $custom-control-indicator-size;
-    height: $custom-control-indicator-size;
+    width: 18px;
+    height: 18px;
     pointer-events: none;
     content: "";
     background-color: $custom-control-indicator-bg;
-    border: $custom-control-indicator-border-color solid $custom-control-indicator-border-width;
-    @include box-shadow($custom-control-indicator-box-shadow);
+    border: #666 solid 2px;
   }
 
   // Foreground (icon)
@@ -99,10 +99,10 @@
     top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
     left: -($custom-control-gutter + $custom-control-indicator-size);
     display: block;
-    width: $custom-control-indicator-size;
-    height: $custom-control-indicator-size;
+    width: 10px;
+    height: 10px;
     content: "";
-    background: no-repeat 50% / #{$custom-control-indicator-bg-size};
+    //background: no-repeat 50% / #{$custom-control-indicator-bg-size};
   }
 }
 
@@ -113,12 +113,18 @@
 
 .custom-checkbox {
   .custom-control-label::before {
-    @include border-radius($custom-checkbox-indicator-border-radius);
+    border-radius: 2px;
   }
 
   .custom-control-input:checked ~ .custom-control-label {
+    &::before {
+      background: $primary;
+    }
     &::after {
-      background-image: escape-svg($custom-checkbox-indicator-icon-checked);
+      background: escape-svg($custom-checkbox-indicator-icon-checked) no-repeat;
+      top: 5px;
+      left: -20px;
+      background-size: 12px 13px;
     }
   }
 
@@ -150,12 +156,24 @@
 .custom-radio {
   .custom-control-label::before {
     // stylelint-disable-next-line property-blacklist
-    border-radius: $custom-radio-indicator-border-radius;
+    border-radius: 50%;
+    border: 2px solid #666;
+    background: #fff;
+    //border-radius: $custom-radio-indicator-border-radius;
   }
 
   .custom-control-input:checked ~ .custom-control-label {
+    &::before {
+      background: #fff;
+    }
     &::after {
-      background-image: escape-svg($custom-radio-indicator-icon-checked);
+      position: absolute;
+      top: 5px;
+      left: -20px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $primary;
     }
   }
 
