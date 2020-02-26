@@ -4470,7 +4470,7 @@ input[type=search]:disabled + .btn-search {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #c2c2c2;
+  border-bottom: 1px solid #04bcde;
 }
 
 .nav-tabs .nav-item {
@@ -4478,13 +4478,19 @@ input[type=search]:disabled + .btn-search {
 }
 
 .nav-tabs .nav-link {
-  border: 1px solid transparent;
+  margin-right: 1px;
+  border: 1px solid;
+  background-color: #fff;
+  border-color: #bfbfbf #bfbfbf #04bcde;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #c2c2c2;
+  border-bottom: 1px solid;
+  background-color: #04bcde;
+  border-color: #04bcde;
+  color: #fff;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -4495,9 +4501,10 @@ input[type=search]:disabled + .btn-search {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  border-bottom: 2px solid;
-  background-color: #fff;
-  border-color: #c2c2c2 #c2c2c2 #fff;
+  border-bottom: 1px solid;
+  background-color: #04bcde;
+  border-color: #04bcde;
+  color: #fff;
 }
 
 .nav-tabs .dropdown-menu {

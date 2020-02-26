@@ -32,18 +32,24 @@
 //
 
 .nav-tabs {
-  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+  border-bottom: $nav-tabs-border-width solid $primary;
 
   .nav-item {
     margin-bottom: -$nav-tabs-border-width;
   }
 
   .nav-link {
-    border: $nav-tabs-border-width solid transparent;
+    margin-right: 1px;
+    border: 1px solid;
+    background-color: $nav-tabs-link-active-bg;
+    border-color: #bfbfbf #bfbfbf $primary;
     @include border-top-radius($nav-tabs-border-radius);
 
     @include hover-focus() {
-      border-color: $nav-tabs-link-hover-border-color;
+      border-bottom: 1px solid;
+      background-color: $primary;
+      border-color: $primary;
+      color: $white;
     }
 
     &.disabled {
@@ -55,9 +61,10 @@
 
   .nav-link.active,
   .nav-item.show .nav-link {
-    border-bottom: 2px solid;
-    background-color: $nav-tabs-link-active-bg;
-    border-color: $nav-tabs-link-active-border-color;
+    border-bottom: 1px solid;
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
   }
 
   .dropdown-menu {
