@@ -5424,7 +5424,7 @@ input[type=search]:disabled + .btn-search {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -5450,6 +5450,8 @@ a.badge:hover, a.badge:focus {
 .btn .badge {
   position: relative;
   top: -1px;
+  color: #04bcde;
+  background: #fff;
 }
 
 .badge-pill {
@@ -5470,7 +5472,6 @@ a.badge-primary:hover, a.badge-primary:focus {
 
 a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(4, 188, 222, 0.5);
 }
 
 .badge-secondary {
@@ -5485,7 +5486,6 @@ a.badge-secondary:hover, a.badge-secondary:focus {
 
 a.badge-secondary:focus, a.badge-secondary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(117, 117, 117, 0.5);
 }
 
 .badge-normal {
@@ -5500,7 +5500,6 @@ a.badge-normal:hover, a.badge-normal:focus {
 
 a.badge-normal:focus, a.badge-normal.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(194, 194, 194, 0.5);
 }
 
 .badge-success {
@@ -5515,7 +5514,6 @@ a.badge-success:hover, a.badge-success:focus {
 
 a.badge-success:focus, a.badge-success.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
 .badge-info {
@@ -5530,7 +5528,6 @@ a.badge-info:hover, a.badge-info:focus {
 
 a.badge-info:focus, a.badge-info.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
 
 .badge-warning {
@@ -5545,7 +5542,6 @@ a.badge-warning:hover, a.badge-warning:focus {
 
 a.badge-warning:focus, a.badge-warning.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
 .badge-danger {
@@ -5560,7 +5556,6 @@ a.badge-danger:hover, a.badge-danger:focus {
 
 a.badge-danger:focus, a.badge-danger.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(197, 1, 86, 0.5);
 }
 
 .badge-light {
@@ -5575,7 +5570,6 @@ a.badge-light:hover, a.badge-light:focus {
 
 a.badge-light:focus, a.badge-light.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(194, 194, 194, 0.5);
 }
 
 .badge-dark {
@@ -5590,7 +5584,6 @@ a.badge-dark:hover, a.badge-dark:focus {
 
 a.badge-dark:focus, a.badge-dark.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(51, 51, 51, 0.5);
 }
 
 .badge-error {
@@ -5605,7 +5598,6 @@ a.badge-error:hover, a.badge-error:focus {
 
 a.badge-error:focus, a.badge-error.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(204, 30, 3, 0.5);
 }
 
 .jumbotron {
