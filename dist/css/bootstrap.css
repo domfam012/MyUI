@@ -5,11 +5,6 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/*
-  2020-02-27
-  추가 사항
-  focus()
-*/
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10675,6 +10670,9 @@ a.text-error:hover, a.text-error:focus {
 }
 
 /*!
+ *  추가
+ */
+/*!
  * Datepicker for Bootstrap v1.6.4 (https://github.com/eternicode/bootstrap-datepicker)
  *
  * Copyright 2012 Stefan Petre
@@ -12488,5 +12486,136 @@ td.today:hover {
 
 .table-condensed:first-child > thead tr:nth-child(3) {
   border-bottom: 1px solid #999999;
+}
+
+.step li {
+  list-style-type: none;
+  width: 33.33%;
+  float: left;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  color: #333333;
+}
+
+.step li:before {
+  width: 30px;
+  height: 30px;
+  content: '';
+  line-height: 30px;
+  border: 3px solid #d2d2d2;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3e%3cpath fill='%23ffffff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e") no-repeat 1px 6px;
+  background-size: 25px 16px;
+}
+
+.step li:after {
+  width: 100%;
+  content: '';
+  position: absolute;
+  border-bottom: 4px dotted #96a1b4;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+
+.step li:first-child:after {
+  content: none;
+}
+
+.step li.active:before {
+  border-color: #04bcde;
+  background-color: #04bcde;
+}
+
+.step li.current:before {
+  border: 3px solid #04bcde;
+}
+
+.step-arrow li {
+  list-style-type: none;
+  position: relative;
+  float: left;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 1rem;
+  color: #333333;
+  height: 38px;
+  line-height: 38px;
+  min-width: 220px;
+  background-color: #f8f8f8;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+}
+
+.step-arrow li:after {
+  content: " ";
+  position: absolute;
+  top: 14px;
+  right: -4px;
+  width: 7px;
+  height: 7px;
+  background: #f8f8f8;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: 1px solid #d4d4d4;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.step-arrow li:last-child:after {
+  content: none;
+}
+
+.step-arrow li:first-child:before {
+  border: none;
+}
+
+.step-arrow li span {
+  position: relative;
+}
+
+.step-arrow li span:before {
+  opacity: 0;
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: -22px;
+  color: #333333;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3e%3cpath fill='%23333333' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e") no-repeat 1px 6px;
+  background-size: 25px 19px;
+}
+
+.step-arrow li.done span:before {
+  opacity: 1;
+}
+
+.step-arrow li.active {
+  color: #fff;
+  background-color: #04bcde;
+  border: 1px solid #04bcde;
+}
+
+.step-arrow li.active:after {
+  background: #04bcde;
+  border-color: #04bcde;
+}
+
+.center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.center .step-arrow {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=bootstrap.css.map */
