@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>modal</title>
+  <title>dialog/alert</title>
   <link rel="stylesheet" href="../dist/css/bootstrap.css">
   <link rel="stylesheet" href="../dist/css/fontawesome.css">
   <link rel="stylesheet" href="../dist/css/fontawesome/solid.css">
@@ -15,25 +15,57 @@
 </head>
 <body>
 <div>
-  <div class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary m-3" data-toggle="modal" data-target="#exampleModal">
+    dialog
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog bd-example-modal-sm modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p>Modal body text goes here.</p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci alias animi atque deserunt distinctio ea eligendi et fuga id, illo ipsa iure libero maiores mollitia nobis nulla optio pariatur porro quasi ratione recusandae tempora velit voluptatem. Ab alias amet blanditiis cumque dicta dolorum ex ipsam molestiae mollitia neque odio perspiciatis, placeat praesentium quaerat repellendus tenetur vel voluptas voluptatem. Corporis exercitationem laudantium non rem sint, ut. Adipisci, aliquam autem consequatur culpa dolorem, dolorum ducimus earum id in iure labore minima odit. Corporis, culpa cupiditate eaque eum expedita explicabo, illum itaque nisi provident quasi quos sapiente, sit sunt velit veniam!
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-lg btn-outline-light" data-dismiss="modal" style="width: 48%;">Close</button>
+          <button type="button" class="btn btn-lg btn-primary" style="width: 48%;">Save changes</button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary m-3" data-toggle="modal" data-target="#exampleModal2">
+    alert
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog bd-example-modal-sm modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci alias animi atque deserunt distinctio ea eligendi et fuga id, illo ipsa iure libero maiores mollitia nobis nulla optio pariatur porro quasi ratione recusandae tempora velit voluptatem. Ab alias amet blanditiis cumque dicta dolorum ex ipsam molestiae mollitia neque odio perspiciatis, placeat praesentium quaerat repellendus tenetur vel voluptas voluptatem. Corporis exercitationem laudantium non rem sint, ut. Adipisci, aliquam autem consequatur culpa dolorem, dolorum ducimus earum id in iure labore minima odit. Corporis, culpa cupiditate eaque eum expedita explicabo, illum itaque nisi provident quasi quos sapiente, sit sunt velit veniam!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg btn-primary btn-block" style="width: 165px">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 </body>
 </html>
