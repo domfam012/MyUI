@@ -12643,4 +12643,61 @@ td.today:hover {
 .step-arrow-center .step-arrow {
   margin: 0 auto;
 }
+
+.pager {
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
+}
+
+.pager li {
+  position: relative;
+}
+
+.pager li:not(:last-child) {
+  padding-bottom: 38px;
+}
+
+.pager li::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 12px;
+  height: 100%;
+  width: 10px;
+  border-left: 2px dotted #dcdcdc;
+  z-index: -1;
+}
+
+.pager li::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: -32px;
+  width: 6px;
+  height: 6px;
+  border-radius: 8px;
+  background-color: #04bcde;
+}
+
+.pager li.active {
+  padding-bottom: 20px;
+}
+
+.pager li.active::after {
+  padding-top: 1px;
+  width: 14px;
+  height: 14px;
+  top: 3px;
+  left: -36px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #04bcde;
+}
+
+.pager li:last-child::before {
+  content: none;
+}
 /*# sourceMappingURL=bootstrap.css.map */
