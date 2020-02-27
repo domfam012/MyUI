@@ -12606,7 +12606,7 @@ td.today:hover {
   border-color: #04bcde;
 }
 
-.center {
+.step-arrow-center {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -12615,7 +12615,7 @@ td.today:hover {
   margin-left: -15px;
 }
 
-.center .step-arrow {
+.step-arrow-center .step-arrow {
   margin: 0 auto;
 }
 /*# sourceMappingURL=bootstrap.css.map */
