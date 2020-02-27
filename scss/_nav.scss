@@ -97,6 +97,7 @@
 
   &.nav-tabs-lg {
     border-bottom: 3px solid $primary;
+
     & .nav-item {
       & .nav-link {
         min-width: 320px;
@@ -114,6 +115,7 @@
           background-color: transparent;
           border-color: transparent;
         }
+
         &.active, &:hover, &:focus {
           position: relative;
           border-bottom: 1px solid;
@@ -149,13 +151,34 @@
 
 .nav-pills {
   .nav-link {
+    line-height: 25px;
+    padding: 0.719rem 0.625rem;
+    color: $body-color;
     @include border-radius($nav-pills-border-radius);
+    @include hover-focus() {
+      color: $nav-pills-link-active-color;
+      background-color: $nav-pills-link-active-bg;
+      & i {
+        display: inline-block;
+        float: right;
+        font-size: 27px;
+      }
+    }
+    & i {
+      display: none;
+    }
   }
 
   .nav-link.active,
   .show > .nav-link {
     color: $nav-pills-link-active-color;
     background-color: $nav-pills-link-active-bg;
+
+    & i {
+      display: inline-block;
+      float: right;
+      font-size: 27px;
+    }
   }
 }
 
@@ -188,6 +211,7 @@
   > .tab-pane {
     display: none;
   }
+
   > .active {
     display: block;
   }

@@ -4581,13 +4581,38 @@ input[type=search]:disabled + .btn-search {
 }
 
 .nav-pills .nav-link {
+  line-height: 25px;
+  padding: 0.719rem 0.625rem;
+  color: #333333;
   border-radius: 0.25rem;
+}
+
+.nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
+  color: #fff;
+  background-color: #04bcde;
+}
+
+.nav-pills .nav-link:hover i, .nav-pills .nav-link:focus i {
+  display: inline-block;
+  float: right;
+  font-size: 27px;
+}
+
+.nav-pills .nav-link i {
+  display: none;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #04bcde;
+}
+
+.nav-pills .nav-link.active i,
+.nav-pills .show > .nav-link i {
+  display: inline-block;
+  float: right;
+  font-size: 27px;
 }
 
 .nav-fill .nav-item {
