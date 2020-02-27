@@ -97,7 +97,7 @@
   width: $carousel-control-width;
   color: $carousel-control-color;
   text-align: center;
-  opacity: $carousel-control-opacity;
+  //opacity: $carousel-control-opacity;
   @include transition($carousel-control-transition);
 
   // Hover/focus state
@@ -105,7 +105,7 @@
     color: $carousel-control-color;
     text-decoration: none;
     outline: 0;
-    opacity: $carousel-control-hover-opacity;
+    //opacity: $carousel-control-hover-opacity;
   }
 }
 .carousel-control-prev {
@@ -130,10 +130,33 @@
   background: no-repeat 50% / 100% 100%;
 }
 .carousel-control-prev-icon {
-  background-image: escape-svg($carousel-control-prev-icon-bg);
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    border: 5px solid;
+    transform: rotate(225deg);
+    border-bottom: 0;
+    border-left: 0;
+    top: -34px;
+  }
 }
 .carousel-control-next-icon {
-  background-image: escape-svg($carousel-control-next-icon-bg);
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    border: 5px solid;
+    transform: rotate(45deg);
+    border-bottom: 0;
+    border-left: 0;
+    top: -34px;
+    right: 0;
+  }
 }
 
 
@@ -165,17 +188,17 @@
     margin-left: $carousel-indicator-spacer;
     text-indent: -999px;
     cursor: pointer;
-    background-color: $carousel-indicator-active-bg;
+    background-color: $carousel-caption-color;
     background-clip: padding-box;
     // Use transparent borders to increase the hit area by 10px on top and bottom.
     border-top: $carousel-indicator-hit-area-height solid transparent;
     border-bottom: $carousel-indicator-hit-area-height solid transparent;
-    opacity: .5;
+    border-radius: 50%;
     @include transition($carousel-indicator-transition);
   }
 
   .active {
-    opacity: 1;
+    background-color: $carousel-control-color;
   }
 }
 
