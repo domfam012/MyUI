@@ -4549,30 +4549,24 @@ input[type=search]:disabled + .btn-search {
   text-align: center;
 }
 
-.nav-tabs.nav-tabs-lg .nav-item .nav-link:hover, .nav-tabs.nav-tabs-lg .nav-item .nav-link:focus {
-  position: relative;
-  border-bottom: 1px solid;
-  background-color: #04bcde;
-  border-color: #04bcde;
-  color: #fff;
-}
-
 .nav-tabs.nav-tabs-lg .nav-item .nav-link.disabled {
   color: #757575;
   background-color: transparent;
   border-color: transparent;
 }
 
-.nav-tabs.nav-tabs-lg .nav-item .nav-link.active {
+.nav-tabs.nav-tabs-lg .nav-item .nav-link.active, .nav-tabs.nav-tabs-lg .nav-item .nav-link:hover, .nav-tabs.nav-tabs-lg .nav-item .nav-link:focus {
   position: relative;
   border-bottom: 1px solid;
   background-color: #04bcde;
   border-color: #04bcde;
   color: #fff;
   z-index: 3;
+  padding: 0;
+  font-size: 20px;
 }
 
-.nav-tabs.nav-tabs-lg .nav-item .nav-link.active::before {
+.nav-tabs.nav-tabs-lg .nav-item .nav-link.active::before, .nav-tabs.nav-tabs-lg .nav-item .nav-link:hover::before, .nav-tabs.nav-tabs-lg .nav-item .nav-link:focus::before {
   content: '';
   padding: 9.5px 0;
   position: absolute;
