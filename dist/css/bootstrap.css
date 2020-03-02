@@ -3295,6 +3295,7 @@ input[type="button"].btn-block {
   height: 36px;
   padding: 0;
   z-index: 10;
+  font-size: 20px;
 }
 
 .btn-search.btn-search-sm, .btn-search.btn-calendar-sm,
@@ -3302,6 +3303,7 @@ input[type="button"].btn-block {
 .btn-calendar.btn-calendar-sm {
   width: 26px;
   height: 26px;
+  font-size: 16px;
 }
 
 .fade {
