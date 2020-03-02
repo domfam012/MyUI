@@ -8,9 +8,9 @@
 $white:    #fff !default;
 $gray-100: #f2f2f2 !default;
 $gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
+$gray-300: #c2c2c2 !default;
+$gray-400: #d9d9d9 !default;
+$gray-500: #ababab !default;
 $gray-600: #757575 !default;
 $gray-700: #495057 !default;
 $gray-800: #333333 !default;
@@ -78,7 +78,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $gray-300 !default;
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
@@ -248,6 +248,7 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
+$border-radius-base:          2px !default;
 $border-radius:               .25rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
@@ -368,13 +369,13 @@ $table-bg:                    null !default;
 $table-accent-bg:             rgba($black, .05) !default;
 $table-hover-color:           $table-color !default;
 $table-hover-bg:              rgba($black, .075) !default;
-$table-active-bg:             $table-hover-bg !default;
+$table-active-bg:             rgba($primary, .080) !default;
 
 $table-border-width:          $border-width !default;
-$table-border-color:          $border-color !default;
+$table-border-color:          $gray-500 !default;
 
-$table-head-bg:               $gray-200 !default;
-$table-head-color:            $gray-700 !default;
+$table-head-bg:               #e9e9e9 !default;
+$table-head-color:            $gray-800 !default;
 
 $table-dark-color:            $white !default;
 $table-dark-bg:               $gray-800 !default;
@@ -383,7 +384,7 @@ $table-dark-hover-color:      $table-dark-color !default;
 $table-dark-hover-bg:         rgba($white, .075) !default;
 $table-dark-border-color:     lighten($table-dark-bg, 7.5%) !default;
 
-$table-striped-order:         odd !default;
+$table-striped-order:         2n !default;
 
 $table-caption-color:         $text-muted !default;
 
@@ -396,7 +397,7 @@ $table-border-level:          -6 !default;
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 $input-btn-padding-y:         0 !default;
-$input-btn-padding-x:         .3125rem !default;
+$input-btn-padding-x:         .625rem !default;
 $input-btn-font-family:       $font-family-base !default;
 $input-btn-font-size:         .875rem !default;
 $input-btn-line-height:       1.125rem !default;
@@ -439,7 +440,7 @@ $btn-padding-x-sm:            0.625rem !default;
 $btn-font-size-sm:            0.875rem !default;
 $btn-line-height-sm:          1.125rem !default;
 
-$btn-padding-y-lg:            0.625rem !default;
+$btn-padding-y-lg:            0.7rem !default;
 $btn-padding-x-lg:            0.625rem !default;
 $btn-font-size-lg:            0.875rem !default;
 $btn-line-height-lg:          1.125rem !default;
@@ -458,7 +459,7 @@ $btn-focus-width:             none !default;
 $btn-disabled-opacity:        .5 !default;
 $btn-active-box-shadow:       none !default;
 
-$btn-link-disabled-color:     $white !default;
+$btn-link-disabled-color:     $gray-400 !default;
 
 $btn-block-spacing-y:         .5rem !default;
 
@@ -576,7 +577,7 @@ $custom-control-indicator-active-box-shadow:    none !default;
 $custom-control-indicator-active-border-color:  $custom-control-indicator-active-bg !default;
 
 $custom-checkbox-indicator-border-radius:       $border-radius !default;
-$custom-checkbox-indicator-icon-checked:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'><path fill='#{$custom-control-indicator-checked-color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/></svg>") !default;
+$custom-checkbox-indicator-icon-checked:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path fill='#ffffff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/></svg>") !default;
 
 $custom-checkbox-indicator-indeterminate-bg:           $component-active-bg !default;
 $custom-checkbox-indicator-indeterminate-color:        $custom-control-indicator-checked-color !default;
@@ -816,9 +817,9 @@ $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
 $pagination-padding-x-lg:           1.5rem !default;
-$pagination-line-height:            1.25 !default;
+$pagination-line-height:            29px !default;
 
-$pagination-color:                  $link-color !default;
+$pagination-color:                  #999 !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
 $pagination-border-color:           $gray-300 !default;
@@ -826,17 +827,19 @@ $pagination-border-color:           $gray-300 !default;
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-color:            $white !default;
+$pagination-hover-bg:               $primary !default;
+$pagination-hover-border-color:     $primary !default;
+
+$pagination-focus-bg:               #ababab !default;
 
 $pagination-active-color:           $component-active-color !default;
 $pagination-active-bg:              $component-active-bg !default;
 $pagination-active-border-color:    $pagination-active-bg !default;
 
-$pagination-disabled-color:         $gray-600 !default;
+$pagination-disabled-color:         rgba(194,194,194,.5) !default;
 $pagination-disabled-bg:            $white !default;
-$pagination-disabled-border-color:  $gray-300 !default;
+$pagination-disabled-border-color:  rgba(194,194,194,.5) !default;
 
 
 // Jumbotron
@@ -943,7 +946,7 @@ $toast-header-border-color:         rgba(0, 0, 0, .05) !default;
 // Badges
 
 $badge-font-size:                   75% !default;
-$badge-font-weight:                 $font-weight-bold !default;
+$badge-font-weight:                 500 !default;
 $badge-padding-y:                   .25em !default;
 $badge-padding-x:                   .4em !default;
 $badge-border-radius:               $border-radius !default;
@@ -960,7 +963,7 @@ $badge-pill-border-radius:          10rem !default;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding:               1rem !default;
+$modal-inner-padding:               20px !default;
 
 // Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
 $modal-footer-margin-between:       .5rem !default;
@@ -968,7 +971,7 @@ $modal-footer-margin-between:       .5rem !default;
 $modal-dialog-margin:               .5rem !default;
 $modal-dialog-margin-y-sm-up:       1.75rem !default;
 
-$modal-title-line-height:           $line-height-base !default;
+$modal-title-line-height:           22px !default;
 
 $modal-content-color:               null !default;
 $modal-content-bg:                  $white !default;
@@ -985,14 +988,19 @@ $modal-header-border-color:         $border-color !default;
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
-$modal-header-padding-y:            1rem !default;
-$modal-header-padding-x:            1rem !default;
+
+$modal-header-bg:                   $primary !default;
+$modal-header-font-size:            16px !default;
+$modal-header-close-button-color:   $white !default;
+$modal-header-title-color:          $white !default;
+$modal-header-padding-y:            8px !default;
+$modal-header-padding-x:            20px !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
-$modal-xl:                          1140px !default;
+$modal-xl:                          1200px !default;
 $modal-lg:                          800px !default;
-$modal-md:                          500px !default;
-$modal-sm:                          300px !default;
+$modal-md:                          600px !default;
+$modal-sm:                          380px !default;
 
 $modal-fade-transform:              translate(0, -50px) !default;
 $modal-show-transform:              none !default;
@@ -1091,17 +1099,17 @@ $breadcrumb-border-radius:          $border-radius !default;
 
 // Carousel
 
-$carousel-control-color:             $white !default;
+$carousel-control-color:             $primary !default;
 $carousel-control-width:             15% !default;
 $carousel-control-opacity:           .5 !default;
 $carousel-control-hover-opacity:     .9 !default;
 $carousel-control-transition:        opacity .15s ease !default;
 
-$carousel-indicator-width:           30px !default;
-$carousel-indicator-height:          3px !default;
+$carousel-indicator-width:           14px !default;
+$carousel-indicator-height:          14px !default;
 $carousel-indicator-hit-area-height: 10px !default;
-$carousel-indicator-spacer:          3px !default;
-$carousel-indicator-active-bg:       $white !default;
+$carousel-indicator-spacer:          18px !default;
+$carousel-indicator-active-bg:       $primary !default;
 $carousel-indicator-transition:      opacity .6s ease !default;
 
 $carousel-caption-width:             70% !default;
@@ -1161,3 +1169,38 @@ $positions: static, relative, absolute, fixed, sticky !default;
 
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+// Step
+// 변수 추가
+$step-list-width:                   33.33% !default;
+$step-font-size:                    1rem !default;
+$step-color:                        $primary !default;
+$step-bg-color:                     $white !default;
+$step-active-color:                 $white !default;
+$step-active-bg-color:              $primary !default;
+$step-border-color:                 #d2d2d2 !default;
+$step-border-current-color:         $primary !default;
+$step-list-color:                   $body-color !default;
+$step-list-border-color:            #96a1b4 !default;
+$step-check-item:                   url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path fill='#333333' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/></svg>") !default;
+
+$step-arrow-list-width:                   220px !default;
+$step-arrow-list-height:                  38px !default;
+$step-arrow-list-line-height:             38px !default;
+$step-arrow-font-size:                    1rem !default;
+$step-arrow-color:                        $primary !default;
+$step-arrow-done-color:                   $body-color !default;
+$step-arrow-bg-color:                     #f8f8f8 !default;
+$step-arrow-active-color:                 $white !default;
+$step-arrow-active-bg-color:              $primary !default;
+$step-arrow-active-border-color:          $primary !default;
+$step-arrow-border-color:                 #d4d4d4 !default;
+$step-arrow-border-current-color:         $primary !default;
+$step-arrow-list-color:                   $body-color !default;
+$step-arrow-list-border-color:            #96a1b4 !default;
+$step-arrow-list-border-radius:           2px !default;
+
+$pager-border-color:                      $primary !default;
+$pager-bg-color:                          $primary !default;
+$pager-line-border-color:                 #dcdcdc !default;
+
