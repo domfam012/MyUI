@@ -12680,7 +12680,7 @@ td.today:hover {
 
 .pager {
   position: relative;
-  padding-left: 45px;
+  padding-left: 21px;
   list-style: none;
 }
 
@@ -12696,7 +12696,7 @@ td.today:hover {
   display: inline-block;
   content: '';
   position: absolute;
-  left: -30px;
+  left: -14px;
   top: 12px;
   height: 100%;
   width: 10px;
@@ -12709,7 +12709,7 @@ td.today:hover {
   display: inline-block;
   position: absolute;
   top: 7px;
-  left: -32px;
+  left: -16px;
   width: 6px;
   height: 6px;
   border-radius: 8px;
@@ -12725,7 +12725,7 @@ td.today:hover {
   width: 14px;
   height: 14px;
   top: 3px;
-  left: -36px;
+  left: -20px;
   font-size: 14px;
   text-align: center;
   background-color: #04bcde;
