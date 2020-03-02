@@ -78,7 +78,6 @@
   .nav-link {
     padding-right: 0;
     padding-left: 0;
-    margin-right: 90px;
   }
 
   .dropdown-menu {
@@ -182,6 +181,7 @@
           }
 
           .nav-link {
+            margin-right: 90px;
             padding-right: $navbar-nav-link-padding-x;
             padding-left: $navbar-nav-link-padding-x;
           }
