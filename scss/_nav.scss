@@ -151,8 +151,9 @@
 
 .nav-pills {
   .nav-link {
-    line-height: 25px;
-    padding: 0.719rem 0.625rem;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 0.625rem;
     color: $body-color;
     @include border-radius($nav-pills-border-radius);
     @include hover-focus() {
@@ -162,6 +163,7 @@
         display: inline-block;
         float: right;
         font-size: 27px;
+        line-height: 50px;
       }
     }
     & i {
@@ -178,6 +180,25 @@
       display: inline-block;
       float: right;
       font-size: 27px;
+      line-height: 50px;
+    }
+  }
+  &.nav-pills-light {
+    border-top: 3px solid $primary;
+    border-bottom: 1px solid #999;
+    & .nav-link {
+      background-color: white;
+      color: #999;
+
+      @include hover-focus() {
+        color: $body-color;
+        background-color: $white;
+      }
+    }
+    & .nav-link.active,
+    & .show > .nav-link {
+      color: #333;
+      background-color: $white;
     }
   }
 }

@@ -4583,8 +4583,9 @@ input[type=search]:disabled + .btn-search {
 }
 
 .nav-pills .nav-link {
-  line-height: 25px;
-  padding: 0.719rem 0.625rem;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 0.625rem;
   color: #333333;
   border-radius: 0.25rem;
 }
@@ -4598,6 +4599,7 @@ input[type=search]:disabled + .btn-search {
   display: inline-block;
   float: right;
   font-size: 27px;
+  line-height: 50px;
 }
 
 .nav-pills .nav-link i {
@@ -4615,6 +4617,28 @@ input[type=search]:disabled + .btn-search {
   display: inline-block;
   float: right;
   font-size: 27px;
+  line-height: 50px;
+}
+
+.nav-pills.nav-pills-light {
+  border-top: 3px solid #04bcde;
+  border-bottom: 1px solid #999;
+}
+
+.nav-pills.nav-pills-light .nav-link {
+  background-color: white;
+  color: #999;
+}
+
+.nav-pills.nav-pills-light .nav-link:hover, .nav-pills.nav-pills-light .nav-link:focus {
+  color: #333333;
+  background-color: #fff;
+}
+
+.nav-pills.nav-pills-light .nav-link.active,
+.nav-pills.nav-pills-light .show > .nav-link {
+  color: #333;
+  background-color: #fff;
 }
 
 .nav-fill .nav-item {
