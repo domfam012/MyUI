@@ -4630,9 +4630,21 @@ input[type=search]:disabled + .btn-search {
   color: #999;
 }
 
+.nav-pills.nav-pills-light .nav-link i {
+  float: left;
+  line-height: 50px;
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .nav-pills.nav-pills-light .nav-link:hover, .nav-pills.nav-pills-light .nav-link:focus {
   color: #333333;
   background-color: #fff;
+}
+
+.nav-pills.nav-pills-light .nav-link:hover i, .nav-pills.nav-pills-light .nav-link:focus i {
+  display: inline-block;
 }
 
 .nav-pills.nav-pills-light .nav-link.active,

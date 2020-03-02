@@ -190,9 +190,21 @@
       background-color: white;
       color: #999;
 
+      & i {
+        float: left;
+        line-height: 50px;
+        font-size: 16px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
       @include hover-focus() {
         color: $body-color;
         background-color: $white;
+
+        & i {
+          display: inline-block;
+        }
       }
     }
     & .nav-link.active,
