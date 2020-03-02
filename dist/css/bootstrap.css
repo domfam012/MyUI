@@ -10800,6 +10800,7 @@ a.text-error:hover, a.text-error:focus {
   border-radius: 0;
   border: none;
   font-weight: bold;
+  font-size: 12px;
 }
 
 .datepicker table tr td span {
@@ -10842,12 +10843,8 @@ a.text-error:hover, a.text-error:focus {
 
 .datepicker table tr td span.active:hover {
   color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-
-.datepicker table tr td span.active:hover:focus, .datepicker table tr td span.active:hover:hover, .datepicker table tr td span.active:hover:active {
-  color: #fff;
   border-color: #04bcde;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
 .datepicker table tr td span.active:focus {
@@ -10863,89 +10860,11 @@ a.text-error:hover, a.text-error:focus {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
-.datepicker table tr td span.active.disabled:hover {
+.datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:focus, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled.focus:focus, .datepicker table tr td span.active.disabled.active:hover {
   color: #fff;
   background-color: #04bcde;
   border-color: #04bcde;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-
-.datepicker table tr td span.active.disabled:hover:focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover:hover {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover:active {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover.focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:active {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:active:hover {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:active:focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover.active {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover.active:hover {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover.active:focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:active.focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover.active.focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
 }
 
 .datepicker table tr td span.active.disabled:hover.disabled:hover {
@@ -11100,7 +11019,8 @@ a.text-error:hover, a.text-error:focus {
   padding: 0;
   border-radius: 0;
   border: none;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 12px;
 }
 
 .datepicker table tr td.old {
@@ -12091,31 +12011,33 @@ a.text-error:hover, a.text-error:focus {
 
 .datepicker .datepicker-switch {
   width: 145px;
+  height: 22px;
   cursor: pointer;
+  font-size: 13px;
 }
 
 .datepicker .datepicker-switch:hover {
   background: #D9D9D9;
 }
 
-.datepicker .prev {
+.datepicker .prev, .datepicker .next {
   cursor: pointer;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #c2c2c2;
   border-radius: 2px;
+  color: #C2C2C2;
+  font-size: 22px;
+  font-weight: bold;
+  vertical-align: top;
 }
 
-.datepicker .prev:hover {
-  background: #E2E2E2;
+.datepicker .prev:hover, .datepicker .prev:focus, .datepicker .next:hover, .datepicker .next:focus {
+  color: #333333;
+  background-color: #c2c2c2;
 }
 
-.datepicker .next {
-  cursor: pointer;
-  border: 1px solid #D9D9D9;
-  border-radius: 2px;
-}
-
-.datepicker .next:hover {
-  background: #D9D9D9;
+.datepicker .prev:active, .datepicker .next:active {
+  color: #333333;
+  background-color: #ababab;
 }
 
 .datepicker tfoot tr th {
