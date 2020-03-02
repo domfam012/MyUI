@@ -5,8 +5,13 @@
   margin-bottom: $breadcrumb-margin-bottom;
   @include font-size($breadcrumb-font-size);
   list-style: none;
-  background-color: $breadcrumb-bg;
   @include border-radius($breadcrumb-border-radius);
+
+  a {
+    @include hover-focus() {
+      color: $primary;
+    }
+  }
 }
 
 .breadcrumb-item {
@@ -19,6 +24,9 @@
       padding-right: $breadcrumb-item-padding;
       color: $breadcrumb-divider-color;
       content: escape-svg($breadcrumb-divider);
+      font-family: Serif;
+      font-weight: 900;
+      vertical-align: middle;
     }
   }
 

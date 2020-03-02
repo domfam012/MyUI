@@ -5326,8 +5326,11 @@ input[type=search]:disabled + .btn-search {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
   border-radius: 0.25rem;
+}
+
+.breadcrumb a:hover, .breadcrumb a:focus {
+  color: #04bcde;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -5337,8 +5340,11 @@ input[type=search]:disabled + .btn-search {
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
-  color: #757575;
-  content: "/";
+  color: #999;
+  content: ">";
+  font-family: Serif;
+  font-weight: 900;
+  vertical-align: middle;
 }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -5350,7 +5356,7 @@ input[type=search]:disabled + .btn-search {
 }
 
 .breadcrumb-item.active {
-  color: #757575;
+  color: #999;
 }
 
 .pagination {
