@@ -24,17 +24,31 @@
     text-decoration: none;
     background-color: $pagination-hover-bg;
     border-color: $pagination-hover-border-color;
+    &.page-arrow {
+      color: $pagination-hover-color;
+    }
   }
 
   &:focus {
     z-index: 3;
     outline: $pagination-focus-outline;
-    box-shadow: $pagination-focus-box-shadow;
+    background-color: $pagination-focus-bg;
+    &.page-arrow {
+      color: $pagination-hover-color;
+    }
   }
   &.page-arrow {
-    color: #666;
+    color: $pagination-border-color;
     border: 1px solid $pagination-border-color;
     font-size: 19px;
+    &:hover {
+      color: #333;
+      background: #C2C2C2;
+    }
+    &:focus {
+      color: #333;
+      background: #ababab;
+    }
   }
 }
 
