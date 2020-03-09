@@ -1,0 +1,6 @@
+@font-face {
+  font-family: noto-sans-cjk-kr, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/NotoSansCJK/NotoSansCJKkr-Regular.otf);
+  src: local("noto-sans-cjk-kr"); }
