@@ -5,7 +5,6 @@
  * Improvements by Andrew Rowls
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */
-//todo: 코드 정리
 
 .datepicker {
   border-radius: 4px;
@@ -76,102 +75,11 @@
           background-color: $primary;
           border-color: $primary;
           text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-          &:hover, &:focus, &:active, &.focus:focus, &.active:hover {
-            color: #fff;
-            background-color: $primary;
-            border-color: $primary;
-            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-          }
-          &:hover.disabled {
-            &:hover {
-              background-color: $primary;
-              border-color: $primary;
-            }
-            &:focus {
-              background-color: $primary;
-              border-color: $primary;
-            }
-          }
-          &:hover[disabled] {
-            &:hover {
-              background-color: $primary;
-              border-color: $primary;
-            }
-            &:focus {
-              background-color: $primary;
-              border-color: $primary;
-            }
-          }
-          &:hover.disabled.focus {
-            background-color: $primary;
-            border-color: $primary;
-          }
-          &:hover[disabled].focus {
-            background-color: $primary;
-            border-color: $primary;
-          }
         }
         span.active.focus {
           color: #fff;
           background-color: $primary;
           border-color: $primary;
-        }
-        span.active.disabled.focus {
-          color: #fff;
-          background-color: $primary;
-          border-color: $primary;
-          background-color: $primary;
-          border-color: $primary;
-        }
-        span.active.active {
-          color: #fff;
-          background-color: $primary;
-          border-color: $primary;
-          &:hover {
-            color: #fff;
-            background-color: $primary;
-            border-color: $primary;
-          }
-          &:focus {
-            color: #fff;
-            background-color: $primary;
-            border-color: $primary;
-          }
-        }
-        span.active.disabled.active {
-          color: #fff;
-          background-color: $primary;
-          border-color: $primary;
-          &:hover {
-            color: #fff;
-            background-color: $primary;
-            border-color: $primary;
-          }
-          &:focus {
-            color: #fff;
-            background-color: $primary;
-            border-color: $primary;
-          }
-        }
-        span.active.active.focus {
-          color: #fff;
-          background-color: $primary;
-          border-color: $primary;
-        }
-        span.active.disabled.active.focus {
-          color: #fff;
-          background-color: $primary;
-          border-color: $primary;
-        }
-        span.active.disabled.disabled {
-          &:hover {
-            background-color: $primary;
-            border-color: $primary;
-          }
-          &:focus {
-            background-color: $primary;
-            border-color: $primary;
-          }
         }
         span.active[disabled] {
           &:hover {
@@ -183,33 +91,10 @@
             border-color: $primary;
           }
         }
-        span.active.disabled[disabled] {
-          &:hover {
-            background-color: $primary;
-            border-color: $primary;
-          }
-          &:focus {
-            background-color: $primary;
-            border-color: $primary;
-          }
-        }
-        span.active.disabled.disabled.focus {
-          background-color: $primary;
-          border-color: $primary;
-        }
-        span.active[disabled].focus {
-          background-color: $primary;
-          border-color: $primary;
-        }
-        span.active.disabled[disabled].focus {
-          background-color: $primary;
-          border-color: $primary;
-        }
-        span.old {
-          color: #777777;
-        }
-        span.new {
-          color: #777777;
+        span.old,
+        span.new{
+          color: #B5B5B5;
+          font-weight: normal;
         }
       }
       th {
@@ -222,10 +107,7 @@
         font-weight: normal;
         font-size: 12px;
       }
-      td.old {
-        color: #B5B5B5;
-        font-weight: normal;
-      }
+      td.old,
       td.new {
         color: #B5B5B5;
         font-weight: normal;
@@ -259,73 +141,25 @@
         background-color: $primary;
         border-color: $primary;
         border-radius: 0;
-        &:focus {
+        &:focus,
+        &:hover,
+        &:active,
+        &.focus,
+        &.active,
+        &.active.focus{
           color: #000;
           background-color: $primary;
           border-color: $primary;
         }
-        &:hover {
-          color: #000;
-          background-color: $primary;
-          border-color: $primary;
-        }
-        &:active {
-          color: #000;
-          background-color: $primary;
-          border-color: $primary;
-          &:hover {
-            color: #000;
-            background-color: $primary;
-            border-color: $primary;
-          }
-          &:focus {
-            color: #000;
-            background-color: $primary;
-            border-color: $primary;
-          }
-        }
-        &:active.focus {
-          color: #000;
-          background-color: $primary;
-          border-color: $primary;
-        }
-      }
-      td.highlighted.focus {
-        color: #000;
-        background-color: $primary;
-        border-color: $primary;
-      }
-      td.highlighted.active {
-        color: #000;
-        background-color: $primary;
-        border-color: $primary;
-        &:hover {
-          color: #000;
-          background-color: $primary;
-          border-color: $primary;
-        }
-        &:focus {
-          color: #000;
-          background-color: $primary;
-          border-color: $primary;
-        }
-      }
-      td.highlighted.active.focus {
-        color: #000;
-        background-color: $primary;
-        border-color: $primary;
       }
       td.highlighted.disabled {
-        &:hover {
-          background-color: $primary;
-          border-color: $primary;
-        }
+        background: #d9edf7;
+        color: #777777;
+        &:hover,
         &:focus {
           background-color: $primary;
           border-color: $primary;
         }
-        background: #d9edf7;
-        color: #777777;
         &:active {
           background: #d9edf7;
           color: #777777;
@@ -367,77 +201,32 @@
           -moz-border-radius: 50%;
           border-radius: 50%;
         }
-        &:hover {
-          &:after {
-            content: '';
-            display: inline-block;
-            position: absolute;
-            bottom: 3px;
-            left: 13px;
-            background-color: #FFFFFF;
-            width: 4px;
-            height: 4px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-          }
-          color: #ffffff;
-          background-color: $primary;
-          border-radius: 2px;
-        }
-        &:active {
-          &:after {
-            content: '';
-            display: inline-block;
-            position: absolute;
-            bottom: 3px;
-            left: 13px;
-            background-color: #FFFFFF;
-            width: 4px;
-            height: 4px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-          }
-          color: #ffffff;
-          border-radius: 2px;
-          background-color: $primary;
-          &:hover {
-            color: #ffffff;
-            border-radius: 2px;
-            background-color: $primary;
-          }
-          &:focus {
-            color: #ffffff;
-            border-radius: 2px;
-            background-color: $primary;
-          }
-        }
-        &:focus {
-          &:after {
-            content: '';
-            display: inline-block;
-            position: absolute;
-            bottom: 3px;
-            left: 13px;
-            background-color: #FFFFFF;
-            width: 4px;
-            height: 4px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-          }
-          color: #000;
-          background-color: #ffc966;
-          border-color: #b37400;
-        }
+        &:hover,
+        &:focus,
+        &:active,
         &:active.focus {
+          &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            bottom: 3px;
+            left: 13px;
+            background-color: #FFFFFF;
+            width: 4px;
+            height: 4px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+          }
           color: #ffffff;
-          border-radius: 2px;
           background-color: $primary;
+          border-radius: 2px;
         }
       }
       td.today.active {
+        color: #ffffff;
+        border-radius: 2px;
+        background-color: $primary;
         &:after {
           content: '';
           display: inline-block;
@@ -451,10 +240,8 @@
           -moz-border-radius: 50%;
           border-radius: 50%;
         }
-        color: #ffffff;
-        border-radius: 2px;
-        background-color: $primary;
-        &:hover {
+        &:hover,
+        &focus {
           color: #ffffff;
           border-radius: 2px;
           background-color: $primary;

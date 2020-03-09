@@ -81,12 +81,12 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -361,8 +361,7 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.125;
 }
 
@@ -573,7 +572,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1160px;
   }
 }
 
@@ -605,7 +604,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
+    max-width: 1160px;
   }
 }
 
@@ -4685,7 +4684,7 @@ input[type=search]:disabled + .btn-search {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1.25rem 1.875rem;
+  padding: 16px 30px;
 }
 
 .navbar .container,
@@ -4727,7 +4726,6 @@ input[type=search]:disabled + .btn-search {
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
-  margin-right: 90px;
 }
 
 .navbar-nav .dropdown-menu {
@@ -4752,7 +4750,7 @@ input[type=search]:disabled + .btn-search {
 
 .navbar-toggler {
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 0.8125rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -4797,8 +4795,9 @@ input[type=search]:disabled + .btn-search {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
+    margin-right: 90px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
@@ -4839,8 +4838,9 @@ input[type=search]:disabled + .btn-search {
     position: absolute;
   }
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
+    margin-right: 90px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
@@ -4881,8 +4881,9 @@ input[type=search]:disabled + .btn-search {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
+    margin-right: 90px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
@@ -4923,8 +4924,9 @@ input[type=search]:disabled + .btn-search {
     position: absolute;
   }
   .navbar-expand-xl .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
+    margin-right: 90px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
@@ -4965,8 +4967,9 @@ input[type=search]:disabled + .btn-search {
 }
 
 .navbar-expand .navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
+  margin-right: 90px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .navbar-expand > .container,
@@ -5036,11 +5039,11 @@ input[type=search]:disabled + .btn-search {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #04bcde;
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: #04bcde;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -5060,7 +5063,7 @@ input[type=search]:disabled + .btn-search {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   border-bottom: 2px solid;
-  color: #fff;
+  color: #04bcde;
 }
 
 .navbar-dark .navbar-toggler {
@@ -5077,11 +5080,11 @@ input[type=search]:disabled + .btn-search {
 }
 
 .navbar-dark .navbar-text a {
-  color: #fff;
+  color: #04bcde;
 }
 
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-  color: #fff;
+  color: #04bcde;
 }
 
 .card {
@@ -10766,6 +10769,14 @@ a.text-error:hover, a.text-error:focus {
   }
 }
 
+.bg-header {
+  background-color: #001D2E;
+}
+
+.m-header-title {
+  padding-top: 120px;
+}
+
 /*!
  *  추가
  */
@@ -10860,111 +10871,8 @@ a.text-error:hover, a.text-error:focus {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
-.datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active.disabled:focus, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled.focus:focus, .datepicker table tr td span.active.disabled.active:hover {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-
-.datepicker table tr td span.active.disabled:hover.disabled:hover {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover.disabled:focus {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover[disabled]:hover {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover[disabled]:focus {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover.disabled.focus {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled:hover[disabled].focus {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
 .datepicker table tr td span.active.focus {
   color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled.focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.active {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.active:hover {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.active:focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled.active {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled.active:hover {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled.active:focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.active.focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled.active.focus {
-  color: #fff;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled.disabled:hover {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled.disabled:focus {
   background-color: #04bcde;
   border-color: #04bcde;
 }
@@ -10979,37 +10887,10 @@ a.text-error:hover, a.text-error:focus {
   border-color: #04bcde;
 }
 
-.datepicker table tr td span.active.disabled[disabled]:hover {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled[disabled]:focus {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled.disabled.focus {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active[disabled].focus {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.active.disabled[disabled].focus {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td span.old {
-  color: #777777;
-}
-
+.datepicker table tr td span.old,
 .datepicker table tr td span.new {
-  color: #777777;
+  color: #B5B5B5;
+  font-weight: normal;
 }
 
 .datepicker table tr th {
@@ -11023,11 +10904,7 @@ a.text-error:hover, a.text-error:focus {
   font-size: 12px;
 }
 
-.datepicker table tr td.old {
-  color: #B5B5B5;
-  font-weight: normal;
-}
-
+.datepicker table tr td.old,
 .datepicker table tr td.new {
   color: #B5B5B5;
   font-weight: normal;
@@ -11066,67 +10943,7 @@ a.text-error:hover, a.text-error:focus {
   border-radius: 0;
 }
 
-.datepicker table tr td.highlighted:focus {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted:hover {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted:active {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted:active:hover {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted:active:focus {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted:active.focus {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted.focus {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted.active {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted.active:hover {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted.active:focus {
-  color: #000;
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted.active.focus {
+.datepicker table tr td.highlighted:focus, .datepicker table tr td.highlighted:hover, .datepicker table tr td.highlighted:active, .datepicker table tr td.highlighted.focus, .datepicker table tr td.highlighted.active, .datepicker table tr td.highlighted.active.focus {
   color: #000;
   background-color: #04bcde;
   border-color: #04bcde;
@@ -11137,12 +10954,7 @@ a.text-error:hover, a.text-error:focus {
   color: #777777;
 }
 
-.datepicker table tr td.highlighted.disabled:hover {
-  background-color: #04bcde;
-  border-color: #04bcde;
-}
-
-.datepicker table tr td.highlighted.disabled:focus {
+.datepicker table tr td.highlighted.disabled:hover, .datepicker table tr td.highlighted.disabled:focus {
   background-color: #04bcde;
   border-color: #04bcde;
 }
@@ -11192,13 +11004,13 @@ a.text-error:hover, a.text-error:focus {
   border-radius: 50%;
 }
 
-.datepicker table tr td.today:hover {
+.datepicker table tr td.today:hover, .datepicker table tr td.today:focus, .datepicker table tr td.today:active, .datepicker table tr td.today:active.focus {
   color: #ffffff;
   background-color: #04bcde;
   border-radius: 2px;
 }
 
-.datepicker table tr td.today:hover:after {
+.datepicker table tr td.today:hover:after, .datepicker table tr td.today:focus:after, .datepicker table tr td.today:active:after, .datepicker table tr td.today:active.focus:after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -11208,60 +11020,6 @@ a.text-error:hover, a.text-error:focus {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-}
-
-.datepicker table tr td.today:active {
-  color: #ffffff;
-  border-radius: 2px;
-  background-color: #04bcde;
-}
-
-.datepicker table tr td.today:active:after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  bottom: 3px;
-  left: 13px;
-  background-color: #FFFFFF;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-}
-
-.datepicker table tr td.today:active:hover {
-  color: #ffffff;
-  border-radius: 2px;
-  background-color: #04bcde;
-}
-
-.datepicker table tr td.today:active:focus {
-  color: #ffffff;
-  border-radius: 2px;
-  background-color: #04bcde;
-}
-
-.datepicker table tr td.today:focus {
-  color: #000;
-  background-color: #ffc966;
-  border-color: #b37400;
-}
-
-.datepicker table tr td.today:focus:after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  bottom: 3px;
-  left: 13px;
-  background-color: #FFFFFF;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-}
-
-.datepicker table tr td.today:active.focus {
-  color: #ffffff;
-  border-radius: 2px;
-  background-color: #04bcde;
 }
 
 .datepicker table tr td.today.active {
@@ -11282,7 +11040,7 @@ a.text-error:hover, a.text-error:focus {
   border-radius: 50%;
 }
 
-.datepicker table tr td.today.active:hover {
+.datepicker table tr td.today.active:hover, .datepicker table tr td.today.activefocus {
   color: #ffffff;
   border-radius: 2px;
   background-color: #04bcde;
