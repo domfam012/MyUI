@@ -9,11 +9,10 @@
     @include make-container-max-widths();
   }
 
-  .container-sm {}
-
   // 100% wide container at all breakpoints
   .container-fluid {
-    @include make-container();
+    @include make-container(100px);
+    max-width: 1200px;
   }
 
   // Responsive containers that are 100% wide until a breakpoint
