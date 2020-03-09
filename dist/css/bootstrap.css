@@ -81,12 +81,12 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -361,8 +361,7 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.125;
 }
 
@@ -10772,6 +10771,10 @@ a.text-error:hover, a.text-error:focus {
 
 .bg-header {
   background-color: #001D2E;
+}
+
+.m-header-title {
+  padding-top: 120px;
 }
 
 /*!
