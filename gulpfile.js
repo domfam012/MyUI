@@ -95,13 +95,13 @@ function beautify() {
 
 gulp.task("dist", gulp.series(scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
 
-gulp.task("scss", scss);
-gulp.task("copyImg", copyImg);
-gulp.task("copyFonts", copyFonts);
-gulp.task("jsLib", jsLib);
-gulp.task("jsCommon", jsCommon);
-gulp.task("htmlInclude", htmlInclude);
-gulp.task("htmlPage", htmlPage);
+// gulp.task("scss", scss);
+// gulp.task("copyImg", copyImg);
+// gulp.task("copyFonts", copyFonts);
+// gulp.task("jsLib", jsLib);
+// gulp.task("jsCommon", jsCommon);
+// gulp.task("htmlInclude", htmlInclude);
+// gulp.task("htmlPage", htmlPage);
 
 gulp.task("watchCss", watchScss);
 gulp.task("watchHtml", watchHtml);
