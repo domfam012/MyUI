@@ -5,6 +5,7 @@ const del = require('del');
 const htmlbeautify = require('gulp-html-beautify');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
+const combine = require('gulp-scss-combine');
 
 gulp.task('distDel', function () {
   del('dist');
@@ -13,6 +14,11 @@ gulp.task('distDel', function () {
 /* scss TASK*/
 function scss() {
   return gulp.src('src/scss/**/*.scss')
+    // style.css 파일 하나로 할 경우
+    // .pipe(sass.sync().on('error', sass.logError))
+    // .pipe(combine())
+    // .pipe(concat('style.scss'))
+
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'));
 }
@@ -70,7 +76,7 @@ function jsCommon() {
 }
 
 function watchScss() {
-  gulp.watch('src/scss/*/*/*.scss', gulp.series(scss));
+  gulp.watch('src/scss/**/*.scss', gulp.series(scss));
 }
 function watchHtml() {
   gulp.watch(['src/html/*.html'], gulp.series(htmlPage));
@@ -97,7 +103,7 @@ gulp.task("dist", gulp.series(scss, copyImg, copyFonts, jsLib, jsCommon, htmlPag
 
 // gulp.task("scss", scss);
 // gulp.task("copyImg", copyImg);
-// gulp.task("copyFonts", copyFonts);
+gulp.task("copyFonts", copyFonts);
 // gulp.task("jsLib", jsLib);
 // gulp.task("jsCommon", jsCommon);
 // gulp.task("htmlInclude", htmlInclude);

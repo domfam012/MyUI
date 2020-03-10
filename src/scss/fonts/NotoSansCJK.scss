@@ -1,7 +1,41 @@
 @font-face {
-  font-family: noto-sans-cjk-kr, sans-serif;
+  font-family: 'NotoSansCJKkr-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/NotoSansCJK/NotoSansCJKkr-Bold.otf);
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr-Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/NotoSansCJK/NotoSansCJKkr-Light.otf);
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr-Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/NotoSansCJK/NotoSansCJKkr-Medium.otf);
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr-Regular';
   font-style: normal;
   font-weight: 400;
   src: url(../../fonts/NotoSansCJK/NotoSansCJKkr-Regular.otf);
-  src: local('noto-sans-cjk-kr');
+}
+
+@font-face {
+  font-family: 'NotoSansMonoCJKkr-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/NotoSansCJK/NotoSansMonoCJKkr-Bold.otf);
+}
+
+@font-face {
+  font-family: 'NotoSansMonoCJKkr-Regular.otf';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/NotoSansCJK/NotoSansMonoCJKkr-Regular.otf);
 }

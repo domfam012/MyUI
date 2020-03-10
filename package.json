@@ -100,6 +100,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
     "bootstrap-icons": "^1.0.0-alpha2",
+    "gulp-scss-combine": "^1.0.0",
     "prettier": "^1.19.1"
   },
   "peerDependencies": {

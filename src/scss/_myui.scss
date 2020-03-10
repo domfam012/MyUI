@@ -1,6 +1,227 @@
+body {
+  font-family: 'NotoSansCJKkr-Regular';
+}
+
+// custom btn
+.btn {
+  &.btn-xl {
+    width: 180px;
+    height: 50px;
+  }
+}
+
+// wrap
+.wrap {
+  overflow: hidden;
+}
+
+// header
 .bg-header {
+  z-index: 100;
   background-color: #001D2E;
 }
-.m-header-title {
-  padding-top: 120px;
+
+// "My UI" text image
+.main-bg {
+  width: 110.4%;
+  margin-left: -3.4%;
+  margin-top: -2%;
+}
+
+// footer
+footer {
+  z-index: 100;
+  width: 100%;
+  height: 60px;
+  background-color: #777;
+  border: solid 1px #707070;
+  .footer {
+    width: 1200px;
+    padding-left: 50px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 60px;
+    color: #fff;
+    vertical-align: middle;
+    .copyright {
+      color: #fff;
+    }
+  }
+}
+
+// section with background-color
+.bg-container {
+  background-color: #eefbff;
+  opacity: 0.3;
+}
+
+// main page sections
+section {
+  z-index: 100;
+
+  // section header
+  .header {
+    padding-top: 80px;
+    font-size: 48px;
+    letter-spacing: -4.5px;
+    margin-left: -2px;
+    line-height: 75px;
+  }
+
+  // 1st section
+  &.introduction {
+    padding: 0 90px;
+    .header {
+      padding-top: 120px;
+    }
+    .detail {
+      padding-top: 40px;
+      width: 759px;
+      color: $gray-800;
+      font-size: 20px;
+      line-height: 24px;
+      .line {
+        margin-bottom: 8px;
+        &.line1 {
+          letter-spacing: -1.4px;
+        }
+        &.line2 {
+          letter-spacing: -1.8px;
+        }
+        &.line3 {
+          margin-bottom: 0;
+          letter-spacing: -1.6px;
+        }
+      }
+    }
+    .version {
+      padding-top: 25px;
+      color: #666;
+      letter-spacing: -0.9px;
+    }
+    .btn-area {
+      padding-top: 58px;
+      .btn {
+        letter-spacing: -1px;
+      }
+    }
+    .github {
+      padding-top: 52px;
+      .line {
+        letter-spacing: -1px;
+      }
+      .link {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  // 2nd section
+  &.support {
+    margin-top: 86px;
+    background-color: #eefbff;
+
+    .framework {
+      text-align: center;
+      .header {
+        letter-spacing: -3.8px;
+      }
+      .sub-header {
+        margin-top: 20px;
+        font-size: 20px;
+        letter-spacing: -1.8px;
+      }
+      .list {
+        margin-top: 100px;
+        text-align: center;
+        .item {
+          display: inline-block;
+
+          .title {
+            margin-top: 35px;
+          }
+          .info {
+            margin-top: 13px;
+            color: #999;
+            letter-spacing: -1.8px;
+          }
+
+          &.bootstrap {
+            padding-left: 80px;
+            .title {
+              color: #62488a;
+            }
+          }
+
+          &.react {
+            .title {
+              color: #05bff2;
+            }
+          }
+
+          &.vue {
+            padding-right: 90px;
+            .title {
+              color: #3bb983;
+            }
+          }
+        }
+      }
+    }
+
+    .technology {
+      .header {
+        text-align: center;
+        width: 897px;
+        margin: 0 auto;
+        padding-top: 89px;
+        line-height: 58px;
+      }
+
+      .list {
+        padding: 60px 150px 0;
+        .item {
+          margin-top: 39px;
+          position: relative;
+          &:first-child {
+            margin-top: 4px;
+          }
+          .icon {
+            position: absolute;
+            top: 45px;
+            left: 0;
+          }
+          .detail {
+            margin-left: 90px;
+            .title {
+              font-size: 20px;
+            }
+            .info {
+              margin-top: 15px;
+              letter-spacing: -1px;
+              line-height: 26px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  // 3rd section
+  &.component {
+    margin-top: 80px;
+    .header {
+      text-align: center;
+      letter-spacing: -3.8px;
+      padding-right: 4px;
+    }
+    .sub-header {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: -1.7px;
+      padding-right: 3px;
+    }
+  }
 }
