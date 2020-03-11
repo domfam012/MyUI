@@ -155,3 +155,13 @@ input[type="button"] {
     font-size: 16px;
   }
 }
+
+
+
+// custom btn
+.btn {
+  &.btn-xl {
+    width: 180px;
+    height: 50px;
+  }
+}
