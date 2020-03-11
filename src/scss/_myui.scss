@@ -10,6 +10,18 @@ body {
   }
 }
 
+.far {
+  font-size: 24px;
+}
+
+a {
+  font-size: 16px;
+  color: #333;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 // wrap
 .wrap {
   width: 100%;
@@ -34,6 +46,103 @@ body {
   z-index: 100;
   background-color: #001D2E;
 }
+
+.doc-header {
+  .navbar{
+    &.navbar-expand {
+      max-width: 880px;
+      min-width: 880px;
+      margin-left: 320px;
+      padding: 19px 25px;
+      .nav-item {
+
+        &:not(.active) {
+          a {
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+}
+
+.doc-content {
+  max-width: 880px;
+  min-width: 880px;
+  margin-left: 320px;
+  padding: 30px;
+
+  .directory {
+    padding: 3px 0 20px;
+    font-size: 16px;
+    line-height: 24px;
+    .name {
+      margin: 0 5px;
+      :first-child {
+        margin-left: 0;
+      }
+      :last-child {
+        margin-right: 0;
+      }
+      &.active {
+        text-decoration: underline;
+        color: #04bcde;
+      }
+    }
+    .far {
+      font-size: 16px;
+    }
+  }
+
+  .doc-title {
+    padding: 30px 0 10px;
+    font-weight: 600;
+    line-height: 54px;
+  }
+
+  .sample-text {
+    span {
+      line-height: 25px;
+    }
+  }
+
+  .sample-bold {
+    margin-top: 20px;
+    span {
+      line-height: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .sample-list {
+    position: relative;
+    margin-top: 20px;
+    line-height: 24px;
+    .fas {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      font-size: 8px;
+      vert-align: middle;
+    }
+    span {
+      margin-left: 14px;
+    }
+  }
+
+  .sample-code {
+    margin: 10px 0;
+    padding: 30px 30px 27px;
+    border: 1px solid #d1e7ee;
+    background: #fbfeff;
+    .title {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
 
 //"My UI" text image
 .main-bg {
@@ -73,6 +182,75 @@ body {
     }
   }
 }
+
+.aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100%;
+  box-shadow: 3px 0 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fbfeff;
+
+  .header {
+    position: relative;
+    height: 70px;
+    min-width: 320px;
+
+    &.bg-header {
+      background-color: #001d2e;
+      a {
+        position: absolute;
+        top: 16.5px;
+        left: 107px;
+      }
+    }
+  }
+
+  .category {
+    margin-top: 7px;
+    .menu {
+      position: relative;
+      padding: 26px 0 0;
+      .title {
+        padding: 0 28px;
+        .icon {
+          position: absolute;
+          top: 26px;
+          left: 28px;
+          width: 24px;
+          text-align: center;
+        }
+        .text {
+          margin-left: 42px;
+          line-height: 26px;
+        }
+      }
+      .submenu {
+        margin-top: 13px;
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+          a {
+            display: inline-block;
+            padding: 13px 18px 13px 70px;
+            width: 100%;
+          }
+
+          &.active, &:hover {
+            background-color: #04bcde;
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 // footer
 footer {
@@ -116,7 +294,7 @@ section {
     line-height: 75px;
   }
 
-  // 1st section
+  // main page 1st section
   &.introduction {
     position: relative;
     padding: 0 90px;
@@ -165,7 +343,7 @@ section {
     }
   }
 
-  // 2nd section
+  // main page 2nd section
   &.support {
     //margin-top: 86px;
     background-color: #eefbff;
@@ -257,7 +435,7 @@ section {
     }
   }
 
-  // 3rd section
+  // main page 3rd section
   &.component {
     margin-top: 1px;
     margin-bottom: 6px;
