@@ -3,30 +3,11 @@
 @@include('../html/include/head.html')
 
 <body>
-<img class="test" src="../../dist/img/temp/test_MYUI_homepage.png" style="position: absolute; opacity: 0.5; z-index: 10" width="1440"/>
-<div class="wrap" style="z-index: 50; position: absolute;">
+<!--<img class="test" src="../../dist/img/temp/test_MYUI_homepage.png" style="position: absolute; opacity: 0.5; z-index: 10" width="1440"/>-->
+<!--<div class="wrap" style="position: absolute; z-index: 50;">-->
+<div class="wrap">
   <!-- header -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-header">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../img/common/logo.png" alt="MyUI"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
-                aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Documentation</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  @@include('../html/include/header.html')
 
   <!-- introduction -->
   <section class="container-fluid introduction">
@@ -54,7 +35,11 @@
   </section>
 
   <!-- My UI background text image -->
-  <img class="main-bg" src="../img/main/main-background.png" alt="My UI background image"/>
+  <div class="main-bg">
+    <div class="bar left-bar"></div>
+    <div class="bar right-bar"></div>
+    <img class="main-bg" src="../img/main/main-bg.png" alt="My UI background image"/>
+  </div>
 
   <!-- framework -->
   <div class="bg-container">
@@ -64,16 +49,16 @@
         <h1 class="header"><strong>MyUI는</strong> 가장 널리 사용되는 프레임 워크를 지원합니다.</h1>
         <p class="sub-header">전용 버전에 대해 자세히 알아보십시오.</p>
         <div class="row list">
-          <div class="col-sm item bootstrap">
+          <div class="col col-sm-4 item bootstrap">
             <img src="../img/main/bootstrap.png" alt="bootstrap">
             <div class="title">Bootstrap 4</div>
           </div>
-          <div class="col-sm item react">
+          <div class="col col-sm-4 item react">
             <img src="../img/main/react.png" alt="reactjs">
             <div class="title">React.js</div>
             <div class="info">2020 상반기 서비스 예정입니다.</div>
           </div>
-          <div class="col-sm item vue">
+          <div class="col col-sm-4 item vue">
             <img src="../img/main/vue.png" alt="vuejs">
             <div class="title">Vue.js</div>
             <div class="info">2020 상반기 서비스 예정입니다.</div>
@@ -152,57 +137,62 @@
     <h1 class="header"><strong>MyUI는</strong> 바로 사용 가능하고 커스터마이징 가능합니다.</h1>
     <p class="sub-header">반응형 웹 앱을 개발하고 개발 시간을 최대 50% 단축 합니다.</p>
 
-    <div>
-      <div>
-        <h5><strong><i class="far fa-th"></i> COMPONENTS</strong></h5>
-        <ul>
-          <li>카드 (Cards)</li>
-          <li>변수 (Vars)</li>
-          <li>페이지 (Pagination)</li>
-          <li>탭메뉴 (Tabs)</li>
-          <li>툴팁 (Tooltips)</li>
-        </ul>
+    <div class="list">
+
+      <div class="row">
+        <div class="col col-sm-6 item">
+          <h5 class="title"><strong><i class="far fa-th"></i><span class="text">COMPONENTS</span></strong></h5>
+          <ul class="detail">
+            <li>카드 (Cards)</li>
+            <li>변수 (Vars)</li>
+            <li>페이지 (Pagination)</li>
+            <li>탭메뉴 (Tabs)</li>
+            <li>툴팁 (Tooltips)</li>
+          </ul>
+        </div>
+        <div class="col col-sm-6 item" style="margin-bottom: 76px;">
+          <h5 class="title"><strong><i class="far fa-bell"></i><span class="text">BUTTONS & NOTIFICATIONS</span></strong></h5>
+          <ul class="detail">
+            <li>기본버튼 (Standard Button)</li>
+            <li>라인버튼 (Outline Button)</li>
+            <li>드랍다운 (Dropdown)</li>
+            <li>팝업 (Alerts)</li>
+            <li>뱃지 (Badge)</li>
+            <li>팝업 (Modal)</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h5><strong><i class="far fa-bell"></i>BUTTONS & NOTIFICATIONS</strong></h5>
-        <ul>
-          <li>기본버튼 (Standard Button)</li>
-          <li>라인버튼 (Outline Button)</li>
-          <li>드랍다운 (Dropdown)</li>
-          <li>팝업 (Alerts)</li>
-          <li>뱃지 (Badge)</li>
-          <li>팝업 (Modal)</li>
-        </ul>
+      <div class="row">
+        <div class="col col-sm-6 item">
+          <h5 class="title"><strong><i class="far fa-border-inner"></i><span class="text">FORMS & TABLES</span></strong></h5>
+          <ul class="detail">
+            <li>유효성 검사 (Form Validation)</li>
+          </ul>
+        </div>
+        <div class="col col-sm-6 item">
+          <h5 class="title"><strong><i class="far fa-bolt"></i><span class="text">PLUGINS, WIDGET</span></strong></h5>
+          <ul class="detail">
+            <li>달력 (bootstrap-datepicker)</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h5><strong><i class="far fa-border-inner"></i>FORMS & TABLES</strong></h5>
-        <ul>
-          <li>유효성 검사 (Form Validation)</li>
-        </ul>
+      <div class="row">
+        <div class="col col-sm-6 item">
+          <h5 class="title"><strong><i class="far fa-th-large"></i><span class="text">EXTRA COMPONENTS</span></strong></h5>
+          <ul class="detail">
+            <li>로그인 (Login Page)</li>
+            <li>회원가입 (Register Page)</li>
+          </ul>
+        </div>
+        <div class="col col-sm-6"></div>
       </div>
-      <div>
-        <h5><strong><i class="far fa-bolt"></i>PLUGINS, WIDGET</strong></h5>
-        <ul>
-          <li>달력 (bootstrap-datepicker)</li>
-        </ul>
-      </div>
-      <div>
-        <h5><strong><i class="far fa-th-large"></i>EXTRA COMPONENTS</strong></h5>
-        <ul>
-          <li>로그인 (Login Page)</li>
-          <li>회원가입 (Register Page)</li>
-        </ul>
-      </div>
+
     </div>
 
   </section>
 
   <!-- footer -->
-  <footer>
-    <div class="footer">
-      <div class="copyright">Copyright © Domfam Corp. All rights reserved.</div>
-    </div>
-  </footer>
+  @@include('../html/include/footer.html')
 </div>
 </body>
 </html>

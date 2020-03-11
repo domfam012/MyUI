@@ -12,32 +12,79 @@ body {
 
 // wrap
 .wrap {
-  overflow: hidden;
+  width: 100%;
+  .navbar {
+    &.navbar-expand {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  // custom container
+  .container-fluid {
+    min-width: 1200px;
+  }
 }
 
 // header
 .bg-header {
+  min-width: 1200px;
   z-index: 100;
   background-color: #001D2E;
 }
 
-// "My UI" text image
+//"My UI" text image
 .main-bg {
-  width: 110.4%;
-  margin-left: -3.4%;
-  margin-top: -2%;
+  //border: 1px solid red;
+  position: relative;
+  .bar {
+    height: 35px;
+    background-color: #b1e2f3;
+    position: absolute;
+    bottom: 2px;
+    &.left-bar {
+      width: calc((100% - 475.4px) * 0.83);
+      min-width: 615.9px;
+      left: 0;
+    }
+    &.right-bar {
+      width: calc((100% - 475.4px) * 0.19);
+      min-width: 108.7px;
+      right: 0;
+    }
+  }
+  img {
+    width: 475.4px;
+    margin-left: calc((100% - 475.4px) * 0.85 - 35px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-bg {
+    .bar {
+      &.right-bar {
+        left: 1089.3px;
+      }
+    }
+    img {
+      margin-left: 613.91px;
+    }
+  }
 }
 
 // footer
 footer {
   z-index: 100;
   width: 100%;
+  min-width: 1200px;
   height: 60px;
   background-color: #777;
   border: solid 1px #707070;
   .footer {
     width: 1200px;
-    padding-left: 50px;
+    padding: 0 50px;
     margin: 0 auto;
     font-size: 12px;
     line-height: 60px;
@@ -51,8 +98,9 @@ footer {
 
 // section with background-color
 .bg-container {
+  margin-top: 85px;
   background-color: #eefbff;
-  opacity: 0.3;
+  //opacity: 0.3;
 }
 
 // main page sections
@@ -70,6 +118,7 @@ section {
 
   // 1st section
   &.introduction {
+    position: relative;
     padding: 0 90px;
     .header {
       padding-top: 120px;
@@ -118,7 +167,7 @@ section {
 
   // 2nd section
   &.support {
-    margin-top: 86px;
+    //margin-top: 86px;
     background-color: #eefbff;
 
     .framework {
@@ -179,7 +228,7 @@ section {
       }
 
       .list {
-        padding: 60px 150px 0;
+        padding: 60px 150px 79px;
         .item {
           margin-top: 39px;
           position: relative;
@@ -210,7 +259,8 @@ section {
 
   // 3rd section
   &.component {
-    margin-top: 80px;
+    margin-top: 1px;
+    margin-bottom: 6px;
     .header {
       text-align: center;
       letter-spacing: -3.8px;
@@ -223,5 +273,34 @@ section {
       letter-spacing: -1.7px;
       padding-right: 3px;
     }
+    .list {
+      margin-top: 119px;
+      padding: 0 55px;
+      .item {
+        padding-left: 66px;
+        margin-bottom: 114px;
+        .title {
+          font-size: 20px;
+          margin-bottom: 30px;
+          i { // fa
+            position: absolute;
+            font-size: 24px;
+          }
+          .text {
+            margin-left: 44px;
+            line-height: 26px;
+          }
+        }
+        .detail {
+          list-style-type: none;
+          margin-left: 2px;
+          li {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
   }
+
 }
