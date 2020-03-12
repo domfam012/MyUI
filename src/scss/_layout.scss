@@ -7,7 +7,7 @@
 
 // wrap
 .wrap {
-  width: 100%;
+  width: auto;
   .navbar {
     &.navbar-expand {
       max-width: 1200px;
@@ -55,19 +55,19 @@ footer {
     position: absolute;
     bottom: 2px;
     &.left-bar {
-      width: calc((100% - 475.4px) * 0.83);
+      width: calc((100% - 475.4px) * 0.89);
       min-width: 615.9px;
       left: 0;
     }
     &.right-bar {
-      width: calc((100% - 475.4px) * 0.19);
+      width: calc((100% - 475.4px) * 0.13 - 5px);
       min-width: 108.7px;
       right: 0;
     }
   }
   img {
     width: 475.4px;
-    margin-left: calc((100% - 475.4px) * 0.85 - 35px);
+    margin-left: calc((100% - 475.4px) * 0.91 - 30px);
   }
 }
 
@@ -115,12 +115,19 @@ footer {
     margin-top: 7px;
     .menu {
       position: relative;
-      padding: 26px 0 0;
       .title {
-        padding: 0 28px;
+        display: block;
+        padding: 13px 28px;
+        &.active {
+          font-weight: 600;
+        }
+        &:hover {
+          background-color: #04bcde;
+          color: #fff;
+        }
         .icon {
           position: absolute;
-          top: 26px;
+          top: 13px;
           left: 28px;
           width: 24px;
           text-align: center;
@@ -131,7 +138,6 @@ footer {
         }
       }
       .submenu {
-        margin-top: 13px;
         list-style-type: none;
         padding-left: 0;
 
