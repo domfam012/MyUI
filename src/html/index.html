@@ -4,7 +4,7 @@
 
 <body>
 <!--<img class="test" src="../../dist/img/temp/test_MYUI_homepage.png" style="position: absolute; opacity: 0.5; z-index: 10" width="1440"/>-->
-<!--<div class="wrap" style="position: absolute; z-index: 50;">-->
+<!--<div class="wrap" style="z-index: 50;">-->
 <div class="wrap">
   <!-- header -->
   @@include('../html/include/main_header.html')
@@ -22,7 +22,11 @@
     </div>
     <div class="btn-area">
       <button class="btn btn-xl btn-primary download">다운로드 MyUI</button>
-      <button class="btn btn-xl btn-outline-secondary preview ml-1">라이브 미리보기</button>
+
+      <!-- TODO -->
+      <button class="btn btn-xl btn-outline-secondary preview" style="margin-left: 5px;">라이브 미리보기</button>
+      <!---->
+
     </div>
     <div class="github">
       <div class="line">MyUI를 좋아한다면 <strong>Github에서 별을 보내주세요.</strong></div>

@@ -15,6 +15,9 @@
       padding-left: 50px;
       padding-right: 50px;
     }
+    .nav-item {
+      padding-left: 2px;
+    }
   }
 
   // custom container
@@ -49,18 +52,19 @@ footer {
 .main-bg {
   //border: 1px solid red;
   position: relative;
+  margin-top: -14px;
   .bar {
     height: 35px;
     background-color: #b1e2f3;
     position: absolute;
     bottom: 2px;
     &.left-bar {
-      width: calc((100% - 475.4px) * 0.89);
+      width: calc((100% - 475.4px) * 0.9);
       min-width: 615.9px;
       left: 0;
     }
     &.right-bar {
-      width: calc((100% - 475.4px) * 0.13 - 5px);
+      width: calc((100% - 475.4px) * 0.11 + 15px);
       min-width: 108.7px;
       right: 0;
     }
