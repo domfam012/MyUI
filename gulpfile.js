@@ -97,7 +97,7 @@ function beautify() {
     .pipe(gulp.dest('./dist/html/'))
 }
 
-
+exports.default = gulp.series(scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify);
 
 gulp.task("dist", gulp.series(scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
 
