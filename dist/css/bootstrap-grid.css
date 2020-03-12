@@ -34,10 +34,11 @@ html {
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  max-width: 1200px; }
 
 @media (min-width: 576px) {
   .container, .container-sm {

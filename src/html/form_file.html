@@ -1,31 +1,16 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>file</title>
-  <link rel="stylesheet" href="../../dist/css/bootstrap.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="../dist/js/bootstrap.js"></script>
-  <!--
-    2020-02-26
-    추가 사항
-    1. script 추가
-    2. custom-file-sm 클래스 추가
-  -->
-  <script>
-    // todo : script 옮겨야 함
-    $(document).ready(function () {
-      $('.custom-file-input').on('change', function() {
-        let fileName = $(this).val().split('\\').pop();
-        $(this).siblings('.custom-file-label').addClass('selected').html(fileName).css({'color':'#333','border-color':'#333'});
-      });
-    })
-  </script>
-</head>
+@@include('../html/include/head.html')
 <body>
+<script>
+  // todo : script 옮겨야 함
+  $(document).ready(function () {
+    $('.custom-file-input').on('change', function() {
+      let fileName = $(this).val().split('\\').pop();
+      $(this).siblings('.custom-file-label').addClass('selected').html(fileName).css({'color':'#333','border-color':'#333'});
+    });
+  })
+</script>
 <div class="input-group m-3" style="width: 350px;">
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFile01">
