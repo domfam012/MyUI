@@ -7,8 +7,8 @@ const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 const combine = require('gulp-scss-combine');
 
-gulp.task('distDel', function () {
-  del('dist');
+gulp.task('distDel', async function () {
+  await del('dist');
 });
 
 /* scss TASK*/
