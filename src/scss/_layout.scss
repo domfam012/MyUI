@@ -49,6 +49,7 @@ footer {
 }
 
 //"My UI" text image
+/* MyUI 텍스트 시작 위치 = 50% + 54.6px */
 .main-bg {
   //border: 1px solid red;
   position: relative;
@@ -59,34 +60,38 @@ footer {
     position: absolute;
     bottom: 2px;
     &.left-bar {
-      width: calc((100% - 475.4px) * 0.9);
-      min-width: 615.9px;
+      width: calc(50% + 54.6px + 5px);
       left: 0;
     }
     &.right-bar {
-      width: calc((100% - 475.4px) * 0.11 + 15px);
-      min-width: 108.7px;
+      width: calc(50% - 54.6px - 475.4px + 5px);
       right: 0;
     }
   }
   img {
     width: 475.4px;
-    margin-left: calc((100% - 475.4px) * 0.91 - 30px);
+    margin-left: calc(50% + 54.6px);
   }
 }
 
 @media (max-width: 1200px) {
   .main-bg {
     .bar {
+      &.left-bar {
+        width: calc(600px + 54.6px + 5px);
+      }
       &.right-bar {
-        left: 1089.3px;
+        // 50% - 54.6px - 475.4px - 20px
+        width: calc(600px - 54.6px - 475.4px + 2px);
+        left: calc(600px + 54.6px + 475.4px);
       }
     }
     img {
-      margin-left: 613.91px;
+      margin-left: 654.6px;
     }
   }
 }
+
 
 
 
