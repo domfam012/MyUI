@@ -62,7 +62,7 @@ Be sure to have your pages set up with the latest design and development standar
 
 {% highlight html %}
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -97,7 +97,7 @@ Bootstrap requires the use of the HTML5 doctype. Without it, you'll see some fun
 
 {% highlight html %}
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   ...
 </html>
 {% endhighlight %}
