@@ -5,11 +5,6 @@ const del = require('del');
 const htmlbeautify = require('gulp-html-beautify');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
-const combine = require('gulp-scss-combine');
-
-gulp.task('distDel', async function () {
-  await del('dist');
-});
 
 /* scss TASK*/
 function scss() {
@@ -21,13 +16,6 @@ function scss() {
 
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'));
-}
-
-function htmlInclude() {
-  let source = 'src/html/include/*.html';
-  return gulp.src(source)
-    .pipe(html())
-    .pipe(gulp.dest('dist/html/include'))
 }
 
 function htmlPage() {
@@ -69,7 +57,6 @@ function jsLib() {
 }
 function jsCommon() {
   let sourceUi = ['src/js/ui/*.js'];
-  // let sourceUi = ['ec/js/ui/_common.js','ec/js/ui/accodian.js','ec/js/ui/carousel.js','ec/js/ui/dialog.js','ec/js/ui/form.js','ec/js/ui/modal.js','ec/js/ui/spinner.js','ec/js/ui/tabs.js'];
   return gulp.src(sourceUi)
     .pipe(concat('front.common.js'))
     .pipe(gulp.dest('dist/js/ui'))
@@ -97,22 +84,11 @@ function beautify() {
     .pipe(gulp.dest('./dist/html/'))
 }
 
-exports.default = gulp.series(scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify);
+function delDist() {
+  return del('dist');
+}
 
-gulp.task("dist", gulp.series(scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
+gulp.task("dist", gulp.series(delDist, scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
+gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs));
 
-// gulp.task("scss", scss);
-// gulp.task("copyImg", copyImg);
-gulp.task("copyFonts", copyFonts);
-// gulp.task("jsLib", jsLib);
-// gulp.task("jsCommon", jsCommon);
-// gulp.task("htmlInclude", htmlInclude);
-// gulp.task("htmlPage", htmlPage);
-
-gulp.task("watchCss", watchScss);
-gulp.task("watchHtml", watchHtml);
-gulp.task("watchInclude", watchInclude);
-gulp.task("watchJs", watchJs);
-gulp.task("test", htmlInclude);
-
-gulp.task('htmlbeautify', htmlbeautify);
+exports.default = gulp.series("dist");
