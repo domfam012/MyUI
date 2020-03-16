@@ -52,7 +52,7 @@ let files = [
 ]
 
 const conf = {
-  basePath: '../../..',
+  basePath: '../..',
   port: 9876,
   colors: true,
   autoWatch: false,

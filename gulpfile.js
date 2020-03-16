@@ -18,6 +18,13 @@ function scss() {
     .pipe(gulp.dest('./dist/css'));
 }
 
+function htmlInclude() {
+  let source = 'src/html/include/*.html';
+  return gulp.src(source)
+    .pipe(html())
+    .pipe(gulp.dest('dist/html/include'))
+}
+
 function htmlPage() {
   let source = 'src/html/*.html';
   return gulp.src(source)
@@ -36,20 +43,9 @@ function copyFonts() {
 function jsLib() {
   let sourceLib = [
     'src/js/src/jquery.js',
+    'src/js/dist/bootstrap.js',
     'src/js/src/bootstrap-datepicker.js',
-    'src/js/src/bootstrap-datepicker.ko.min.js',
-    'src/js/dist/util.js',
-    'src/js/dist/tooltip.js',
-    'src/js/dist/alert.js',
-    'src/js/dist/button.js',
-    'src/js/dist/carousel.js',
-    'src/js/dist/collapse.js',
-    'src/js/dist/index.js',
-    'src/js/dist/modal.js',
-    'src/js/dist/popover.js',
-    'src/js/dist/scrollspy.js',
-    'src/js/dist/tab.js',
-    'src/js/dist/toast.js',
+    'src/js/src/bootstrap-datepicker.ko.min.js'
   ];
   return gulp.src(sourceLib)
     .pipe(concat('front.lib.js'))
@@ -74,6 +70,13 @@ function watchInclude() {
 function watchJs() {
   gulp.watch('src/js/*/*.js', gulp.series(jsLib, jsCommon));
 }
+function watchImg() {
+  gulp.watch('src/img/**/*', gulp.series(copyImg));
+}
+function watchFont() {
+  gulp.watch('src/fonts/**/**', gulp.series(copyFonts));
+}
+
 
 function beautify() {
   var options = {
@@ -89,6 +92,6 @@ function delDist() {
 }
 
 gulp.task("dist", gulp.series(delDist, scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
-gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs));
+gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg, watchFont));
 
 exports.default = gulp.series("dist");

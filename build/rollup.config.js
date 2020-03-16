@@ -35,10 +35,10 @@ if (BUNDLE) {
 }
 
 module.exports = {
-  input: path.resolve(__dirname, '../js/src/index.js'),
+  input: path.resolve(__dirname, '../src/js/src/index.js'),
   output: {
     banner,
-    file: path.resolve(__dirname, `../dist/js/${fileDest}`),
+    file: path.resolve(__dirname, `../src/js/dist/${fileDest}`),
     format: 'umd',
     globals,
     name: 'bootstrap'
