@@ -48,14 +48,14 @@ function jsLib() {
     'src/js/src/bootstrap-datepicker.ko.min.js'
   ];
   return gulp.src(sourceLib)
-    .pipe(concat('front.lib.js'))
-    .pipe(gulp.dest('dist/js/lib'))
+    .pipe(concat('bundle.js'))
+    .pipe(gulp.dest('dist/js'))
 }
 function jsCommon() {
   let sourceUi = ['src/js/ui/*.js'];
   return gulp.src(sourceUi)
-    .pipe(concat('front.common.js'))
-    .pipe(gulp.dest('dist/js/ui'))
+    .pipe(concat('common.js'))
+    .pipe(gulp.dest('dist/js'))
 }
 
 function watchScss() {
