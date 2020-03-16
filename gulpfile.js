@@ -5,11 +5,6 @@ const del = require('del');
 const htmlbeautify = require('gulp-html-beautify');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
-const combine = require('gulp-scss-combine');
-
-gulp.task('distDel', async function () {
-  await del('dist');
-});
 
 /* scss TASK*/
 function scss() {
@@ -48,31 +43,19 @@ function copyFonts() {
 function jsLib() {
   let sourceLib = [
     'src/js/src/jquery.js',
+    'src/js/dist/bootstrap.js',
     'src/js/src/bootstrap-datepicker.js',
-    'src/js/src/bootstrap-datepicker.ko.min.js',
-    'src/js/dist/util.js',
-    'src/js/dist/tooltip.js',
-    'src/js/dist/alert.js',
-    'src/js/dist/button.js',
-    'src/js/dist/carousel.js',
-    'src/js/dist/collapse.js',
-    'src/js/dist/index.js',
-    'src/js/dist/modal.js',
-    'src/js/dist/popover.js',
-    'src/js/dist/scrollspy.js',
-    'src/js/dist/tab.js',
-    'src/js/dist/toast.js',
+    'src/js/src/bootstrap-datepicker.ko.min.js'
   ];
   return gulp.src(sourceLib)
-    .pipe(concat('front.lib.js'))
-    .pipe(gulp.dest('dist/js/lib'))
+    .pipe(concat('bundle.js'))
+    .pipe(gulp.dest('dist/js'))
 }
 function jsCommon() {
   let sourceUi = ['src/js/ui/*.js'];
-  // let sourceUi = ['ec/js/ui/_common.js','ec/js/ui/accodian.js','ec/js/ui/carousel.js','ec/js/ui/dialog.js','ec/js/ui/form.js','ec/js/ui/modal.js','ec/js/ui/spinner.js','ec/js/ui/tabs.js'];
   return gulp.src(sourceUi)
-    .pipe(concat('front.common.js'))
-    .pipe(gulp.dest('dist/js/ui'))
+    .pipe(concat('common.js'))
+    .pipe(gulp.dest('dist/js'))
 }
 
 function watchScss() {
@@ -87,6 +70,13 @@ function watchInclude() {
 function watchJs() {
   gulp.watch('src/js/*/*.js', gulp.series(jsLib, jsCommon));
 }
+function watchImg() {
+  gulp.watch('src/img/**/*', gulp.series(copyImg));
+}
+function watchFont() {
+  gulp.watch('src/fonts/**/**', gulp.series(copyFonts));
+}
+
 
 function beautify() {
   var options = {
@@ -97,22 +87,11 @@ function beautify() {
     .pipe(gulp.dest('./dist/html/'))
 }
 
-exports.default = gulp.series(scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify);
+function delDist() {
+  return del('dist');
+}
 
-gulp.task("dist", gulp.series(scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
+gulp.task("dist", gulp.series(delDist, scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
+gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg, watchFont));
 
-// gulp.task("scss", scss);
-// gulp.task("copyImg", copyImg);
-gulp.task("copyFonts", copyFonts);
-// gulp.task("jsLib", jsLib);
-// gulp.task("jsCommon", jsCommon);
-// gulp.task("htmlInclude", htmlInclude);
-// gulp.task("htmlPage", htmlPage);
-
-gulp.task("watchCss", watchScss);
-gulp.task("watchHtml", watchHtml);
-gulp.task("watchInclude", watchInclude);
-gulp.task("watchJs", watchJs);
-gulp.task("test", htmlInclude);
-
-gulp.task('htmlbeautify', htmlbeautify);
+exports.default = gulp.series("dist");
