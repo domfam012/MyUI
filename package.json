@@ -1,7 +1,7 @@
 {
-  "name": "MyUI",
+  "name": "myui-bootstrap-kr",
   "description": "한국형 부트스트랩 템플릿",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "version_short": "0.1",
   "keywords": [
     "css",
@@ -14,6 +14,9 @@
   ],
   "homepage": "https://myui.co.kr",
   "author": "domfam inc.",
+  "bugs": {
+    "url": "https://github.com/domfam012/MyUI/issues"
+  },
   "contributors": [
     "domfam Inc."
   ],
@@ -47,7 +50,7 @@
   "main": "dist/js/bootstrap",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/domfam012/MyUI"
+    "url": "git+https://github.com/domfam012/MyUI.git"
   },
   "license": "MIT",
   "dependencies": {
