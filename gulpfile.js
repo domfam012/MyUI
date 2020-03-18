@@ -7,6 +7,7 @@ const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 
+
 /* scss TASK*/
 function scss() {
   return gulp.src('src/scss/**/*.scss')
@@ -16,7 +17,7 @@ function scss() {
     // .pipe(concat('style.scss'))
 
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./dist/css'))
 }
 
 function htmlInclude() {
@@ -38,8 +39,7 @@ function htmlPage() {
   }
   return gulp.src('src/html/*.html')
     .pipe(html())
-    .pipe(gulp.dest('dist/html/'));
-
+    .pipe(gulp.dest('dist/html/'))
 }
 
 function copyCss() {
@@ -127,8 +127,13 @@ function setEnvDevelope(cb) {
 }
 
 
+//task
 gulp.task("dev", gulp.series(setEnvDevelope, delDist, scss, copyImg, copyFonts, jsLib, jsCommon, htmlPage));
 gulp.task("dist", gulp.series(setEnvProduct, delDist, copyCss, copyImg, copyFonts, jsLib, jsCommon, htmlPage, beautify));
 gulp.task("watch", gulp.parallel(watchScss, watchHtml, watchInclude, watchJs, watchImg, watchFont));
 
+
 exports.default = gulp.series("dist");
+
+
+
