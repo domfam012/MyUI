@@ -1,7 +1,7 @@
 {
   "name": "myui-bootstrap-kr",
   "description": "한국형 부트스트랩 템플릿",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "version_short": "0.1",
   "keywords": [
     "css",
@@ -107,11 +107,6 @@
   "engines": {
     "node": ">=6"
   },
-  "files": [
-    "dist/{css,js}/*.{css,js,map}",
-    "src/js/{src,dist}/**/*.{js,map}",
-    "src/scss/**/*.scss"
-  ],
   "jspm": {
     "registry": "npm",
     "main": "js/bootstrap",
