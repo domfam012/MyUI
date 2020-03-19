@@ -56,7 +56,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
     "bootstrap-icons": "^1.0.0-alpha2",
-    "gulp-scss-combine": "^1.0.0",
     "prettier": "^1.19.1"
   },
   "peerDependencies": {
@@ -82,12 +81,14 @@
     "glob": "^7.1.6",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
     "gulp-file-include": "^2.1.1",
     "gulp-html-beautify": "^1.0.1",
-    "gulp-replace": "1.0.0",
     "gulp-rename": "^2.0.0",
+    "gulp-replace": "1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-scss": "^1.4.0",
+    "gulp-scss-combine": "^1.0.0",
     "hammer-simulator": "0.0.1",
     "http-server": "^0.11.1",
     "ip": "^1.1.5",
@@ -95,6 +96,7 @@
     "node-sass": "^4.13.1",
     "nodemon": "^1.19.4",
     "npm-run-all": "^4.1.5",
+    "opn": "^6.0.0",
     "popper.js": "^1.16.0",
     "qunit": "2.9.2",
     "rollup": "1.26.5",
