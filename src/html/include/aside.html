@@ -2,35 +2,66 @@
   <header class="header bg-header">
     <a class="navbar-brand" href="#"><img src="../img/common/logo.png" alt="MyUI"></a>
   </header>
+  <div class="box-snb">
+    <ul class="snb">
+      <li class="snb-menu">
+        <a class="h-menu" href="#"><i class="fas fa-bolt"></i>시작하기</a>
+        <div class="s-menu">
+          <ul class="inner-menu">
+            <li><a class="inner-item" href="#">소개</a></li>
+            <li><a class="inner-item" href="#">다운로드</a></li>
+            <li><a class="inner-item" href="#">브라우저&디바이스</a></li>
+            <li><a class="inner-item" href="#">빌드도구</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="snb-menu">
+        <a class="h-menu" href="#"><i class="fas fa-th"></i>구성요소</a>
+        <div class="s-menu">
+          <ul class="inner-menu">
+            <li><a class="inner-item" href="#">배지(Badge)</a></li>
+            <li><a class="inner-item" href="#">경로(Breadcrumb)</a></li>
+            <li><a class="inner-item" href="#">단계(Step)</a></li>
+            <li><a class="inner-item" href="#">슬라이드(Slide)</a></li>
+            <li><a class="inner-item" href="#">버튼(Button)</a></li>
+            <li><a class="inner-item" href="#">카드(Cards)</a></li>
+            <li><a class="inner-item" href="#">폼(Form)</a></li>
+            <li><a class="inner-item" href="#">페이지네이션(Pagination)</a></li>
+            <li><a class="inner-item" href="#">탭(Tab)</a></li>
+            <li><a class="inner-item" href="#">테이블(Table)</a></li>
+            <li><a class="inner-item" href="#">사이드 네비게이션 바(SNB)</a></li>
+            <li><a class="inner-item" href="#">모달(Modal)</a></li>
+            <li><a class="inner-item" href="#">네비게이션 바(Navigation Bars)</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <script>
+      $(document)
+        .ready(function () {
+          $('.s-menu')
+            .hide()
+          // $("ul > li:first-child a").next().show();
+          $('.h-menu')
+            .click(function () {
+              $(this)
+                .next()
+                .slideToggle(300)
+              // $(this).next().slideDown(300);
+              $('.s-menu')
+                .not(this)
+                .next()
+                .slideUp(300)
+              return false
+            })
+          $('.s-menu')
+            .eq(0)
+            .trigger('click')
+        })
+    </script>
 
-  <div class="category">
-    <div class="menu">
-      <a href="#" class="title">
-        <i class="far fa-bolt icon"></i>
-        <span class="text">MENU 1</span>
-      </a>
-    </div>
-
-    <div class="menu">
-      <a href="#" class="title">
-        <i class="far fa-bell icon"></i>
-        <span class="text">MENU 2</span>
-      </a>
-    </div>
-
-    <div class="menu">
-      <a href="#" class="title active">
-        <i class="far fa-th icon"></i>
-        <span class="text">MENU 3</span>
-      </a>
-      <ul class="submenu">
-        <li><a href="#">SUB MENU 1</a></li>
-        <li class="active"><a href="#">SUB MENU 2</a></li>
-        <li><a href="#">SUB MENU 3</a></li>
-        <li><a href="#">SUB MENU 4</a></li>
-      </ul>
-    </div>
 
   </div>
+
 
 </aside>

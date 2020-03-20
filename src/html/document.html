@@ -12,13 +12,20 @@
   <!-- sub pages header -->
   @@include('../html/include/doc_header.html')
 
+  <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">.......</div>
+    <div class="tab-pane fade active show" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">......</div>
+  </div>
+
   <!-- content -->
   <div class="doc-content">
-    <div class="directory">
-      <a class="active name" href="#">Home</a>
-      <i class="far fa-chevron-right"></i>
-      <a class="name" href="#">Library</a>
-    </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page"><a href="#">홈</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="#">시작하기</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">구성요소</a></li>
+      </ol>
+    </nav>
 
     <h2 class="doc-title">Title</h2>
     <div class="sample-text">

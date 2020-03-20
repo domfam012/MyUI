@@ -10,6 +10,7 @@
   a {
     @include hover-focus() {
       color: $primary;
+      border-bottom: 1px solid $primary;
     }
   }
 }
@@ -45,6 +46,8 @@
   }
 
   &.active {
-    color: $breadcrumb-active-color;
+    a {
+      color: $breadcrumb-active-color;
+    }
   }
 }
