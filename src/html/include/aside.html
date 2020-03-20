@@ -3,34 +3,55 @@
     <a class="navbar-brand" href="#"><img src="../img/common/logo.png" alt="MyUI"></a>
   </header>
 
-  <div class="category">
-    <div class="menu">
-      <a href="#" class="title">
-        <i class="far fa-bolt icon"></i>
-        <span class="text">MENU 1</span>
-      </a>
+  <div class="box-snb">
+    <div class="snb nav nav-tabs" id="myTab" role="tablist">
+      <a class="h-title active" href="#"><i class="fas fa-bolt"></i>시작하기</a>
+      <span class="m-menu">
+        <a class="m-item nav-link"id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">소개</a>
+        <a class="m-item nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">다운로드</a>
+        <a class="m-item" href="#">브라우저&디바이스</a>
+        <a class="m-item" href="#">빌드도구</a>
+      </span>
+      <a class="h-title" href="#"><i class="fas fa-th"></i>구성요소</a>
+      <span class="m-menu">
+        <a class="m-item" href="#">배지(Badge)</a>
+        <a class="m-item" href="#">경로(Breadcrumb)</a>
+        <a class="m-item" href="#">단계(Step)</a>
+        <a class="m-item" href="#">슬라이드(Slide)</a>
+        <a class="m-item" href="#">버튼(Button)</a>
+        <a class="m-item" href="#">카드(Cards)</a>
+        <a class="m-item" href="#">폼(Forms)</a>
+        <a class="m-item" href="#">페이지네이션(Pagination)</a>
+        <a class="m-item" href="#">탭(Tab)</a>
+        <a class="m-item" href="#">테이블(Table)</a>
+        <a class="m-item" href="#">사이드 네비게이션 바(SNB)</a>
+        <a class="m-item" href="#">모달(Modal)</a>
+        <a class="m-item" href="#">네비게이션 바(Navigation Bars)</a>
+      </span>
     </div>
-
-    <div class="menu">
-      <a href="#" class="title">
-        <i class="far fa-bell icon"></i>
-        <span class="text">MENU 2</span>
-      </a>
-    </div>
-
-    <div class="menu">
-      <a href="#" class="title active">
-        <i class="far fa-th icon"></i>
-        <span class="text">MENU 3</span>
-      </a>
-      <ul class="submenu">
-        <li><a href="#">SUB MENU 1</a></li>
-        <li class="active"><a href="#">SUB MENU 2</a></li>
-        <li><a href="#">SUB MENU 3</a></li>
-        <li><a href="#">SUB MENU 4</a></li>
-      </ul>
-    </div>
-
   </div>
+
+  <script>
+    $(document).ready(function () {
+        $('.m-menu').hide();
+        $('.h-title').click(function () {
+            $(this).addClass('active').next().slideToggle(300);
+            $(this).siblings().filter('.h-title').removeClass('active');
+            // $(this).parent().next().children().removeClass('active')
+            // $(this).parent();
+            // console.log($(this).parent().children().prevAll().not())
+            // console.log($(this).siblings().filter('.h-title'))
+
+            $('.h-title').not(this).next().slideUp(300);
+            return false
+          });
+        $('.h-title').eq(0).trigger('click');
+
+        $('.m-item').on('click',function () {
+          $(this).addClass('active').css('color','#ffffff').siblings().removeClass('active').css('color','#333');
+        });
+
+      });
+  </script>
 
 </aside>

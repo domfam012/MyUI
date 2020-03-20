@@ -310,9 +310,9 @@ $line-height-base:            1.125 !default;
 
 $h1-font-size:                $font-size-base * 3 !default;
 $h2-font-size:                $font-size-base * 2.25 !default;
-$h3-font-size:                $font-size-base * 1.25 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.25 !default;
+$h5-font-size:                $font-size-base * 1.125 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
@@ -1087,7 +1087,7 @@ $figure-caption-color:              $gray-600 !default;
 $breadcrumb-font-size:              null !default;
 
 $breadcrumb-padding-y:              .75rem !default;
-$breadcrumb-padding-x:              1rem !default;
+$breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding:           .5rem !default;
 
 $breadcrumb-margin-bottom:          1rem !default;

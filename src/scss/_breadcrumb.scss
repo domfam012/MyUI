@@ -10,6 +10,7 @@
   a {
     @include hover-focus() {
       color: $primary;
+      border-bottom: 1px solid $primary;
     }
   }
 }

@@ -3,8 +3,6 @@
 @@include('../html/include/head.html')
 
 <body>
-<!--<img class="test" src="../../dist/img/temp/test_MYUI_homepage.png" style="position: absolute; opacity: 0.5; z-index: 10" width="1440"/>-->
-<!--<div class="wrap" style="position: absolute; z-index: 50;">-->
 <div class="wrap">
   <!-- aside -->
   @@include('../html/include/aside.html')
@@ -13,45 +11,42 @@
   @@include('../html/include/doc_header.html')
 
   <!-- content -->
-  <div class="doc-content">
-    <div class="directory">
-      <a class="active name" href="#">Home</a>
-      <i class="far fa-chevron-right"></i>
-      <a class="name" href="#">Library</a>
-    </div>
+  <div id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="doc-content">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">시작하기</a></li>
+        <li class="breadcrumb-item active" aria-current="page">1. 소개</li>
+      </ol>
 
-    <h2 class="doc-title">Title</h2>
-    <div class="sample-text">
-      <span>Text</span>
-      <br/>
-      <span>Text</span>
-    </div>
-
-    <div class="sample-bold">
-      <span class="bold">Text</span>
-    </div>
-
-    <div class="sample-list text-primary">
-      <i class="fas fa-circle"></i><span>Text</span>
-    </div>
-
-    <h2 class="doc-title">Title</h2>
-    <div class="sample-text">
-      <span>Text</span>
-    </div>
-    <div class="sample-code">
-      <h3 class="title">Code</h3>
-      <div class="sample-text">
-        <span>Text</span>
-        <br/>
-        <span>Text</span>
+      <h2 class="title">시작하기</h2>
+      <h3 class="title-sm">1. 소개</h3>
+      <div class="text mb-3">
+      <span>MY UI는 부트스트랩을 기반으로 제작되었습니다.
+      <br/>모든 플랫폼, 브라우저 또는 장치에 대한 최신 대시 보드를 가장 빠를게 구축할 수 있도록 도와드립니다.</span>
       </div>
-      <div class="sample-bold">
-        <span class="bold">Text</span>
+      <div class="text mb-5">
+        <p class="pl-3 mb-2"><a href="#">빠른 시작</a></p>
+        <p class="pl-4 mb-2"><a href="#">- MY UI 관리 템플릿</a></p>
+        <p class="pl-5 mb-2"><a href="#">설치</a></p>
+        <p class="pl-5 mb-3"><a href="#">용법</a></p>
+
+        <p class="pl-4 mb-2"><a href="#">- MY UI 구성요소 라이브러리</a></p>
+        <p class="pl-5 mb-2"><a href="#">CSS</a></p>
+        <p class="pl-5 mb-3"><a href="#">JS</a></p>
+
+        <p class="pl-3 mb-3"><a href="#">스타터 템플릿</a></p>
+        <p class="pl-3 mb-2"><a href="#">중요한 글로벌</a></p>
+        <p class="pl-4 mb-2"><a href="#">- HTML5독 타입</a></p>
+        <p class="pl-4 mb-2"><a href="#">- 오른쪽에서 왼쪽지원</a></p>
+        <p class="pl-4 mb-2"><a href="#">- 상자크기</a></p>
+        <p class="pl-4 mb-2"><a href="#">- 재부팅</a></p>
+      </div>
+
+      <h3 class="title-sm">2. 다운로드</h3>
+      <div class="text mb-3">
+        MY UI를 다운로드하여 컴파일 된 CSS 및 JavaScript, 소스 코드를 얻거나 npm, RubyGems등과 같은 즐겨사용하는 패키지 관리자에 포함하십시오.
       </div>
     </div>
   </div>
-
-</div>
 </body>
 </html>
