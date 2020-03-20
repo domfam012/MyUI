@@ -62,6 +62,7 @@ function copyFonts() {
 function jsLib() {
   let sourceLib = [
     'src/js/src/jquery.js',
+    'src/js/src/popper.min.js',
     'src/js/src/bootstrap.min.js',
     'src/js/src/bootstrap-datepicker.js',
     'src/js/src/bootstrap-datepicker.ko.min.js'
