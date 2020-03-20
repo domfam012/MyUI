@@ -46,14 +46,14 @@
 /*!
  *  추가
  */
-@import "bootstrap-datepicker3";
 @import "step";
 @import "pager";
-@import "fonts/NotoSansCJK";
-
+@import "bootstrap-datepicker3"; // datepicker3
+@import "prism"; //code viewer
+@import "fonts/NotoSansCJK"; // default font
 @import "fa";     // font awesome styles
-@import "layout"; // my ui layout
-@import "sample"; // sample styles from document.html
+@import "layout"; // MYUI layout
 
 // pages
 @import "pages/index";
+@import "pages/document"; // styles from document.html
