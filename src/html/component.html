@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ko">
+@@include('../html/include/head.html')
+
+<body>
+<div class="wrap">
+  <!-- aside -->
+  @@include('../html/include/aside.html')
+
+  <!-- sub pages header -->
+  @@include('../html/include/doc_header.html')
+
+  <!-- content -->
+  <div class="doc-content">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">MyUI</a></li>
+      <li class="breadcrumb-item active" aria-current="page">구성요소</li>
+    </ol>
+
+    <h2 class="title">구성요소</h2>
+    <h3 class="title-sm">1. 뱃지(Badge)</h3>
+    <div class="text mb-3">
+      <span>텍스트 뒤에 붙어 상태를 나타내거나 버튼의 일부로 사용되어 새롭거나 읽지않은 항목을 강조한다.</span>
+    </div>
+    <div class="text mb-5">
+      <p class="pl-3 mb-2">1. 상태를 나타내는 경우</p>
+      <p class="pl-3 mb-5">2. 버튼의 일부로 사용되는 경우</p>
+      <p class="ml-3 mb-2 font-weight-bold">1. 상태를 나타내는 경우</p>
+      <p class="ml-3 mb-3">게시판, 공지사항, FAQ등의 제목뒤에 붙어 상태를 나타낼 때 사용한다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">2. 버튼의 일부로 사용되는 경우</p>
+      <p class="ml-3">버튼의 일부로 사용되어 버튼의 기능에 따르는 항목을 강조한다. </p>
+      <p class="ml-3">예) 메일 수신 버튼에 같이 사용하여 수신된 메일이 몇 개 있는지 알려준다.</p>
+    </div>
+
+    <h3 class="title-sm">2. 경로(Breadcrumb)</h3>
+    <div class="text mb-3">네비게이션 체계 내에서 현재페이지 위치를 나타낸다.</div>
+    <div class="text mb-5">
+
+    </div>
+
+    <h3 class="title-sm">3. 단계(Step)</h3>
+    <div class="text mb-3">
+      회원가입 등 절차가 있는경우 사용자에게 단계(현재순서, 다음순서, 작성완료)를 확인 시킨다.
+    </div>
+    <div class="text mb-5">
+      <p class="ml-3 mb-2 font-weight-bold">1. 단계와 텍스트가 분리된 경우</p>
+      <p class="ml-3 mb-1">절차가 많지않아 공간의 여유가 있을경우 사용한다.</p>
+      <p class="ml-3 mb-4">중앙정렬을 기본으로 한다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">2. 단계와 텍스트가 합쳐진 경우</p>
+      <p class="ml-3 mb-1">1번보다 공간의 여유가 적을경우 사용한다.</p>
+      <p class="ml-3">중앙정렬이나 좌측정렬을 한다.</p>
+    </div>
+
+    <h3 class="title-sm">4. 슬라이드(Slide)</h3>
+    <div class="text mb-3">
+      <span>웹 사이트에서 이미지를 순환하여 보여줄 경우 사용한다.<br/>
+이미지는 10개 이하를 사용한다.<br/>
+좌/우 컨트롤과 함께 표시기를 함께 사용할 수 있다.(표시기를 눌렀을 경우 해당이미지 표출)
+</span>
+    </div>
+    <div class="text mb-5">
+
+    </div>
+
+    <h3 class="title-sm">5. 버튼(Button)</h3>
+    <div class="text mb-3">
+      다양한 크기, 스타일을 지원한다.
+    </div>
+    <div class="text mb-5">
+      <p class="ml-3 mb-2">1. 기본 버튼</p>
+      <p class="ml-3 mb-2">2. 아웃라인 버튼</p>
+      <p class="ml-3 mb-2">3. 아이콘과 같이 사용되는 버튼</p>
+      <p class="ml-3 mb-5">4. 링크</p>
+      <p class="ml-3 mb-2 font-weight-bold">1. 기본버튼</p>
+      <p class="ml-3 mb-1">기본버튼은 5가지 사이즈(Extra Samll, Small, Medium, Lage, ExtraLarge)로 구성되어 있다.</p>
+      <p class="ml-3 mb-1">기본 Extra Samll, Small, Medium 버튼 사이즈는 가로 80px 이며, 텍스트가 길어질 경우 좌/우 마진 10px를 유지한다.</p>
+      <p class="ml-3 mb-4">Primary 컬러는 주요 기능/결정 버튼으로 사용한다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">2. 아웃라인 버튼</p>
+      <p class="ml-3 mb-1">5가지 사이즈(Extra Samll, Small, Medium, Lage, ExtraLarge)로 구성되어 있다.</p>
+      <p class="ml-3 mb-4">기본 Extra Samll, Small, Medium 버튼 사이즈는 가로 80px 이며, 텍스트가 길어질 경우 좌/우 마진 10px를 유지한다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">3. 아이콘과 같이 사용되는 버튼</p>
+      <p class="ml-3 mb-1">버튼을 강조하거나 기능을 쉽게 이해시키기 위해 아이콘을 텍스트와 같이 사용한다.</p>
+      <p class="ml-3 mb-4">아이콘과 텍스트의 간격은 6px이며, 아이콘+텍스트는 버튼 넓이의 중앙정렬한다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">4. 링크</p>
+      <p class="ml-3 mb-1">텍스트에 링크를 걸었을 때 사용한다.</p>
+      <p class="ml-3">마우스 오버시 텍스트 하단에 라인이 생겨 링크가 있음을 알려준다.</p>
+    </div>
+
+    <h3 class="title-sm">6. 카드(Cards)</h3>
+    <div class="text mb-3">
+      <span>동일한 구성의 컨텐츠를 반복해서 보여줄 경우 카드를 사용하며, 이미지와 텍스트로 구성된다<br/>
+        일반적으로 타이틀, 내용, 버튼으로 구성되며, 내용에 따라 버튼은 생략될 수 있다.
+      </span>
+    </div>
+    <div class="text mb-5">
+      <p class="ml-3 mb-2">1. 이미지 + 텍스트 + 버튼(기능)으로 구성된 카드</p>
+      <p class="ml-3 mb-5">2. 이미지 + 텍스트로 구성된 카드</p>
+      <p class="ml-3 mb-2 font-weight-bold">1. 이미지 + 텍스트 + 버튼(기능)으로 구성된 카드 </p>
+      <p class="ml-3 mb-4">이미지에 대한 타이틀, 설명을 포함하며 기능버튼을(다운로드, 링크) 포함한다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">2. 이미지 + 텍스트 구성된 카드 </p>
+      <p class="ml-3 mb-4">썸네일을 보여주는 카드로 이미지와 텍스트로 구성된다 </p>
+    </div>
+
+    <h3 class="title-sm">7. 폼(Forms)</h3>
+    <div class="text mb-3">
+      입력에 관련된 내용으로 입력, 체크, 확인/설정
+    </div>
+    <div class="text mb-5">
+      <p class="ml-3 mb-2">1. 인풋 박스</p>
+      <p class="ml-3 mb-2">2. 셀렉트 박스 </p>
+      <p class="ml-3 mb-2">3. 파일선택 인풋박스</p>
+      <p class="ml-3 mb-2">4. 검색 인풋 박스</p>
+      <p class="ml-3 mb-2">5. 이메일 주소 입력 인풋박스</p>
+      <p class="ml-3 mb-2">7. 유효성(Validation)</p>
+      <p class="ml-3 mb-5">8. 달력(Datepicker)</p>
+      <p class="ml-3 mb-2 font-weight-bold">1. 인풋박스 </p>
+      <p class="ml-3 mb-1">인풋박스는 흰색 배경에 스트록으로 표현된다.</p>
+      <p class="ml-3 mb-1">일반적인 상태에서는 플레이스홀더를 사용하여 어떤 내용을 입력하는지 힌트를 준다.</p>
+      <p class="ml-3 mb-1">입력 시 플레이스홀더는 사라지며 인풋박스의 테두리는 select 상태임을 나타내기위해 색상이 진하게 바뀐다.</p>
+      <p class="ml-3 mb-1">미리입려된 내용이나 텍스트를 수정할 수 없는 Readonly 상태가 있다. (그레이 배경컬러에 스트록없음)</p>
+      <p class="ml-3 mb-4">입력이 잘돗되었을 경우 밸리데이션으로 잘못된 내용을 알 려준다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">2. 셀렉트박스 </p>
+      <p class="ml-3 mb-4">조건을 정해놓고 조건을 고를 때 사용한다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">3. 파일선택 인풋박스</p>
+      <p class="ml-3 mb-1">첨부파일을 선택할 때 사용한다.</p>
+      <p class="ml-3 mb-4">파일을 선택하면 파일명은 자동으로 입력 된다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">4. 검색 인풋박스 </p>
+      <p class="ml-3 mb-4">검색을 할 때 사용한다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">5. 이메일주소 입력 인풋박스 </p>
+      <p class="ml-3 mb-1">이메일 주소를 입력할 때 사용한다.</p>
+      <p class="ml-3 mb-4">주소를 직접입력하거나 선택해서 입력할 수 있다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">6. 라디오/체크박스 </p>
+      <p class="ml-3 mb-1">라디오는 여러조건중 하나만 선택이 가능할 때 사용한다.</p>
+      <p class="ml-3 mb-1">체크박스는 여러조건중 다중 선택이 가능할 때 사용한다.</p>
+      <p class="ml-3 mb-4">라디오/체크박스와 텍스트 사이는 6px 거리를 띄우며, 한줄에 나올경우 다음 라디오/체크박스 까지의 거리는 60px이다. </p>
+      <p class="ml-3 mb-2 font-weight-bold">7. 밸리데이션(Validation)  </p>
+      <p class="ml-3 mb-1">유효성 검사를 통해 사용자에게 가치있고 실행 가능한 피드백을 제공한다.</p>
+      <p class="ml-3 mb-1">보통 인풋박스 하단에 표현되며, 인풋박스와의 간격은 1px이다.</p>
+      <p class="ml-3 mb-1">밸리데이션은 인풋박스보다 좌/우 5px 작다.</p>
+      <p class="ml-3 mb-4">텍스트는 좌/우 마진 5px를 갖는다. </p>
+      <p class="ml-3 mb-2 font-weight-bold">8. 달력(Datepicker)</p>
+      <p class="ml-3 mb-1">날짜를 직접 입력하거나 Datepicker를 통해 선택할수 있다</p>
+      <p class="ml-3 mb-4">인풋박스의 상단에 위치한다.</p>
+    </div>
+
+    <h3 class="title-sm">8. 페이지네이션(Pagination)</h3>
+    <div class="text mb-3">
+      <span>리스트가 많아 세로 스크롤이 길어질 경우 페이지로 구분하여 나타낼 경우 사용한다. <br/>
+        버튼 및 숫자 사이즈는 30px X 30px이며, 간격은 10px이다.<br/>
+        페이지 넘버가 길어질 경우(3자리) 숫자 좌/우 마진 5px 만큼 사이즈 늘어난다.
+      </span>
+    </div>
+
+    <h3 class="title-sm">9. 탭(Tab)</h3>
+    <div class="text mb-3">
+      <span>화면이동 없이 내용을 바꿀 때 사용한다. <br/>
+        SNB와 같이 사용하여 SNB 메뉴를 눌렀을 때 메뉴가 탭으로 쌓인다.
+      </span>
+    </div>
+    <div class="text mb-5">
+      <p class="ml-3 mb-2">1. 내용을 바꿀 때사용하는 탭</p>
+      <p class="ml-3 mb-5">2. SNB와 같이 사용하는 탭</p>
+      <p class="ml-3 mb-2 font-weight-bold">1. 내용을 바꿀 때 사용하는 탭</p>
+      <p class="ml-3 mb-1">정보의 내용이 같으나 내용을 따로 구분하고 싶을 때 사용한다</p>
+      <p class="ml-3 mb-1">화면의 이동없이 탭 선택 시 내용을 바꿀 때 사용한다.</p>
+      <p class="ml-3 mb-4">탭선택 시 컬러의 차이뿐 아니라 탭사이즈와 텍스트가 커져 선택된 탭을 강조 수 있다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">2. SNB와 같이 사용하는 탭</p>
+      <p class="ml-3 mb-1">SNB와 같이 사용하여 SNB 메뉴를 눌렀을 경우 화면을 생성하면서 상단에 탭으로 쌓인다.</p>
+      <p class="ml-3 mb-4">탭에 닫기 버튼을 두어 화면을 닫을 수 있다.</p>
+    </div>
+
+    <h3 class="title-sm">10. 테이블(Table)</h3>
+    <div class="text mb-3">
+      <span>표가 필요한 경우 사용한다. <br/>
+        테이블의 기본 높이는 40px이다.<br/>
+        테이블은 라인으로 구분되나 세로 라인은 그리지 않는다. <br/>
+        테이블의 리스트는 홀수열에 흐린 bg컬러를 사용하여 열간 구분을 명확하게 한다. <br/>
+        리스트는 포커스 될 수 있으며, 포커스 컬러는 메인컬러에 화이트(#FFFFFF) 80% 비율의 컬러값을 사용한다.
+      </span>
+    </div>
+    <div class="text mb-5">
+
+    </div>
+
+    <h3 class="title-sm">11. 사이드 네비게이션 바(SNB)</h3>
+    <div class="text mb-3">
+      <span>웹사이트 서브 화면에서 Depth 이동을 할 때 사용한다.<br/>
+        메인화면에서 메뉴를 구성 할 때 사용한다.
+      </span>
+    </div>
+    <div class="text mb-5">
+      <p class="ml-3 mb-2">1. 서브화면에서 Depth 이동</p>
+      <p class="ml-3 mb-5">2. 메인화면에서 메뉴로 사용</p>
+      <p class="ml-3 mb-2 font-weight-bold">1. 서브화면에서 Depth 이동 </p>
+      <p class="ml-3 mb-1">웹사이트의 서브화면에서 동일 Depth를 이동할 때 사용한다.</p>
+      <p class="ml-3 mb-4">텍스트로만 구성되거나, 아이콘 + 텍스트로 구성된다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">2. 메인화면에서 메뉴로 사용</p>
+      <p class="ml-3 mb-1">대시보드나, 관리화면에서 메뉴로 사용한다.</p>
+      <p class="ml-3 mb-4">1Depth 메뉴에만 아이콘이 붙으며, 뎁스는 2Depth 까지만 구성된다. </p>
+    </div>
+
+    <h3 class="title-sm">12. 모달(Modal)</h3>
+    <div class="text mb-3">
+      <span>사이즈는 Extra Large(1200px), Large(800px), Medium(600px), Small(380px) 4가지를 사용한다. <br/>
+        모달은 제목, 본문,  바닥 글의 기본 섹션으로 나뉜다.<br/>
+        Dialog와 Alert는 small(380px) 사이즈를 사용한다.
+      </span>
+    </div>
+    <div class="text mb-5">
+      <p class="ml-3 mb-2">1. 일반 Modal</p>
+      <p class="ml-3 mb-5">2. Dialog & Alert</p>
+      <p class="ml-3 mb-2 font-weight-bold">1. 일반 Modal </p>
+      <p class="ml-3 mb-1">사이즈는 Extra Large(1200px), Large(800px), Medium(600px)을 사용한다. </p>
+      <p class="ml-3 mb-1">Dialog & Alert 제외하고 본문의 내용이 많을경우 사용한다. </p>
+      <p class="ml-3 mb-4">바닥글에 포함되는 버튼은 상황에 따라서 다양한 사이즈(Medium, Lage, ExtraLarge)를 사용할 수 있다.</p>
+      <p class="ml-3 mb-2 font-weight-bold">2. Dialog & Alert </p>
+      <p class="ml-3 mb-1">사이즈는 Medium(600px)을 사용한다. </p>
+      <p class="ml-3 mb-4">웹사이트에서 어떠한 행위를 하였을 때 알림을 주거나 주의를 주는 용도로 사용한다. </p>
+    </div>
+
+    <h3 class="title-sm">13. 네비게이션 바(Navigation Bars)</h3>
+    <div class="text mb-3">
+      <span>웹사이트의 가로넓이 1200px를 기준으로 한다. <br/>
+        로고는 좌측 30px을 띄우며, 메뉴는 로고를 기준으로 100px 띄운다.<br/>
+        메뉴간 간격은 60px이며 메뉴 포커스시 메뉴 하단에 바가 생긴다.<br/>
+        바는 텍스트 길이보다 10px 크다.<br/>
+        메뉴명의 길이, 메뉴의 개수에 따라 메뉴사이 간격이 변동 될 수 있다.
+      </span>
+    </div>
+    <div class="text mb-5">
+
+    </div>
+
+
+  </div>
+</div>
+</body>
+</html>
