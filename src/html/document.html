@@ -15,7 +15,7 @@
   <div class="doc-content">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">MyUI</a></li>
-      <li class="breadcrumb-item active" aria-current="page">시작하기</li>
+      <li class="breadcrumb-item"><a href="#intro">시작하기</a></li>
     </ol>
 
     <h2 class="title">시작하기</h2>
@@ -29,23 +29,44 @@
       <p class="pl-4 mb-2">- MY UI 관리 템플릿</p>
       <p class="pl-5 mb-3"><a href="#download">설치</a></p>
 
-      <p class="pl-4 mb-2"><a href="#">- MY UI 구성요소 라이브러리</a></p>
-      <p class="pl-5 mb-2">CSS</p>
-      <pre class="line-numbers" style="height: 60px;">
+      <p class="pl-4 mb-2">- MY UI 구성요소 라이브러리</p>
+      <p class="pl-5 mb-2">CSS/JS</p>
+      <pre class="line-numbers">
         <code class="language-markup">
-          &lt;link rel="stylesheet" href="../css/bootstrap.min.css"&gt;
-      </code>
+          <script type="text/plain">
+          <link rel="stylesheet" href="../css/bootstrap.min.css">
+          <script src="../js/bundle.js"></script>
+        </code>
       </pre>
-      <p class="pl-5 mb-3">JS</p>
-      <pre class="line-numbers" style="height: 60px;">
+      <p class="pl-3 mb-3 font-weight-bold">스타터 템플릿</p>
+      <p class="pl-4 mb-2">- HTML5독 타입</p>
+      <pre class="line-numbers" style="height: 134px;">
         <code class="language-markup">
-          &lt;script src="../js/bundle.js"&gt;
-      </code>
-      <p class="pl-3 mb-3"><a href="#">스타터 템플릿</a></p>
-      <p class="pl-4 mb-2"><a href="#">- HTML5독 타입</a></p>
-      <p class="pl-4 mb-2"><a href="#">- 오른쪽에서 왼쪽지원</a></p>
-      <p class="pl-4 mb-2"><a href="#">- 상자크기</a></p>
-      <p class="pl-4 mb-2"><a href="#">- 재부팅</a></p>
+          &lt;!doctype html&gt;
+          &lt;html lang="ko"&gt;
+            ...
+          &lt;/html&gt;
+        </code>
+      </pre>
+      <p class="pl-4 mb-2">- 오른쪽에서 왼쪽지원</p>
+      <pre class="line-numbers" style="height: 169px;">
+        <code class="language-css" style="height: 110px;">
+          *,
+          *::before,
+          *::after {
+            box-sizing: border-box;
+          }
+        </code>
+      </pre>
+      <p class="pl-4 mb-2">- 상자크기</p>
+      <pre class="line-numbers" style="height: 134px;">
+        <code class="language-markup">
+          &lt;!doctype html&gt;
+          &lt;html lang="ko"&gt;
+            ...
+          &lt;/html&gt;
+        </code>
+      </pre>
     </div>
 
     <h3 class="title-sm" id="download">2. 다운로드</h3>
@@ -53,11 +74,13 @@
       MY UI를 다운로드하여 컴파일 된 CSS 및 JavaScript, 소스 코드를 얻거나 npm, RubyGems등과 같은 즐겨사용하는 패키지 관리자에 포함하십시오.
     </div>
     <div class="text mb-5">
-      <h3 class="pl-3 mb-5"><a href="https://github.com/domfam012/MyUI/archive/master.zip">소스파일</a></h3>
+      <h3 class="pl-3 mb-5"><a class="btn btn-primary btn-lg"
+                               href="https://github.com/domfam012/MyUI/archive/master.zip">소스파일</a></h3>
       <h4 class="mb-3">- MyUI</h4>
       <h5 class="mb-3 pl-2">설치(installation)</h5>
       <p class="pl-3 mb-3">1. 저장소 클론</p>
-      <div class="mb-3"><code class="ml-3 language-npm">$ git clone https://github.com/domfam012/MyUI.git my-project</code></div>
+      <div class="mb-3"><code class="ml-3 language-npm">$ git clone https://github.com/domfam012/MyUI.git
+        my-project</code></div>
       <p class="pl-3 mb-3">2. 프로젝트 디렉터리로 이동</p>
       <div class="mb-3"><code class="ml-3 language-npm">$ cd my-project</code></div>
       <p class="pl-3 mb-3">3. npm 의존 모듈 설치</p>
@@ -71,7 +94,8 @@
       <h4 class="mb-3">- MyUI(React)</h4>
       <h5 class="mb-3 pl-2">설치(installation)</h5>
       <p class="pl-3 mb-3">1. 저장소 클론</p>
-      <div class="mb-3"><code class="ml-3 language-npm">$ git clone https://github.com/domfam012/MyUI-react.git my-react-project</code></div>
+      <div class="mb-3"><code class="ml-3 language-npm">$ git clone https://github.com/domfam012/MyUI-react.git
+        my-react-project</code></div>
       <p class="pl-3 mb-3">2. 프로젝트 디렉터리로 이동</p>
       <div class="mb-3"><code class="ml-3 language-npm">$ cd my-react-project</code></div>
       <p class="pl-3 mb-3">3. npm 의존 모듈 설치</p>
@@ -85,39 +109,38 @@
       <h4 class="mb-3">- MyUI(Vue)</h4>
       <h5 class="mb-3 pl-2">설치(installation)</h5>
       <p class="pl-3 mb-3">1. 저장소 클론</p>
-      <div class="mb-3"><code class="ml-3 language-npm">$ git clone https://github.com/domfam012/MyUI-vue.git my-vue-project</code></div>
+      <div class="mb-3"><code class="ml-3 language-npm">$ git clone https://github.com/domfam012/MyUI-vue.git
+        my-vue-project</code></div>
       <p class="pl-3 mb-3">2. 프로젝트 디렉터리로 이동</p>
       <div class="mb-3"><code class="ml-3 language-npm">$ cd my-vue-project</code></div>
       <p class="pl-3 mb-3">3. npm 의존 모듈 설치</p>
       <div class="mb-5 "><code class="ml-3 language-npm">$ npm install</code></div>
       <h5 class="mb-3 pl-2">용법(usage)</h5>
-      <div class="mb-3"><code class="ml-3 language-npm">$ npm run dev</code></div>
-      <p class="pl-3 mb-3">로컬호스트 개발 서버 시작(localhost:3000)</p>
+      <div class="mb-3"><code class="ml-3 language-npm">$ npm run dev    //로컬호스트 개발 서버 시작(localhost:3000)</code></div>
       <div class="mb-3"><code class="ml-3 language-npm">$ npm run build</code></div>
-      <div class="mb-3"><code class="ml-3 language-npm">$ npm run start</code></div>
-      <p class="pl-3 mb-3">프로덕션 빌드 서버 시작</p>
-      <div class="mb-3"><code class="ml-3 language-npm">$ npm run generate</code></div>
-      <p class="pl-3 mb-5">정적 프로젝트 생성</p>
+      <div class="mb-3"><code class="ml-3 language-npm">$ npm run start      //프로덕션 빌드 서버 시작</code></div>
+      <div class="mb-5"><code class="ml-3 language-npm">$ npm run generate      //정적 프로젝트 생성</code></div>
 
-      <h3 class="pl-3 mb-3">패키지 관리자</h3>
-      <p class="pl-4 mb-3">패키지 설치 후, node_modules 폴더에서 myui-bootstrap / myui-react / myui-vuejs 폴더를 복사 -> npm install</p>
+      <h4 class="pl-3 mb-3">패키지 관리자</h4>
+      <p class="pl-4 mb-3">패키지 설치 후, node_modules 폴더에서 myui-bootstrap / myui-react / myui-vuejs 폴더를 복사 -> npm
+        install</p>
       <p class="pl-4 mb-3">- npm</p>
-      <div class="mb-3"><code class="ml-3 language-npm">$npm install myui-bootstrap</code></div>
+      <div class="mb-3"><code class="ml-3 language-npm">$ npm install myui-bootstrap</code></div>
       <p class="pl-4 mb-3">- react-npm</p>
-      <div class="mb-3"><code class="ml-3 language-npm">$npm install myui-react</code></div>
+      <div class="mb-3"><code class="ml-3 language-npm">$ npm install myui-react</code></div>
       <p class="pl-4 mb-3">- vue-npm</p>
-      <div class="mb-3"><code class="ml-3 language-npm">$npm install myui-vuejs</code></div>
+      <div class="mb-3"><code class="ml-3 language-npm">$ npm install myui-vuejs</code></div>
     </div>
 
     <h3 class="title-sm" id="device">3. 브라우저&디바이스</h3>
     <div class="text mb-4">
-      부트스트랩이 지원하는 최신 브라우저에서 오래된 브아우저 및 장치에 대해서 알아 봅니다.
+      부트스트랩이 지원하는 최신 브라우저에서 오래된 브라우저 및 장치에 대해서 알아 봅니다.
     </div>
     <div class="text mb-3">
-      <p class="pl-3 mb-3"><a href="#">지원되는 브라우저</a></p>
-      <p class="pl-4 mb-3"><a href="#">- 휴대 기기</a></p>
-      <p class="pl-4 mb-3"><a href="#">- 테스크탑 브라우저</a></p>
-      <p class="pl-3 mb-5"><a href="#">인터넷 익스플로러</a></p>
+      <p class="pl-3 mb-3">지원되는 브라우저</p>
+      <p class="pl-4 mb-3">- 휴대 기기</p>
+      <p class="pl-4 mb-3">- 테스크탑 브라우저</p>
+      <p class="pl-3 mb-5">인터넷 익스플로러</p>
     </div>
     <div class="pl-4">
       <p class="pl-5 mb-3">지원되는 브라우저</p>
@@ -216,10 +239,10 @@
   <div class="doc-content">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">MyUI</a></li>
-      <li class="breadcrumb-item active" aria-current="page">구성요소</li>
+      <li class="breadcrumb-item"><a href="#component">구성요소</a></li>
     </ol>
 
-    <h2 class="title">구성요소</h2>
+    <h2 class="title" id="component">구성요소</h2>
     <h3 class="title-sm" id="badge">1. 뱃지(Badge)</h3>
     <div class="text mb-3">
       <span>텍스트 뒤에 붙어 상태를 나타내거나 버튼의 일부로 사용되어 새롭거나 읽지않은 항목을 강조한다.</span>
@@ -248,7 +271,6 @@
       <a href="#" class="badge badge-primary">Primary</a>
       <a href="#" class="badge badge-normal">Normal</a>
     </div>
-
 
 
     <h3 class="title-sm" id="breadcrumb">2. 경로(Breadcrumb)</h3>
@@ -553,26 +575,31 @@
       <p class="ml-3 mb-2 font-weight-bold">1. 인풋박스 </p>
       <p class="ml-3 mb-1">인풋박스는 흰색 배경에 스트록으로 표현된다.</p>
       <p class="ml-3 mb-1">일반적인 상태에서는 플레이스홀더를 사용하여 어떤 내용을 입력하는지 힌트를 준다.</p>
-      <p class="ml-3 mb-1">입력 시 플레이스홀더는 사라지며 인풋박스의 테두리는 select 상태임을 나타내기위해 색상이 진하게 바뀐다.</p>
-      <p class="ml-3 mb-1">미리입려된 내용이나 텍스트를 수정할 수 없는 Readonly 상태가 있다. (그레이 배경컬러에 스트록없음)</p>
-      <p class="ml-3 mb-4">입력이 잘돗되었을 경우 밸리데이션으로 잘못된 내용을 알 려준다.</p>
+      <p class="ml-3 mb-1">입력 시 플레이스홀더는 사라지며 인풋박스의 테두리는 select 상태임을 나타내기 위해 색상이 진하게 바뀐다.</p>
+      <p class="ml-3 mb-1">미리 입력된 내용이나 텍스트를 수정할 수 없는 Readonly 상태가 있다. (그레이 배경 컬러에 스트록없음)</p>
+      <p class="ml-3 mb-4">입력이 잘못되었을 경우 밸리데이션으로 잘못된 내용을 알 려준다.</p>
       <form class="pl-3">
         <div class="form-group">
           <input type="text" class="form-control" title="example" value="Normal" style="width: 200px;">
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" title="example" value="Normal Normal Normal Normal Normal" style="width: 200px;">
+          <input type="text" class="form-control" title="example" value="Normal Normal Normal Normal Normal"
+                 style="width: 200px;">
         </div>
         <div class="form-group">
           <input type="text" class="form-control" title="example" style="width: 200px;" value="Disabled" disabled>
         </div>
         <div class="form-group">
-          <input class="form-control" type="text" title="example" placeholder="read-only" style="margin-bottom: 10px; width: 200px;" readonly>
-          <input class="form-control form-control-sm" title="example" type="text" placeholder="Small" style="width: 200px;">
+          <input class="form-control" type="text" title="example" placeholder="read-only"
+                 style="margin-bottom: 10px; width: 200px;" readonly>
+          <input class="form-control form-control-sm" title="example" type="text" placeholder="Small"
+                 style="width: 200px;">
         </div>
         <div class="form-group">
-          <input class="form-control" type="text" title="example" placeholder="Medium" style="margin-bottom: 10px; width: 200px;">
-          <input class="form-control form-control-sm" title="example" type="text" placeholder="Small" style="width: 200px;">
+          <input class="form-control" type="text" title="example" placeholder="Medium"
+                 style="margin-bottom: 10px; width: 200px;">
+          <input class="form-control form-control-sm" title="example" type="text" placeholder="Small"
+                 style="width: 200px;">
         </div>
       </form>
       <p class="pl-3 mb-2 font-weight-bold">2. 셀렉트박스 </p>
@@ -618,11 +645,13 @@
         </div>
         <div class="input-group mb-3">
           <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light btn-search btn-search-sm" type="submit"><i class="fas fa-search"></i></button>
+          <button class="btn btn-outline-light btn-search btn-search-sm" type="submit"><i class="fas fa-search"></i>
+          </button>
         </div>
         <div class="input-group">
           <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search" disabled>
-          <button class="btn btn-outline-light btn-search btn-search-sm disabled" type="submit"><i class="fas fa-search"></i></button>
+          <button class="btn btn-outline-light btn-search btn-search-sm disabled" type="submit"><i
+            class="fas fa-search"></i></button>
         </div>
       </form>
       <p class="ml-3 mb-2 font-weight-bold">5. 이메일주소 입력 인풋박스 </p>
@@ -773,13 +802,15 @@
       <p class="ml-3 mb-4">텍스트는 좌/우 마진 5px를 갖는다. </p>
       <form class="pl-3 mb-5">
         <div class="form-group" style="width: 200px; margin-bottom: 50px;">
-          <input type="text" class="form-control is-invalid" placeholder="Text" title="example" style="width: 200px;" required>
+          <input type="text" class="form-control is-invalid" placeholder="Text" title="example" style="width: 200px;"
+                 required>
           <div class="invalid-feedback">
             Text
           </div>
         </div>
         <div class="form-group" style="width: 200px;">
-          <input type="text" class="form-control is-invalid" placeholder="Text" title="example" style="width: 200px;" required>
+          <input type="text" class="form-control is-invalid" placeholder="Text" title="example" style="width: 200px;"
+                 required>
           <div class="invalid-feedback">
             Text Text Text Text Text Text Text Text
           </div>
@@ -793,7 +824,8 @@
              data-date-format="yyyy-mm-dd" autoclose="true" style="width: 400px">
           <input type="text" id="datePicker" class="form-control" value="2020-02-23" title="datepicker"
                  data-autohide="true">
-          <button class="btn btn-outline-light btn-calendar add-on" type="submit"><i class="far fa-calendar-alt"></i></button>
+          <button class="btn btn-outline-light btn-calendar add-on" type="submit"><i class="far fa-calendar-alt"></i>
+          </button>
         </div>
       </div>
       <div class="pl-3 mb-3">
@@ -801,7 +833,8 @@
              data-date-format="yyyy-mm-dd" autoclose="true" style="width: 400px">
           <input type="text" id="datePicker2" class="form-control form-control-sm" value="2020-02-23" title="datepicker"
                  data-autohide="true">
-          <button class="btn btn-outline-light btn-calendar btn-calendar-sm add-on" type="submit"><i class="far fa-calendar-alt"></i></button>
+          <button class="btn btn-outline-light btn-calendar btn-calendar-sm add-on" type="submit"><i
+            class="far fa-calendar-alt"></i></button>
         </div>
       </div>
     </div>
@@ -874,15 +907,12 @@
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent" style="height: 50px">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Aliquid, mollitia!
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            ...
           </div>
-          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Consequuntur corporis ducimus exercitationem expedita ipsa magni perferendis
-            quod ratione recusandae velit.
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">..
           </div>
-          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Distinctio, eaque.
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">......
           </div>
         </div>
       </div>
@@ -902,17 +932,9 @@
           </li>
         </ul>
         <div class="tab-content" id="myTabContent" style="height: 50px">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Architecto assumenda atque cumque est id natus omnis, quam quasi tempora.
-            Quam!
-          </div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aspernatur, aut?
-          </div>
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Adipisci amet beatae commodi deserunt distinctio ea fuga ipsam iusto obcaecati
-            officiis possimus quod sint, soluta ut velit. Dolor itaque magni quaerat?
-          </div>
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">.....</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...........</div>
         </div>
       </div>
       <p class="ml-3 mb-2 font-weight-bold">2. SNB와 같이 사용하는 탭</p>
@@ -930,14 +952,18 @@
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent2">
-          <div class="tab-pane fade show active" id="nav-home2" role="tabpanel" aria-labelledby="nav-home-ta2b">Lorem ipsum
+          <div class="tab-pane fade show active" id="nav-home2" role="tabpanel" aria-labelledby="nav-home-ta2b">Lorem
+            ipsum
             dolor sit amet, consectetur adipisicing elit. Aliquid, mollitia!
           </div>
-          <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile-tab2">Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Consequuntur corporis ducimus exercitationem expedita ipsa magni perferendis
+          <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile-tab2">Lorem ipsum
+            dolor sit
+            amet, consectetur adipisicing elit. Consequuntur corporis ducimus exercitationem expedita ipsa magni
+            perferendis
             quod ratione recusandae velit.
           </div>
-          <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2">Lorem ipsum dolor sit
+          <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2">Lorem ipsum
+            dolor sit
             amet, consectetur adipisicing elit. Distinctio, eaque.
           </div>
         </div>
@@ -1013,19 +1039,32 @@
       <p class="ml-3 mb-4">텍스트로만 구성되거나, 아이콘 + 텍스트로 구성된다.</p>
       <div class="row pl-3 mb-3">
         <div class="col-3">
-          <div class="nav flex-column nav-pills nav-pills-light" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" id="v-pills-home-tab2" data-toggle="pill" href="#v-pills-home2" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-circle"></i>Home</a>
-            <a class="nav-link" id="v-pills-profile-tab2" data-toggle="pill" href="#v-pills-profile2" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-circle"></i>Profile</a>
-            <a class="nav-link" id="v-pills-messages-tab2" data-toggle="pill" href="#v-pills-messages2" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-circle"></i>Messages</a>
-            <a class="nav-link" id="v-pills-settings-tab2" data-toggle="pill" href="#v-pills-settings2" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-circle"></i>Settings</a>
+          <div class="nav flex-column nav-pills nav-pills-light" id="v-pills-tab2" role="tablist"
+               aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab2" data-toggle="pill" href="#v-pills-home2" role="tab"
+               aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-circle"></i>Home</a>
+            <a class="nav-link" id="v-pills-profile-tab2" data-toggle="pill" href="#v-pills-profile2" role="tab"
+               aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-circle"></i>Profile</a>
+            <a class="nav-link" id="v-pills-messages-tab2" data-toggle="pill" href="#v-pills-messages2" role="tab"
+               aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-circle"></i>Messages</a>
+            <a class="nav-link" id="v-pills-settings-tab2" data-toggle="pill" href="#v-pills-settings2" role="tab"
+               aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-circle"></i>Settings</a>
           </div>
         </div>
         <div class="col-8">
           <div class="tab-content" id="v-pills-tabContent2">
-            <div class="tab-pane fade show active" id="v-pills-home2" role="tabpanel" aria-labelledby="v-pills-home-tab2">.......</div>
-            <div class="tab-pane fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab2">......</div>
-            <div class="tab-pane fade" id="v-pills-messages2" role="tabpanel" aria-labelledby="v-pills-messages-tab2">....................</div>
-            <div class="tab-pane fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2">......</div>
+            <div class="tab-pane fade show active" id="v-pills-home2" role="tabpanel"
+                 aria-labelledby="v-pills-home-tab2">.......
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab2">
+              ......
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages2" role="tabpanel" aria-labelledby="v-pills-messages-tab2">
+              ....................
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2">
+              ......
+            </div>
           </div>
         </div>
       </div>
@@ -1036,18 +1075,30 @@
       <div class="row pl-3 mb-3">
         <div class="col-3">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home<i class="fas fa-angle-right"></i></a>
-            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile<i class="fas fa-angle-right"></i></a>
-            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages<i class="fas fa-angle-right"></i></a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings<i class="fas fa-angle-right"></i></a>
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+               aria-controls="v-pills-home" aria-selected="true">Home<i class="fas fa-angle-right"></i></a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+               aria-controls="v-pills-profile" aria-selected="false">Profile<i class="fas fa-angle-right"></i></a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+               aria-controls="v-pills-messages" aria-selected="false">Messages<i class="fas fa-angle-right"></i></a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+               aria-controls="v-pills-settings" aria-selected="false">Settings<i class="fas fa-angle-right"></i></a>
           </div>
         </div>
         <div class="col-8">
           <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">.......</div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">......</div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">....................</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">......</div>
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              .......
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              ......
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              ....................
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              ......
+            </div>
           </div>
         </div>
       </div>
@@ -1069,8 +1120,11 @@
       <p class="ml-3 mb-4">바닥글에 포함되는 버튼은 상황에 따라서 다양한 사이즈(Medium, Lage, ExtraLarge)를 사용할 수 있다.</p>
       <div class="pl-3 mb-4">
         <!-- Extra large modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large modal</button>
-        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large
+          modal
+        </button>
+        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+             aria-hidden="true">
           <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -1094,8 +1148,11 @@
         </div>
 
         <!-- Large modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large
+          modal
+        </button>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
           <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -1120,9 +1177,11 @@
 
         <!-- Medium modal -->
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Medium modal</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Medium modal
+        </button>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+             aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -1178,7 +1237,8 @@
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">dialog</button>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
           <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -1188,10 +1248,13 @@
                 </button>
               </div>
               <div class="modal-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis itaque nulla placeat sunt tenetur?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis itaque nulla placeat sunt
+                tenetur?
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-lg btn-outline-light" data-dismiss="modal" style="width: 47%;">Close</button>
+                <button type="button" class="btn btn-lg btn-outline-light" data-dismiss="modal" style="width: 47%;">
+                  Close
+                </button>
                 <button type="button" class="btn btn-lg btn-primary" style="width: 47%;">Save changes</button>
               </div>
             </div>
@@ -1201,17 +1264,23 @@
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">alert</button>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+             aria-hidden="true">
           <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <span class="modal-title" id="exampleModalLabel2">Modal title</span>
               </div>
               <div class="modal-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci alias animi atque deserunt distinctio ea eligendi et fuga id, illo ipsa iure libero maiores mollitia nobis nulla optio pariatur porro quasi ratione recusandae tempora velit voluptatem. Ab alias amet blanditiis cumque dicta dolorum ex ipsam molestiae mollitia neque odio perspiciatis, placeat praesentium quaerat repellendus tenetur vel voluptas voluptatem.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci alias animi atque
+                deserunt distinctio ea eligendi et fuga id, illo ipsa iure libero maiores mollitia nobis nulla optio
+                pariatur porro quasi ratione recusandae tempora velit voluptatem. Ab alias amet blanditiis cumque dicta
+                dolorum ex ipsam molestiae mollitia neque odio perspiciatis, placeat praesentium quaerat repellendus
+                tenetur vel voluptas voluptatem.
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-lg btn-primary btn-block" style="width: 165px">Save changes</button>
+                <button type="button" class="btn btn-lg btn-primary btn-block" style="width: 165px">Save changes
+                </button>
               </div>
             </div>
           </div>
@@ -1232,7 +1301,8 @@
       <div class="mb-5">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
           <a class="navbar-brand" href="#">LOGO</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -1257,7 +1327,8 @@
       <div>
         <nav class="navbar navbar-expand-lg navbar-light ">
           <a class="navbar-brand" href="#">LOGO</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
+                  aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
