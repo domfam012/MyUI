@@ -63,6 +63,18 @@
       background-color: transparent;
       border-color: transparent;
     }
+
+    &.icon {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '×';
+        font-size: 14px;
+        right: 2px;
+        top: 0;
+        color: #b5b5b5;
+      }
+    }
   }
 
   .nav-link.active,
@@ -71,6 +83,11 @@
     background-color: $primary;
     border-color: $primary;
     color: $white;
+    &.icon {
+      &::after {
+        color: $white;
+      }
+    }
   }
 
   .dropdown-menu {
@@ -166,6 +183,7 @@
         line-height: 50px;
       }
     }
+
     & i {
       display: none;
     }
@@ -183,9 +201,11 @@
       line-height: 50px;
     }
   }
+
   &.nav-pills-light {
     border-top: 3px solid $primary;
     border-bottom: 1px solid #999;
+
     & .nav-link {
       background-color: white;
       color: #999;
@@ -207,6 +227,7 @@
         }
       }
     }
+
     & .nav-link.active,
     & .show > .nav-link {
       color: #333;

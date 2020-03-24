@@ -65,6 +65,7 @@ function jsLib() {
     'src/js/src/popper.min.js',
     'src/js/src/bootstrap.min.js',
     'src/js/src/prism.js',
+    'src/js/src/_common.js',
     'src/js/src/bootstrap-datepicker.js',
     'src/js/src/bootstrap-datepicker.ko.min.js'
   ];

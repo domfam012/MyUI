@@ -248,6 +248,7 @@
   background: url("https://img.icons8.com/material-rounded/48/000000/sort-down.png") no-repeat right 0.3125rem center/12px 13px;
   border: $custom-select-border-width solid $custom-select-border-color;
   appearance: none;
+  -webkit-appearance: none;
 
   &:focus {
     border-color: #666;

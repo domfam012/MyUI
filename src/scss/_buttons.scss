@@ -34,6 +34,9 @@
     opacity: $btn-disabled-opacity;
     @include box-shadow(none);
   }
+  i, .icon {
+    margin-right: 6px;
+  }
 }
 
 // Future-proof disabling of clicks on `<a>` elements
@@ -153,6 +156,14 @@ input[type="button"] {
     width: 26px;
     height: 26px;
     font-size: 16px;
+    i {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+  i {
+    margin: 0;
+    font-size: 20px;
   }
 }
 
