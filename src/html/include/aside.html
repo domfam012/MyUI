@@ -4,29 +4,29 @@
   </header>
 
   <div class="box-snb">
-    <div class="snb">
-      <a class="h-title active _start" href="#"><i class="fas fa-bolt"></i>시작하기</a>
+    <div class="nav snb" id="navbar-example2">
+      <a class="h-title active" href="document.html"><i class="fas fa-bolt"></i>시작하기</a>
       <div class="m-menu">
-        <a class="m-item" href="#intro">소개</a>
-        <a class="m-item" href="#download">다운로드</a>
-        <a class="m-item" href="#device">브라우저&디바이스</a>
-        <a class="m-item" href="#buildtool">빌드도구</a>
+        <a class="m-item nav-link" href="#intro">소개</a>
+        <a class="m-item nav-link" href="#download">다운로드</a>
+        <a class="m-item nav-link" href="#device">브라우저&디바이스</a>
+        <a class="m-item nav-link" href="#buildtool">빌드도구</a>
       </div>
-      <a class="h-title _compo" href="#"><i class="fas fa-th"></i>구성요소</a>
+      <a class="h-title" href="component.html"><i class="fas fa-th"></i>구성요소</a>
       <div class="m-menu">
-        <a class="m-item" href="#badge">배지(Badge)</a>
-        <a class="m-item" href="#breadcrumb">경로(Breadcrumb)</a>
-        <a class="m-item" href="#step">단계(Step)</a>
-        <a class="m-item" href="#slide">슬라이드(Slide)</a>
-        <a class="m-item" href="#button">버튼(Button)</a>
-        <a class="m-item" href="#card">카드(Cards)</a>
-        <a class="m-item" href="#form">폼(Forms)</a>
-        <a class="m-item" href="#pagination">페이지네이션(Pagination)</a>
-        <a class="m-item" href="#tab">탭(Tab)</a>
-        <a class="m-item" href="#table">테이블(Table)</a>
-        <a class="m-item" href="#snb">사이드 네비게이션 바(SNB)</a>
-        <a class="m-item" href="#modal">모달(Modal)</a>
-        <a class="m-item" href="#navbar">네비게이션 바(Navigation Bars)</a>
+        <a class="m-item nav-link" href="#badge">배지(Badge)</a>
+        <a class="m-item nav-link" href="#breadcrumb">경로(Breadcrumb)</a>
+        <a class="m-item nav-link" href="#step">단계(Step)</a>
+        <a class="m-item nav-link" href="#slide">슬라이드(Slide)</a>
+        <a class="m-item nav-link" href="#button">버튼(Button)</a>
+        <a class="m-item nav-link" href="#card">카드(Cards)</a>
+        <a class="m-item nav-link" href="#form">폼(Forms)</a>
+        <a class="m-item nav-link" href="#pagination">페이지네이션(Pagination)</a>
+        <a class="m-item nav-link" href="#tab">탭(Tab)</a>
+        <a class="m-item nav-link" href="#table">테이블(Table)</a>
+        <a class="m-item nav-link" href="#snb">사이드 네비게이션 바(SNB)</a>
+        <a class="m-item nav-link" href="#modal">모달(Modal)</a>
+        <a class="m-item nav-link" href="#navbar">네비게이션 바(Navigation Bars)</a>
       </div>
     </div>
   </div>
@@ -43,7 +43,6 @@
         $(this).addClass('active').css('color','#ffffff')
           .siblings().removeClass('active').css('color','#333')
       })
-      $('.h-title').eq(0).trigger('click');
     });
   </script>
 
