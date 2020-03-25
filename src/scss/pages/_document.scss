@@ -76,54 +76,6 @@
       }
     }
   }
-
-  .category {
-    margin-top: 7px;
-    .menu {
-      position: relative;
-      .title {
-        display: block;
-        padding: 13px 28px;
-        &.active {
-          font-weight: 600;
-        }
-        &:hover {
-          background-color: #04bcde;
-          color: #fff;
-        }
-        .icon {
-          position: absolute;
-          top: 13px;
-          left: 28px;
-          width: 24px;
-          text-align: center;
-        }
-        .text {
-          margin-left: 42px;
-          line-height: 26px;
-        }
-      }
-      .submenu {
-        list-style-type: none;
-        padding-left: 0;
-
-        li {
-          a {
-            display: inline-block;
-            padding: 13px 18px 13px 70px;
-            width: 100%;
-          }
-
-          &.active, &:hover {
-            background-color: #04bcde;
-            a {
-              color: #fff;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 // document page (page with aside) header
@@ -155,6 +107,7 @@
   }
 }
 
+// document content
 .doc-content {
   min-width: 880px;
   margin-left: 320px;
