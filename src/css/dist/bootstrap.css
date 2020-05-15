@@ -3061,8 +3061,13 @@ input[type="button"].btn-block {
   color: #212529;
 }
 
+.btn.btn-lg, .btn-group-lg > .btn {
+  width: 140px;
+  height: 50px;
+}
+
 .btn.btn-xl {
-  width: 180px;
+  width: 140px;
   height: 50px;
 }
 
@@ -3901,6 +3906,10 @@ input[type="button"].btn-block {
 .custom-file.custom-file-sm .custom-file-label::after {
   height: 24px;
   line-height: 21px;
+}
+
+.custom-file:disabled {
+  cursor: default;
 }
 
 .custom-file-input {
@@ -12474,9 +12483,10 @@ section.component .list .item .detail li {
 }
 
 .doc-content .title {
-  padding: 30px 0 10px;
+  padding: 0 0 10px;
   font-weight: 600;
   line-height: 54px;
+  padding-bottom: 60px;
 }
 
 .doc-content .title-sm {

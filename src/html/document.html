@@ -12,10 +12,10 @@
 
   <!-- start -->
   <div class="doc-content">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">MyUI</a></li>
-      <li class="breadcrumb-item active" aria-current="page">시작하기</li>
-    </ol>
+<!--    <ol class="breadcrumb">-->
+<!--      <li class="breadcrumb-item"><a href="index.html">MyUI</a></li>-->
+<!--      <li class="breadcrumb-item active" aria-current="page">시작하기</li>-->
+<!--    </ol>-->
 
     <h2 class="title">시작하기</h2>
     <h3 class="title-sm">1. 소개</h3>
@@ -68,7 +68,7 @@
       </pre>
     </div>
 
-    <h3 class="title-sm" id="download">2. 다운로드</h3>
+    <h3 class="title-sm" id="download" style="padding-top: 75px;">2. 다운로드</h3>
     <div class="text mb-4">
       MY UI를 다운로드하여 컴파일 된 CSS 및 JavaScript, 소스 코드를 얻거나 npm, RubyGems등과 같은 즐겨사용하는 패키지 관리자에 포함하십시오.
     </div>
@@ -131,7 +131,40 @@
       <div class="mb-3"><code class="ml-3 language-npm">$ npm install myui-vuejs</code></div>
     </div>
 
-    <h3 class="title-sm" id="device">3. 브라우저&디바이스</h3>
+    <h3 class="title-sm" id="buildtool" style="padding-top: 75px;">3. 빌드도구</h3>
+    <div class="text mb-4">
+      MYUI에 포함된 npm 스크립트를 사용하여 소스코드를 컴파일하고 테스트를 실행하는 방법을 배우세요
+    </div>
+    <div class="text mb-5">
+      <h4 class="title-sm">사용 방법</h4>
+      <p class="pl-3 mb-3">- 부트 스트랩은 빌드 시스템에 <a href="https://docs.npmjs.com/misc/scripts">npm 스크립트</a>를 사용합니다. package.json에는 코드 컴파일, 테스트 실행 등 프레임 워크 작업을 위한 편리한 메소드가 포함되어 있습니다.</p>
+      <p class="pl-3 mb-3">- 빌드 시스템을 사용하고 문서를 로컬로 실행하려면 MyUI의 소스 파일 및 노드 사본이 필요합니다.</p>
+      <p class="pl-3 mb-3">- 의존성을 관리하는 데 사용하는 <a href="https://nodejs.org/en/">Node.js</a>를 다운로드하여 설치하십시오.</p>
+      <p class="pl-3 mb-3">- root / bootstrap 디렉토리로 이동하여 npm install을 실행하여 package.json에 나열된 로컬 종속성을 설치하십시오.</p>
+      <p class="pl-3 mb-5">- 완료되면 명령 줄에서 제공되는 다양한 명령을 실행할 수 있습니다.</p>
+      <h4 class="title-sm">npm 스크립트 이용</h4>
+      <p class="pl-3 mb-3"><a href="https://github.com/domfam012/MyUI/blob/master/package.json">- package.json</a>에는 다음과 같은 명령과 작업이 포함되어 있습니다.</p>
+      <table class="table">
+        <thead class="thead-light">
+        <tr>
+          <th scope="col">스크립트</th>
+          <th scope="col">설명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>npm run dev</td>
+          <td>개발을 위한 빌드를 watch 상태로 제공합니다.</td>
+        </tr>
+        <tr>
+          <td>npm run dist</td>
+          <td>minify 된 프로덕션 빌드를 제공합니다.</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="title-sm" id="device" style="padding-top: 75px;">4. 브라우저&디바이스</h3>
     <div class="text mb-4">
       부트스트랩이 지원하는 최신 브라우저에서 오래된 브라우저 및 장치에 대해서 알아 봅니다.
     </div>
@@ -184,7 +217,7 @@
         </tbody>
       </table>
     </div>
-    <div class="p-3">
+    <div class="p-3" style="margin-bottom: 400px;">
       <p class="font-weight-bold p-3">데스크탑 브라우저</p>
       <table class="table table-hover" style="min-width: 900px">
         <thead>
@@ -216,39 +249,6 @@
           <td>Supported</td>
           <td>Supported</td>
           <td></td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 class="title-sm" id="buildtool">4. 빌드도구</h3>
-    <div class="text mb-4">
-      MYUI에 포함된 npm 스크립트를 사용하여 소스코드를 컴파일하고 테스트를 실행하는 방법을 배우세요
-    </div>
-    <div class="text mb-5">
-      <h4 class="title-sm">사용 방법</h4>
-      <p class="pl-3 mb-3">- 부트 스트랩은 빌드 시스템에 <a href="https://docs.npmjs.com/misc/scripts">npm 스크립트</a>를 사용합니다. package.json에는 코드 컴파일, 테스트 실행 등 프레임 워크 작업을 위한 편리한 메소드가 포함되어 있습니다.</p>
-      <p class="pl-3 mb-3">- 빌드 시스템을 사용하고 문서를 로컬로 실행하려면 MyUI의 소스 파일 및 노드 사본이 필요합니다.</p>
-      <p class="pl-3 mb-3">- 의존성을 관리하는 데 사용하는 <a href="https://nodejs.org/en/">Node.js</a>를 다운로드하여 설치하십시오.</p>
-      <p class="pl-3 mb-3">- root / bootstrap 디렉토리로 이동하여 npm install을 실행하여 package.json에 나열된 로컬 종속성을 설치하십시오.</p>
-      <p class="pl-3 mb-5">- 완료되면 명령 줄에서 제공되는 다양한 명령을 실행할 수 있습니다.</p>
-      <h4 class="title-sm">npm 스크립트 이용</h4>
-      <p class="pl-3 mb-3"><a href="https://github.com/domfam012/MyUI/blob/master/package.json">- package.json</a>에는 다음과 같은 명령과 작업이 포함되어 있습니다.</p>
-      <table class="table">
-        <thead class="thead-light">
-        <tr>
-          <th scope="col">스크립트</th>
-          <th scope="col">설명</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>npm run dev</td>
-          <td>개발을 위한 빌드를 watch 상태로 제공합니다.</td>
-        </tr>
-        <tr>
-          <td>npm run dist</td>
-          <td>minify 된 프로덕션 빌드를 제공합니다.</td>
         </tr>
         </tbody>
       </table>
