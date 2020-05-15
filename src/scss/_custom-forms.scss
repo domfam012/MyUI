@@ -342,6 +342,9 @@
       }
     }
   }
+  &:disabled {
+    cursor: default;
+  }
 }
 
 .custom-file-input {

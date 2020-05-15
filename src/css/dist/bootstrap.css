@@ -3026,6 +3026,7 @@ input[type="button"].btn-block {
   padding: 0;
   z-index: 10;
   font-size: 20px;
+  border-color: #c2c2c2;
 }
 
 .btn-search.btn-search-sm, .btn-search.btn-calendar-sm,
@@ -3047,6 +3048,17 @@ input[type="button"].btn-block {
 .btn-calendar i {
   margin: 0;
   font-size: 20px;
+  color: #c2c2c2;
+}
+
+.btn-search:hover,
+.btn-calendar:hover {
+  background-color: #f2f2f2;
+}
+
+.btn-search:hover i,
+.btn-calendar:hover i {
+  color: #212529;
 }
 
 .btn.btn-xl {
@@ -3888,7 +3900,7 @@ input[type="button"].btn-block {
 
 .custom-file.custom-file-sm .custom-file-label::after {
   height: 24px;
-  line-height: 20px;
+  line-height: 21px;
 }
 
 .custom-file-input {
@@ -4875,6 +4887,13 @@ input[type=search]:disabled + .btn-search {
 .card-img-bottom {
   flex-shrink: 0;
   width: 100%;
+}
+
+.card-text-top {
+  background: #eef9fb;
+  text-align: center;
+  font-size: 26px;
+  color: #a4cad1;
 }
 
 .card-deck .card {
@@ -6490,8 +6509,7 @@ a.close.disabled {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 500px;
-  background: #eef9fb;
+  height: 485px;
 }
 
 .carousel-inner::after {
@@ -6514,6 +6532,14 @@ a.close.disabled {
   .carousel-item {
     transition: none;
   }
+}
+
+.carousel-item p {
+  width: 100%;
+  height: 100%;
+  line-height: 485px;
+  text-align: center;
+  font-size: 26px;
 }
 
 .carousel-item.active,
