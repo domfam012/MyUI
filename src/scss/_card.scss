@@ -146,6 +146,12 @@
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
 }
 
+.card-text-top {
+  background: #eef9fb;
+  text-align: center;
+  font-size: 26px;
+  color: #a4cad1;
+}
 // Card deck
 
 .card-deck {

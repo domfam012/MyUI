@@ -151,6 +151,7 @@ input[type="button"] {
   padding: 0;
   z-index: 10;
   font-size: 20px;
+  border-color: #c2c2c2;
   &.btn-search-sm,
   &.btn-calendar-sm{
     width: 26px;
@@ -164,6 +165,13 @@ input[type="button"] {
   i {
     margin: 0;
     font-size: 20px;
+    color: #c2c2c2;
+  }
+  &:hover {
+    background-color: #f2f2f2;
+    i {
+      color: #212529;
+    }
   }
 }
 

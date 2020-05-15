@@ -6490,6 +6490,8 @@ a.close.disabled {
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: 500px;
+  background: #eef9fb;
 }
 
 .carousel-inner::after {
@@ -12417,60 +12419,6 @@ section.component .list .item .detail li {
 .doc-aside .box-snb .snb .m-menu .m-item.active {
   color: #fff !important;
   background-color: #04bcde;
-}
-
-.doc-aside .category {
-  margin-top: 7px;
-}
-
-.doc-aside .category .menu {
-  position: relative;
-}
-
-.doc-aside .category .menu .title {
-  display: block;
-  padding: 13px 28px;
-}
-
-.doc-aside .category .menu .title.active {
-  font-weight: 600;
-}
-
-.doc-aside .category .menu .title:hover {
-  background-color: #04bcde;
-  color: #fff;
-}
-
-.doc-aside .category .menu .title .icon {
-  position: absolute;
-  top: 13px;
-  left: 28px;
-  width: 24px;
-  text-align: center;
-}
-
-.doc-aside .category .menu .title .text {
-  margin-left: 42px;
-  line-height: 26px;
-}
-
-.doc-aside .category .menu .submenu {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.doc-aside .category .menu .submenu li a {
-  display: inline-block;
-  padding: 13px 18px 13px 70px;
-  width: 100%;
-}
-
-.doc-aside .category .menu .submenu li.active, .doc-aside .category .menu .submenu li:hover {
-  background-color: #04bcde;
-}
-
-.doc-aside .category .menu .submenu li.active a, .doc-aside .category .menu .submenu li:hover a {
-  color: #fff;
 }
 
 .doc-header .navbar.navbar-expand {
