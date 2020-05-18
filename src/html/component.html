@@ -6,17 +6,10 @@
 <div class="wrap">
   <!-- aside -->
   @@include('../html/include/aside.html')
-
   <!-- sub pages header -->
   @@include('../html/include/doc_header.html')
-
   <!-- component -->
   <div class="doc-content">
-    <!--    <ol class="breadcrumb">-->
-    <!--      <li class="breadcrumb-item"><a href="index.html">MyUI</a></li>-->
-    <!--      <li class="breadcrumb-item active" aria-current="page">구성요소</li>-->
-    <!--    </ol>-->
-
     <h2 class="title">구성요소</h2>
     <h3 class="title-sm">1. 뱃지(Badge)</h3>
     <div class="text mb-3">
@@ -45,12 +38,12 @@
     <div class="ml-5 pl-3 mb-5">
       <button type="button" class="btn btn-primary">Notifications <span class="badge">4</span></button>
     </div>
-    <div class="ml-5 pl-3" style="margin-bottom: 35px;">
+    <div class="ml-5 pl-3 mb-5">
       <p class="pl-1 mb-3 font-weight-bold">3. 링크로 사용되는 경우</p>
       <a href="#" class="badge badge-primary">Primary</a>
       <a href="#" class="badge badge-normal">Normal</a>
     </div>
-    <h3 class="title-sm" id="breadcrumb" style="padding-top: 75px;">2. 경로(Breadcrumb)</h3>
+    <h3 class="title-sm com-pt" id="breadcrumb">2. 경로(Breadcrumb)</h3>
     <div class="text mb-3">네비게이션 체계 내에서 현재페이지 위치를 나타낸다.</div>
     <div class="text">
       <nav aria-label="breadcrumb">
@@ -75,7 +68,7 @@
       </nav>
     </div>
 
-    <h3 class="title-sm" id="step" style="padding-top: 75px;">3. 단계(Step)</h3>
+    <h3 class="title-sm com-pt" id="step">3. 단계(Step)</h3>
     <div class="text mb-3">
       회원가입 등 절차가 있는경우 사용자에게 단계(현재순서, 다음순서, 작성완료)를 확인 시킨다.
     </div>
@@ -106,37 +99,6 @@
       </div>
       <p class="ml-3 mb-2 font-weight-bold">2. 단계와 텍스트가 합쳐진 경우</p>
       <p class="ml-3 mb-4">1번보다 공간의 여유가 적을경우 사용한다.</p>
-      <!--      <p class="ml-3 mb-4">중앙정렬이나 좌측정렬을 한다.</p>-->
-      <!--      <div>-->
-      <!--        <div class="clearfix mb-2">-->
-      <!--          <ul class="step-arrow clearfix">-->
-      <!--            <li class="active"><span>Text</span></li>-->
-      <!--            <li><span>TextText</span></li>-->
-      <!--            <li><span>TextTextText</span></li>-->
-      <!--          </ul>-->
-      <!--        </div>-->
-      <!--        <div class="clearfix mb-2">-->
-      <!--          <ul class="step-arrow clearfix">-->
-      <!--            <li class="done"><span>Text</span></li>-->
-      <!--            <li class="active"><span>TextText</span></li>-->
-      <!--            <li><span>TextTextText</span></li>-->
-      <!--          </ul>-->
-      <!--        </div>-->
-      <!--        <div class="clearfix mb-2">-->
-      <!--          <ul class="step-arrow clearfix">-->
-      <!--            <li class="done"><span>Text</span></li>-->
-      <!--            <li class="done"><span>TextText</span></li>-->
-      <!--            <li class="active"><span>TextTextText</span></li>-->
-      <!--          </ul>-->
-      <!--        </div>-->
-      <!--        <div class="clearfix mb-5">-->
-      <!--          <ul class="step-arrow clearfix">-->
-      <!--            <li class="done"><span>Text</span></li>-->
-      <!--            <li class="done"><span>TextText</span></li>-->
-      <!--            <li class="done"><span>TextTextText</span></li>-->
-      <!--          </ul>-->
-      <!--        </div>-->
-      <!--      </div>-->
       <div class="mb-5">
         <div class="step-arrow-center clearfix mb-2">
           <ul class="step-arrow">
@@ -169,7 +131,7 @@
       </div>
     </div>
 
-    <h3 class="title-sm" id="slide" style="padding-top: 75px;">4. 슬라이드(carousel)</h3>
+    <h3 class="title-sm com-pt" id="slide">4. 슬라이드(carousel)</h3>
     <div class="text mb-3">
       <span>웹 사이트에서 이미지를 순환하여 보여줄 경우 사용한다.<br/>
         이미지는 10개 이하를 사용한다.<br/>
@@ -185,16 +147,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <p style="color:#a4cad1; background: #eef9fb;">First Slide</p>
-            <!--            <img src="" class="d-block w-100" alt="..." style="width: 200px;height: 485px; background: #eef9fb;">-->
+            <p class="com-carousel-col01">First Slide</p>
           </div>
           <div class="carousel-item">
-            <p style="color:#8ec7d1; background: #e1f6fa;">Second Slide</p>
-            <!--            <img src="" class="d-block w-100" alt="..." style="width: 200px;height: 485px; background: #eef9fb;">-->
+            <p class="com-carousel-col02">Second Slide</p>
           </div>
           <div class="carousel-item">
-            <p style="color:#79c4d1; background: #d4f4fa;">Third Slide</p>
-            <!--            <img src="" class="d-block w-100" alt="..." style="width: 200px;height: 485px; background: #eef9fb;">-->
+            <p class="com-carousel-col03">Third Slide</p>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -208,7 +167,7 @@
       </div>
     </div>
 
-    <h3 class="title-sm" id="button" style="padding-top: 75px">5. 버튼(Button)</h3>
+    <h3 class="title-sm com-pt" id="button">5. 버튼(Button)</h3>
     <div class="text mb-3">
       다양한 크기, 스타일을 지원한다.
     </div>
@@ -228,35 +187,35 @@
       </div>
       <div class="ml-3 mb-2 font-weight-bold">Size</div>
       <div class="pl-3 mb-3">
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-xs btn-primary">Extra Small</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-xs btn-secondary">Extra Small</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-xs btn-light">Extra Small</button>
         </div>
       </div>
       <div class="pl-3 mb-3">
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-sm btn-primary">Small</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-sm btn-secondary">Small</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-sm btn-light">Small</button>
         </div>
       </div>
       <div class="pl-3 mb-3">
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-primary">Medium</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-secondary">Medium</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-light">Medium</button>
         </div>
       </div>
@@ -286,44 +245,44 @@
       </div>
       <div class="ml-3 mb-2 font-weight-bold">Size</div>
       <div class="pl-3 mb-3">
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-xs btn-outline-primary">Extra Small</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-xs btn-outline-secondary">Extra Small</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-xs btn-outline-light">Extra Small</button>
         </div>
       </div>
       <div class="pl-3 mb-3">
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
         <button type="button" class="btn btn-sm btn-outline-primary">Small</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-sm btn-outline-secondary">Small</button>
         </div>
         <button type="button" class="btn btn-sm btn-outline-light">Small</button>
       </div>
       <div class="pl-3 mb-3">
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-outline-primary">Medium</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-outline-secondary">Medium</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-outline-light">Medium</button>
         </div>
       </div>
       <div class="pl-3 mb-3">
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-lg btn-outline-primary">Large</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-lg btn-outline-secondary">Large</button>
         </div>
-        <div style="width: 140px; text-align: left; display: inline-block;">
+        <div class="com-btn">
           <button type="button" class="btn btn-lg btn-outline-light">Large</button>
         </div>
       </div>
@@ -347,12 +306,12 @@
       <p class="ml-3 mb-2 font-weight-bold">4. 링크</p>
       <p class="ml-3 mb-1">텍스트에 링크를 걸었을 때 사용한다.</p>
       <p class="ml-3 mb-4">마우스 오버시 텍스트 하단에 라인이 생겨 링크가 있음을 알려준다.</p>
-      <div class="pl-3" style="margin-bottom: 35px;">
+      <div class="pl-3 mb-5">
         <button type="button" class="btn btn-link">Link</button>
       </div>
     </div>
 
-    <h3 class="title-sm" id="card" style="padding-top: 75px;">6. 카드(Cards)</h3>
+    <h3 class="title-sm com-pt" id="card">6. 카드(Cards)</h3>
     <div class="text mb-3">
       <span>동일한 구성의 컨텐츠를 반복해서 보여줄 경우 카드를 사용하며, 이미지와 텍스트로 구성된다.<br/>
         일반적으로 타이틀, 내용, 버튼으로 구성되며, 내용에 따라 버튼은 생략될 수 있다.
@@ -364,15 +323,14 @@
       <p class="ml-3 mb-2 font-weight-bold">1. 이미지 + 텍스트 + 버튼(기능)으로 구성된 카드 </p>
       <p class="ml-3 mb-4">이미지에 대한 타이틀, 설명을 포함하며 기능버튼을(다운로드, 링크) 포함한다.</p>
       <div class="mb-5">
-        <div class="card" style="width: 862px; height: 760px; margin: 20px;">
-          <p class="card-text-top" style="width: 862px; height: 485px; line-height: 485px;">Image</p>
-          <!--          <img src="#" class="card-img-top" alt="이미지" style="width: 862px; height: 485px; background: #eef9fb;">-->
+        <div class="card com-card-style01">
+          <p class="card-text-top com-card-text01">Image</p>
           <div class="card-body">
             <p class="card-title">Title</p>
             <p class="card-text">Adobe사에서 제공하는 무료 UI Kit<br/>
               종류별로 사이트를 관리하기에 좋은 디자인입니다.<br/>
               웹사이트 버전과 모바일 버전으로 나뉘어서 작업 할 수 있습니다.</p>
-            <button class="btn btn-lg btn-primary" style="width: 140px">BUTTON</button>
+            <button class="btn btn-lg btn-primary com-btn-width">BUTTON</button>
           </div>
         </div>
       </div>
@@ -380,9 +338,8 @@
       <p class="ml-3 mb-4">썸네일을 보여주는 카드로 이미지와 텍스트로 구성된다. </p>
       <div>
         <div>
-          <div class="card" style="width: 366px; height: 290px; margin: 20px;">
-            <p class="card-text-top" style="width: 366px; height: 206px; line-height: 206px;">Image</p>
-            <!--            <img src="" class="card-img-top" alt="이미지" style="width: 366px; height: 206px; background: #eef9fb;">-->
+          <div class="card com-card-style02">
+            <p class="card-text-top com-card-text02">Image</p>
             <div class="card-body">
               <p class="card-title">Title</p>
             </div>
@@ -391,7 +348,7 @@
       </div>
     </div>
 
-    <h3 class="title-sm" id="form" style="padding-top: 75px;">7. 폼(Forms)</h3>
+    <h3 class="title-sm com-pt" id="form">7. 폼(Forms)</h3>
     <div class="text mb-3">
       입력에 관련된 내용으로 입력, 체크, 확인/설정
     </div>
@@ -408,37 +365,29 @@
       <p class="ml-3 mb-1">일반적인 상태에서는 플레이스홀더를 사용하여 어떤 내용을 입력하는지 힌트를 준다.</p>
       <p class="ml-3 mb-1">입력 시 플레이스홀더는 사라지며 인풋박스의 테두리는 select 상태임을 나타내기 위해 색상이 진하게 바뀐다.</p>
       <p class="ml-3 mb-4">미리 입력된 내용이나 텍스트를 수정할 수 없는 Readonly 상태가 있다. (그레이 배경 컬러에 스트록없음)</p>
-      <!--      <p class="ml-3 mb-4">입력이 잘못되었을 경우 밸리데이션으로 잘못된 내용을 알 려준다.</p>-->
       <form class="pl-3 mb-5">
         <div class="mb-3 font-weight-bold">Normal</div>
         <div class="form-group mb-4">
-          <input type="text" class="form-control" title="example" placeholder="Normal" style="width: 200px;">
+          <input type="text" class="form-control com-input-width" title="example" placeholder="Normal">
         </div>
-        <!--        <div class="form-group">-->
-        <!--          <input type="text" class="form-control" title="example" value="Normal Normal Normal Normal Normal"-->
-        <!--                 style="width: 200px;">-->
-        <!--        </div>-->
         <div class="mb-3 font-weight-bold">Disabled</div>
         <div class="form-group mb-4">
-          <input type="text" class="form-control" title="example" style="width: 200px;" placeholder="Disabled" disabled>
+          <input type="text" class="form-control com-input-width" title="example" placeholder="Disabled" disabled>
         </div>
         <div class="mb-3 font-weight-bold">Read only</div>
         <div class="form-group mb-4">
-          <input class="form-control" type="text" title="example" placeholder="read-only"
-                 style="margin-bottom: 10px; width: 200px;" readonly>
+          <input class="form-control mb-2 com-input-width" type="text" title="example" placeholder="read-only" readonly>
         </div>
         <div class="mb-3 font-weight-bold">Size</div>
         <div class="form-group">
-          <input class="form-control form-control-sm" title="example" type="text" placeholder="Small"
-                 style="width: 200px;margin-bottom: 10px; ">
-          <input class="form-control" type="text" title="example" placeholder="Medium"
-                 style="margin-bottom: 10px; width: 200px;">
+          <input class="form-control form-control-sm mb-2 com-input-width" title="example" type="text" placeholder="Small">
+          <input class="form-control com-input-width" type="text" title="example" placeholder="Medium">
         </div>
       </form>
       <p class="pl-3 mb-2 font-weight-bold">2. 셀렉트박스 </p>
       <p class="pl-3 mb-4">조건을 정해놓고 조건을 고를 때 사용한다.</p>
       <div class="pl-3 mb-3 font-weight-bold">Normal</div>
-      <div class="pl-3 mb-4" style="width: 200px">
+      <div class="pl-3 mb-4 com-input-width">
         <select class="custom-select" title="Text">
           <option selected>Normal</option>
           <option value="1">One</option>
@@ -447,7 +396,7 @@
         </select>
       </div>
       <div class="pl-3 mb-3 font-weight-bold">Disabled</div>
-      <div class="pl-3 mb-4" style="width: 200px">
+      <div class="pl-3 mb-4 com-input-width">
         <select class="custom-select" disabled title="Text">
           <option selected>Disabled</option>
           <option value="1">One</option>
@@ -456,7 +405,7 @@
         </select>
       </div>
       <div class="pl-3 mb-3 font-weight-bold">Size</div>
-      <div class="input-group pl-3 mb-3" style="width: 200px">
+      <div class="input-group pl-3 mb-3 com-input-width">
         <select class="custom-select custom-select-sm" title="example">
           <option selected>Small</option>
           <option value="1">One</option>
@@ -464,7 +413,7 @@
           <option value="3">Three</option>
         </select>
       </div>
-      <div class="pl-3 mb-5" style="width: 200px">
+      <div class="pl-3 mb-5 com-input-width">
         <select class="custom-select" title="Text">
           <option selected>Medium</option>
           <option value="1">One</option>
@@ -476,27 +425,20 @@
       <p class="ml-3 mb-1">첨부파일을 선택할 때 사용한다.</p>
       <p class="ml-3 mb-4">파일을 선택하면 파일명은 자동으로 입력 된다.</p>
       <div class="pl-3 mb-3 font-weight-bold">Normal</div>
-      <div class="input-group m-3 mb-4" style="width: 350px;">
+      <div class="input-group m-3 mb-4 com-input-width">
         <div class="custom-file">
           <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFile01">
           <label class="custom-file-label" for="inputGroupFile01">선택된 파일 없음</label>
         </div>
       </div>
-<!--      <div class="pl-3 mb-3 font-weight-bold">Disabled</div>-->
-<!--      <div class="input-group m-3" style="width: 350px;">-->
-<!--        <div class="custom-file custom-file-sm">-->
-<!--          <input type="file" class="custom-file-input file-path validate" id="inputGroupFile02" aria-describedby="inputGroupFile02" disabled>-->
-<!--          <label class="custom-file-label" for="inputGroupFile02">선택된 파일 없음</label>-->
-<!--        </div>-->
-<!--      </div>-->
       <div class="pl-3 mb-3 font-weight-bold">Size</div>
-      <div class="input-group m-3" style="width: 350px;">
+      <div class="input-group m-3 com-input-width">
         <div class="custom-file custom-file-sm">
           <input type="file" class="custom-file-input file-path validate" id="inputGroupFile03" aria-describedby="inputGroupFile03">
           <label class="custom-file-label" for="inputGroupFile03">선택된 파일 없음</label>
         </div>
       </div>
-      <div class="input-group m-3 mb-5" style="width: 350px;">
+      <div class="input-group m-3 mb-5 com-input-width">
         <div class="custom-file">
           <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFile04">
           <label class="custom-file-label" for="inputGroupFile04">선택된 파일 없음</label>
@@ -506,23 +448,23 @@
       <p class="ml-3 mb-4">검색을 할 때 사용한다.</p>
       <form class="pl-3 mb-5">
         <div class="mb-3 font-weight-bold">Normal</div>
-        <div class="input-group mb-4" style="width: 350px;">
+        <div class="input-group mb-4 com-input-width">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light btn-search" type="submit"><i class="fas fa-search"></i></button>
         </div>
         <div class="mb-3 font-weight-bold">Disabled</div>
-        <div class="input-group mb-4" style="width: 350px;">
+        <div class="input-group mb-4 com-input-width">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search" disabled>
           <button class="btn btn-outline-light btn-search disabled" type="submit"><i
             class="fas fa-search"></i></button>
         </div>
         <div class="mb-3 font-weight-bold">Size</div>
-        <div class="input-group mb-3" style="width: 350px;">
+        <div class="input-group mb-3 com-input-width">
           <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light btn-search btn-search-sm" type="submit"><i class="fas fa-search"></i>
           </button>
         </div>
-        <div class="input-group mb-5" style="width: 350px;">
+        <div class="input-group mb-5 com-input-width">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light btn-search" type="submit"><i class="fas fa-search"></i></button>
         </div>
@@ -628,7 +570,6 @@
       <p class="ml-3 mb-2 font-weight-bold">6. 라디오/체크박스 </p>
       <p class="ml-3 mb-4">라디오/체크박스와 텍스트 사이는 6px 거리를 띄우며, 한줄에 나올경우 다음 라디오/체크박스 까지의 거리는 60px이다. </p>
       <div class="pl-3 mb-4 font-weight-bold">라디오</div>
-      <!--      <p class="ml-3 mb-4">라디오는 여러 조건 중 하나만 선택이 가능할 때 사용한다.</p>-->
       <div class="mb-4 pl-3">- Normal</div>
       <div class="ml-3 mb-5">
         <div class="custom-control custom-radio mb-3">
@@ -660,14 +601,13 @@
         </div>
       </div>
       <div class="mb-4 pl-3">- Disabled</div>
-      <div class="ml-3" style="margin-bottom: 70px">
+      <div class="ml-3 com-mb">
         <div class="custom-control custom-radio">
           <input type="radio" name="radioDisabled" id="customRadioDisabled2" class="custom-control-input" disabled>
           <label class="custom-control-label" for="customRadioDisabled2">Text</label>
         </div>
       </div>
       <div class="pl-3 mb-4 font-weight-bold">체크박스</div>
-      <!--      <p class="ml-3 mb-4">checkbox는 여러 조건 중 다중 선택이 가능할 때 사용한다.</p>-->
       <div class="mb-4 pl-3">- Normal</div>
       <div class="ml-3 mb-5">
         <div class="custom-control custom-checkbox mb-3">
@@ -699,7 +639,7 @@
         </div>
       </div>
       <div class="mb-4 pl-3">- Disabled</div>
-      <div class="ml-3" style="margin-bottom: 60px;">
+      <div class="ml-3 com-mb">
         <div class="custom-control custom-checkbox">
           <input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled>
           <label class="custom-control-label" for="customCheckDisabled1">Text</label>
@@ -710,16 +650,14 @@
       <p class="ml-3 mb-1">보통 인풋박스 하단에 표현되며, 인풋박스와의 간격은 1px이다.</p>
       <p class="ml-3 mb-4">텍스트는 좌/우 마진 5px를 갖는다. </p>
       <form class="pl-3 mb-5">
-        <div class="form-group" style="width: 200px; margin-bottom: 50px;">
-          <input type="text" class="form-control is-invalid" placeholder="Text" title="example" style="width: 200px;"
-                 required>
+        <div class="form-group com-input-width mb-5">
+          <input type="text" class="form-control is-invalid com-input-width" placeholder="Text" title="example" required>
           <div class="invalid-feedback">
             Text
           </div>
         </div>
-        <div class="form-group" style="width: 200px;">
-          <input type="text" class="form-control is-invalid" placeholder="Text" title="example" style="width: 200px;"
-                 required>
+        <div class="form-group com-input-width">
+          <input type="text" class="form-control is-invalid com-input-width" placeholder="Text" title="example" required>
           <div class="invalid-feedback">
             Text Text Text Text Text Text Text Text
           </div>
@@ -730,37 +668,30 @@
       <p class="ml-3 mb-4">인풋박스의 상단에 위치한다.</p>
       <div class="mb-3 pl-3 font-weight-bold">Normal</div>
       <div class="pl-3 mb-4">
-        <div class="input-group date" data-provide="datepicker" data-date-today-highlight="true" data-date-language="kr"
-             data-date-format="yyyy-mm-dd" autoclose="true" style="width: 400px">
-          <input type="text" id="datePicker" class="form-control" placeholder="2020-02-23" title="datepicker"
-                 data-autohide="true">
+        <div class="input-group date com-input-width" data-provide="datepicker" data-date-today-highlight="true" data-date-language="kr" data-date-format="yyyy-mm-dd" autoclose="true">
+          <input type="text" id="datePicker" class="form-control" placeholder="2020-02-23" title="datepicker" data-autohide="true">
           <button class="btn btn-outline-light btn-calendar add-on" type="submit"><i class="far fa-calendar-alt"></i>
           </button>
         </div>
       </div>
       <div class="mb-3 pl-3 font-weight-bold">Size</div>
       <div class="pl-3 mb-3">
-        <div class="input-group date" data-provide="datepicker" data-date-today-highlight="true" data-date-language="kr"
-             data-date-format="yyyy-mm-dd" autoclose="true" style="width: 400px">
-          <input type="text" id="datePicker2" class="form-control form-control-sm" placeholder="2020-02-23"
-                 title="datepicker"
-                 data-autohide="true">
-          <button class="btn btn-outline-light btn-calendar btn-calendar-sm add-on" type="submit"><i
-            class="far fa-calendar-alt"></i></button>
+        <div class="input-group date com-input-width" data-provide="datepicker" data-date-today-highlight="true" data-date-language="kr"
+             data-date-format="yyyy-mm-dd" autoclose="true">
+          <input type="text" id="datePicker2" class="form-control form-control-sm" placeholder="2020-02-23" title="datepicker" data-autohide="true">
+          <button class="btn btn-outline-light btn-calendar btn-calendar-sm add-on" type="submit"><i class="far fa-calendar-alt"></i></button>
         </div>
       </div>
       <div class="pl-3 mb-3">
-        <div class="input-group date" data-provide="datepicker" data-date-today-highlight="true" data-date-language="kr"
-             data-date-format="yyyy-mm-dd" autoclose="true" style="width: 400px">
-          <input type="text" id="datePicker" class="form-control" placeholder="2020-02-23" title="datepicker"
-                 data-autohide="true">
+        <div class="input-group date com-input-width" data-provide="datepicker" data-date-today-highlight="true" data-date-language="kr" data-date-format="yyyy-mm-dd" autoclose="true">
+          <input type="text" id="datePicker" class="form-control" placeholder="2020-02-23" title="datepicker" data-autohide="true">
           <button class="btn btn-outline-light btn-calendar add-on" type="submit"><i class="far fa-calendar-alt"></i>
           </button>
         </div>
       </div>
     </div>
 
-    <h3 class="title-sm" id="pagination" style="padding-top: 75px;">8. 페이지네이션(Pagination)</h3>
+    <h3 class="title-sm com-pt" id="pagination">8. 페이지네이션(Pagination)</h3>
     <div class="text mb-3">
       <span>리스트가 많아 세로 스크롤이 길어질 경우 페이지로 구분하여 나타낼 경우 사용한다. <br/>
         버튼 및 숫자 사이즈는 30px X 30px이며, 간격은 10px이다.<br/>
@@ -802,8 +733,7 @@
         </ul>
       </nav>
     </div>
-
-    <h3 class="title-sm" id="tab" style="padding-top: 75px;">9. 탭(Tab)</h3>
+    <h3 class="title-sm com-pt" id="tab">9. 탭(Tab)</h3>
     <div class="text mb-3">
       <span>화면이동 없이 내용을 바꿀 때 사용한다. <br/>
         SNB와 같이 사용하여 SNB 메뉴를 눌렀을 때 메뉴가 탭으로 쌓인다.
@@ -816,52 +746,44 @@
       <p class="ml-3 mb-1">정보의 내용이 같으나 내용을 따로 구분하고 싶을 때 사용한다.</p>
       <p class="ml-3 mb-1">화면의 이동없이 탭 선택 시 내용을 바꿀 때 사용한다.</p>
       <p class="ml-3 mb-4">탭선택 시 컬러의 차이뿐 아니라 탭사이즈와 텍스트가 커져 선택된 탭을 강조 수 있다.</p>
-      <div class="pl-3" style="margin-bottom: 200px;">
-        <!--        <div class="mb-4 font-weight-bold">- tab01</div>-->
+      <div class="pl-3 com-mb02">
         <nav>
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-               aria-controls="nav-home" aria-selected="true">Home</a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-               aria-controls="nav-profile" aria-selected="false">Profile</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-               aria-controls="nav-contact" aria-selected="false">Contact</a>
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
           </div>
         </nav>
-        <div class="tab-content" id="nav-tabContent" style="height: 50px">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active com-tab-style01" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" >
             Home
           </div>
-          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+          <div class="tab-pane fade com-tab-style01" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
             Profile
           </div>
-          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+          <div class="tab-pane fade com-tab-style01" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
             Contact
           </div>
         </div>
       </div>
-      <div class="pl-3" style="margin-bottom: 40px;">
-        <!--        <div class="mb-4 font-weight-bold">- tab02</div>-->
-        <ul class="nav nav-tabs nav-tabs-lg" id="myTab" role="tablist" style="min-width: 970px">
+      <div class="pl-3 mb-5">
+        <ul class="nav nav-tabs nav-tabs-lg com-tab-mw" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-               aria-selected="true">Home</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-               aria-selected="false">Profile</a>
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-               aria-selected="false">Contact</a>
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="min-width:970px; padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+          <div class="tab-pane fade show active com-tab-style02" id="home" role="tabpanel" aria-labelledby="home-tab">
             Home</div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="min-width:970px; padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+          <div class="tab-pane fade com-tab-style02" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             Profile</div>
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" style="min-width:970px; padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+          <div class="tab-pane fade com-tab-style02" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             Contact
           </div>
         </div>
@@ -872,28 +794,25 @@
       <div class="m-3">
         <nav>
           <div class="nav nav-tabs" id="nav-tab2" role="tablist">
-            <a class="nav-item nav-link icon active" id="nav-home-tab2" data-toggle="tab" href="#nav-home2" role="tab"
-               aria-controls="nav-home2" aria-selected="true">Home<i class="far fa-close"></i></a>
-            <a class="nav-item nav-link icon" id="nav-profile-tab2" data-toggle="tab" href="#nav-profile2" role="tab"
-               aria-controls="nav-profile2" aria-selected="false">Profile</a>
-            <a class="nav-item nav-link icon" id="nav-contact-tab2" data-toggle="tab" href="#nav-contact2" role="tab"
-               aria-controls="nav-contact2" aria-selected="false">Contact</a>
+            <a class="nav-item nav-link icon active" id="nav-home-tab2" data-toggle="tab" href="#nav-home2" role="tab" aria-controls="nav-home2" aria-selected="true">Home<i class="far fa-close"></i></a>
+            <a class="nav-item nav-link icon" id="nav-profile-tab2" data-toggle="tab" href="#nav-profile2" role="tab" aria-controls="nav-profile2" aria-selected="false">Profile</a>
+            <a class="nav-item nav-link icon" id="nav-contact-tab2" data-toggle="tab" href="#nav-contact2" role="tab" aria-controls="nav-contact2" aria-selected="false">Contact</a>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent2">
-          <div class="tab-pane fade show active" id="nav-home2" role="tabpanel" aria-labelledby="nav-home-ta2b" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+          <div class="tab-pane fade show active com-tab-style03" id="nav-home2" role="tabpanel" aria-labelledby="nav-home-tab2">
             Home
           </div>
-          <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile-tab2" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+          <div class="tab-pane fade com-tab-style03" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile-tab2">
             Profile</div>
-          <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+          <div class="tab-pane fade com-tab-style03" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2">
             Contact</div>
         </div>
       </div>
 
     </div>
 
-    <h3 class="title-sm" id="table" style="padding-top: 75px;">10. 테이블(Table)</h3>
+    <h3 class="title-sm com-pt" id="table">10. 테이블(Table)</h3>
     <div class="text mb-3">
       <span>표가 필요한 경우 사용한다. <br/>
         테이블의 기본 높이는 40px이다.<br/>
@@ -947,7 +866,7 @@
       </table>
     </div>
 
-    <h3 class="title-sm" id="snb" style="padding-top: 75px;">11. 사이드 네비게이션 바(SNB)</h3>
+    <h3 class="title-sm com-pt" id="snb">11. 사이드 네비게이션 바(SNB)</h3>
     <div class="text mb-3">
       <span>웹사이트 서브 화면에서 Depth 이동을 할 때 사용한다.<br/>
         메인화면에서 메뉴를 구성 할 때 사용한다.
@@ -975,16 +894,16 @@
         </div>
         <div class="col-8">
           <div class="tab-content" id="v-pills-tabContent2">
-            <div class="tab-pane fade show active" id="v-pills-home2" role="tabpanel"
-                 aria-labelledby="v-pills-home-tab2" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">Home
+            <div class="tab-pane fade show active com-tab-style03" id="v-pills-home2" role="tabpanel"
+                 aria-labelledby="v-pills-home-tab2">Home
             </div>
-            <div class="tab-pane fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab2" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+            <div class="tab-pane fade com-tab-style03" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab2">
               Profile
             </div>
-            <div class="tab-pane fade" id="v-pills-messages2" role="tabpanel" aria-labelledby="v-pills-messages-tab2" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+            <div class="tab-pane fade com-tab-style03" id="v-pills-messages2" role="tabpanel" aria-labelledby="v-pills-messages-tab2">
               Messages
             </div>
-            <div class="tab-pane fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+            <div class="tab-pane fade com-tab-style03" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2">
               Settings
             </div>
           </div>
@@ -1009,16 +928,16 @@
         </div>
         <div class="col-8">
           <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+            <div class="tab-pane fade show active com-tab-style03" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
               Home
             </div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+            <div class="tab-pane fade com-tab-style03" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
               Profile
             </div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+            <div class="tab-pane fade com-tab-style03" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               Messages
             </div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" style="padding: 0;color: #a4cad1; background: #eef9fb;line-height: 204px; text-align: center;font-size: 24px;">
+            <div class="tab-pane fade com-tab-style03" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
               Settings
             </div>
           </div>
@@ -1026,7 +945,7 @@
       </div>
     </div>
 
-    <h3 class="title-sm" id="navbar" style="padding-top: 75px;">12. 네비게이션 바(Navigation Bars)</h3>
+    <h3 class="title-sm com-pt" id="navbar">12. 네비게이션 바(Navigation Bars)</h3>
     <div class="text mb-3">
       <span>웹사이트의 가로넓이 1200px를 기준으로 한다. <br/>
         로고는 좌측 30px을 띄우며, 메뉴는 로고를 기준으로 90px 띄운다.<br/>
@@ -1062,7 +981,7 @@
           </div>
         </nav>
       </div>
-      <div style="margin-bottom: 40px;">
+      <div class="mb-5">
         <nav class="navbar navbar-expand-lg navbar-light ">
           <a class="navbar-brand" href="#">LOGO</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
@@ -1090,14 +1009,14 @@
       </div>
     </div>
 
-    <h3 class="title-sm" id="modal" style="padding-top: 75px;">13. 모달(Modal)</h3>
+    <h3 class="title-sm com-pt" id="modal">13. 모달(Modal)</h3>
     <div class="text mb-3">
       <span>사이즈는 Extra Large(1200px), Large(800px), Medium(600px), Small(380px) 4가지를 사용한다. <br/>
         모달은 제목, 본문,  바닥 글의 기본 섹션으로 나뉜다.<br/>
         Dialog와 Alert는 small(380px) 사이즈를 사용한다.
       </span>
     </div>
-    <div class="text" style="margin-bottom: 500px;">
+    <div class="text com-mb-xl">
       <p class="ml-3 mb-2">1. 일반 Modal</p>
       <p class="ml-3 mb-5">2. Dialog & Alert</p>
       <p class="ml-3 mb-2 font-weight-bold">1. 일반 Modal </p>
@@ -1238,10 +1157,10 @@
                 tenetur?
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-lg btn-outline-secondary" data-dismiss="modal" style="width: 47%;">
+                <button type="button" class="btn btn-lg btn-outline-secondary com-modal-btn" data-dismiss="modal">
                   Close
                 </button>
-                <button type="button" class="btn btn-lg btn-primary" style="width: 47%;">Save changes</button>
+                <button type="button" class="btn btn-lg btn-primary com-modal-btn">Save changes</button>
               </div>
             </div>
           </div>
@@ -1265,7 +1184,7 @@
                 tenetur vel voluptas voluptatem.
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-lg btn-primary btn-block" style="width: 165px">Save changes
+                <button type="button" class="btn btn-lg btn-primary btn-block">Save changes
                 </button>
               </div>
             </div>
@@ -1273,8 +1192,6 @@
         </div>
       </div>
     </div>
-
-
   </div>
 </div>
 <script>
