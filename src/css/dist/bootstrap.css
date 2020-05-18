@@ -12410,6 +12410,11 @@ section.component .list .item .detail li {
   margin: 0;
 }
 
+.doc-aside .box-snb .snb {
+  max-height: calc(100vh - 5rem);
+  overflow-y: auto;
+}
+
 .doc-aside .box-snb .snb .h-title {
   display: block;
   width: 100%;
