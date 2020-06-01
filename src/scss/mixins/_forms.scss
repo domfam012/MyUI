@@ -109,6 +109,10 @@
         border-color: $color;
       }
     }
+    &:focus {
+      color: $yale;
+    }
+    color: $yale;
   }
 
   // stylelint-disable-next-line selector-no-qualifying-type

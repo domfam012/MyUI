@@ -112,6 +112,7 @@
 // Tweak just a few things for checkboxes.
 
 .custom-checkbox {
+  min-width: calc(60px - 1rem);
   .custom-control-label::before {
     border-radius: 2px;
   }
@@ -154,6 +155,7 @@
 // Tweak just a few things for radios.
 
 .custom-radio {
+  min-width: calc(60px - 1rem);
   .custom-control-label::before {
     // stylelint-disable-next-line property-blacklist
     border-radius: 50%;

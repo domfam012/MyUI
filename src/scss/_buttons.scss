@@ -55,6 +55,9 @@ fieldset:disabled a.btn {
   .btn-#{$color} {
     @include button-variant($value, $value);
   }
+  .btn-primary, .btn-secondary, .btn-alert {
+    color: #fff;
+  }
 }
 
 @each $color, $value in $theme-colors {
@@ -188,3 +191,123 @@ input[type="button"] {
     height: 50px;
   }
 }
+
+.btn-primary {
+  color: #fff;
+  background-color: #f6c221;
+  border-color: #f6c221; }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #d9aa1c;
+    border-color: #d9aa1c; }
+  .btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #d9aa1c;
+    border-color: #d9aa1c; }
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #f6c221;
+    border-color: #f6c221; }
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #c29819;
+    border-color: #c29819; }
+
+.btn-secondary {
+  color: #fff;
+  background-color: #b8cbcf;
+  border-color: #b8cbcf; }
+  .btn-secondary:hover {
+    color: #fff;
+    background-color: #a3b4b8;
+    border-color: #a3b4b8; }
+  .btn-secondary:focus, .btn-secondary.focus {
+    color: #fff;
+    background-color: #a3b4b8;
+    border-color: #a3b4b8; }
+  .btn-secondary.disabled, .btn-secondary:disabled {
+    color: #fff;
+    background-color: #b8cbcf;
+    border-color: #b8cbcf; }
+  .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+  .show > .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #8f9da1;
+    border-color: #8f9da1; }
+
+.btn-light {
+  color: #333;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2; }
+  .btn-light:hover {
+    color: #333;
+    background-color: #dbdbdb;
+    border-color: #dbdbdb; }
+  .btn-light:focus, .btn-light.focus {
+    color: #333;
+    background-color: #dbdbdb;
+    border-color: #dbdbdb; }
+  .btn-light.disabled, .btn-light:disabled {
+    color: #989898;
+    background-color: #f8f8f8;
+    border-color: #f8f8f8; }
+  .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
+  .show > .btn-light.dropdown-toggle {
+    color: #333;
+    background-color: #c4c4c4;
+    border-color: #c4c4c4; }
+
+.btn-alert {
+  color: #fff;
+  background-color: #f56049;
+  border-color: #f56049; }
+  .btn-alert:hover {
+    color: #fff;
+    background-color: #de5743;
+    border-color: #de5743; }
+  .btn-alert:focus, .btn-alert.focus {
+    color: #fff;
+    background-color: #de5743;
+    border-color: #de5743; }
+  .btn-alert.disabled, .btn-alert:disabled {
+    color: #fff;
+    background-color: #f56049;
+    border-color: #f56049; }
+  .btn-alert:not(:disabled):not(.disabled):active, .btn-alert:not(:disabled):not(.disabled).active,
+  .show > .btn-alert.dropdown-toggle {
+    color: #fff;
+    background-color: #c74e3c;
+    border-color: #c74e3c; }
+
+.btn-outline-primary {
+  color: #f6c221;
+  border: 1px solid #f6c221; }
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #f6c221;
+    border-color: #f6c221; }
+  .btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: #f6c221;
+    background-color: transparent; }
+  .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #d9aa1c;
+    border-color: #d9aa1c; }
+
+.btn-outline-secondary {
+  color: #b8cbcf;
+  border: 1px solid #b8cbcf; }
+  .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #b8cbcf;
+    border-color: #b8cbcf; }
+  .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
+    color: #b8cbcf;
+    background-color: transparent; }
+  .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #a3b4b8;
+    border-color: #a3b4b8; }

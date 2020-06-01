@@ -37,6 +37,7 @@ $grays: map-merge(
   $grays
 );
 
+$yale:    #0c6290 !default;
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -47,14 +48,17 @@ $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
-$primary: #04bcde !default;
+$primary: #f6c221 !default;
+$secondary: #b8cbcf !default;
 $error:   #cc1e03 !default;
 $normal:  #c2c2c2 !default;
+$alert: #f56049 !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
+    "yale":       $yale,
     "blue":       $blue,
     "indigo":     $indigo,
     "purple":     $purple,
@@ -68,9 +72,10 @@ $colors: map-merge(
     "white":      $white,
     "gray":       $gray-600,
     "gray-dark":  $gray-800,
-    "primary":  $primary,
-    "error":    $error,
-    "normal": $normal
+    "primary":    $primary,
+    "error":      $error,
+    "normal":     $normal,
+    "alert":      $alert
   ),
   $colors
 );
@@ -97,7 +102,8 @@ $theme-colors: map-merge(
     "danger":     $danger,
     "light":      $light,
     "dark":       $dark,
-    "error":      $error
+    "error":      $error,
+    "alert":      $alert
   ),
   $theme-colors
 );
@@ -603,7 +609,9 @@ $custom-select-height:              $input-height !default;
 $custom-select-indicator-padding:   1rem !default; // Extra padding to account for the presence of the background-image based indicator
 $custom-select-font-weight:         $input-font-weight !default;
 $custom-select-line-height:         $input-line-height !default;
-$custom-select-color:               $input-color !default;
+
+$custom-select-color:               $yale !default;
+
 $custom-select-disabled-color:      $gray-600 !default;
 $custom-select-bg:                  $input-bg !default;
 $custom-select-disabled-bg:         $gray-200 !default;

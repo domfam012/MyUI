@@ -53,4 +53,8 @@
   .badge-#{$color} {
     @include badge-variant($value);
   }
+
+  .badge-primary {
+    color: #fff;
+  }
 }
