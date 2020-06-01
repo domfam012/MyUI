@@ -82,25 +82,26 @@
   // Background-color and (when enabled) gradient
   &::before {
     position: absolute;
-    top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
-    left: -($custom-control-gutter + $custom-control-indicator-size);
+    top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 3;
+    left: -($custom-control-gutter + $custom-control-indicator-size) * 1.5;
     display: block;
-    width: 18px;
-    height: 18px;
+    width: 27px;
+    height: 27px;
     pointer-events: none;
     content: "";
     background-color: $custom-control-indicator-bg;
     border: #666 solid 2px;
+    top: 0;
   }
 
   // Foreground (icon)
   &::after {
     position: absolute;
-    top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 2;
-    left: -($custom-control-gutter + $custom-control-indicator-size);
+    top: ($font-size-base * $line-height-base - $custom-control-indicator-size) / 3;
+    left: -($custom-control-gutter + $custom-control-indicator-size) * 1.5;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     content: "";
     //background: no-repeat 50% / #{$custom-control-indicator-bg-size};
   }
@@ -120,12 +121,13 @@
   .custom-control-input:checked ~ .custom-control-label {
     &::before {
       background: $primary;
+      top: 0;
     }
     &::after {
       background: escape-svg($custom-checkbox-indicator-icon-checked) no-repeat;
-      top: 5px;
-      left: -20px;
-      background-size: 12px 13px;
+      top: 7px;
+      left: -30px;
+      background-size: 18px 18px;
     }
   }
 
@@ -159,7 +161,7 @@
   .custom-control-label::before {
     // stylelint-disable-next-line property-blacklist
     border-radius: 50%;
-    border: 2px solid #666;
+    border: 2px solid #b3b3b3;
     background: #fff;
     //border-radius: $custom-radio-indicator-border-radius;
   }
@@ -167,15 +169,16 @@
   .custom-control-input:checked ~ .custom-control-label {
     &::before {
       background: #fff;
+      border: 2px solid #b3b3b3;
     }
     &::after {
       position: absolute;
-      top: 5px;
-      left: -20px;
-      width: 10px;
-      height: 10px;
+      top: 10px;
+      left: -30px;
+      width: 15px;
+      height: 15px;
       border-radius: 50%;
-      background: $primary;
+      background: $yale;
     }
   }
 
@@ -239,15 +242,16 @@
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: 40px;
+  height: 60px;
   padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y 10px;
   font-family: $custom-select-font-family;
   @include font-size($custom-select-font-size);
+  font-size: 21px;
   font-weight: $custom-select-font-weight;
   line-height: $custom-select-line-height;
   color: $custom-select-color;
   vertical-align: middle;
-  background: url("https://img.icons8.com/material-rounded/48/000000/sort-down.png") no-repeat right 0.3125rem center/12px 13px;
+  background: url("https://img.icons8.com/material-rounded/48/000000/sort-down.png") no-repeat right 0.5rem center/15px 15px;
   border: $custom-select-border-width solid $custom-select-border-color;
   appearance: none;
   -webkit-appearance: none;
@@ -296,11 +300,12 @@
 }
 
 .custom-select-sm {
-  height: 30px;
+  height: 45px;
   padding-top: $custom-select-padding-y-sm;
   padding-bottom: $custom-select-padding-y-sm;
   padding-left: $custom-select-padding-x-sm;
   @include font-size($custom-select-font-size-sm);
+  font-size: 20px;
 }
 
 .custom-select-lg {
@@ -390,9 +395,10 @@
   font-family: $custom-file-font-family;
   font-weight: $custom-file-font-weight;
   line-height: 38px;
-  color: #aaa;
+  color: $yale;
   border: $custom-file-border-width solid $custom-file-border-color;
   cursor: pointer;
+  font-size: 14px;
 
   &:hover, &:focus {
     &::after {

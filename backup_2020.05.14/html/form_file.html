@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>무료 템플릿을 만나보세요. 부트스트랩 / 뷰 / 리액트 - My UI</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/fonts/fontawesome/fontawesome.css">
+  <link rel="stylesheet" href="../css/fonts/fontawesome/solid.css">
+  <link rel="stylesheet" href="../css/fonts/fontawesome/brands.css">
+  <link rel="stylesheet" href="../css/fonts/fontawesome/regular.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/common/favicon.ico"/>
+  <script src="../js/bundle.js"></script>
+</head>
+
+<body>
+<script>
+  // todo : script 옮겨야 함
+  $(document).ready(function () {
+    $('.custom-file-input').on('change', function() {
+      let fileName = $(this).val().split('\\').pop();
+      $(this).siblings('.custom-file-label').addClass('selected').html(fileName).css({'color':'#333','border-color':'#333'});
+    });
+  })
+</script>
+<div class="input-group m-3" style="width: 350px;">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFile01">
+    <label class="custom-file-label" for="inputGroupFile01">선택된 파일 없음</label>
+  </div>
+</div>
+<div class="input-group m-3" style="width: 350px;">
+  <div class="custom-file custom-file-sm">
+    <input type="file" class="custom-file-input file-path validate" id="inputGroupFile02"
+           aria-describedby="inputGroupFile02">
+    <label class="custom-file-label" for="inputGroupFile02">선택된 파일 없음</label>
+  </div>
+</div>
+</body>
+</html>

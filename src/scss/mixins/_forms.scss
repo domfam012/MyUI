@@ -45,11 +45,11 @@
   .#{$state}-feedback {
     display: none;
     position: absolute;
-    background: #c50156;
-    color: #fff;
-    font-size: .75rem;
+    background: #f56049;
+    color: #fedb0e;
+    font-size: 1.125rem;
     width: 100%;
-    padding: 5px;
+    padding: 5px 7.5px;
     border-radius: 3px;
     z-index: 100;
     top: 117%;
@@ -64,7 +64,7 @@
       margin-left: -10px;
       border-width: 7px;
       border-style: solid;
-      border-color: transparent transparent #C50156 transparent;
+      border-color: transparent transparent #f56049 transparent;
     }
   }
 

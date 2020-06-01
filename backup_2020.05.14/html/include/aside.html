@@ -1,0 +1,60 @@
+<aside class="doc-aside">
+  <header class="header bg-header">
+    <a class="navbar-brand" href="index.html"><img src="../img/common/logo.png" alt="MyUI"></a>
+  </header>
+
+  <div class="box-snb">
+    <div class="nav snb" id="navbar-example2">
+      <a class="h-title active" href="document.html"><i class="fas fa-bolt"></i>시작하기</a>
+      <div class="m-menu">
+        <a class="m-item nav-link" href="#intro">소개</a>
+        <a class="m-item nav-link" href="#download">다운로드</a>
+        <a class="m-item nav-link" href="#device">브라우저&디바이스</a>
+        <a class="m-item nav-link" href="#buildtool">빌드도구</a>
+      </div>
+      <a class="h-title" href="component.html"><i class="fas fa-th"></i>구성요소</a>
+      <div class="m-menu">
+        <a class="m-item nav-link" href="#badge">배지(Badge)</a>
+        <a class="m-item nav-link" href="#breadcrumb">경로(Breadcrumb)</a>
+        <a class="m-item nav-link" href="#step">단계(Step)</a>
+        <a class="m-item nav-link" href="#slide">슬라이드(Slide)</a>
+        <a class="m-item nav-link" href="#button">버튼(Button)</a>
+        <a class="m-item nav-link" href="#card">카드(Cards)</a>
+        <a class="m-item nav-link" href="#form">폼(Forms)</a>
+        <a class="m-item nav-link" href="#pagination">페이지네이션(Pagination)</a>
+        <a class="m-item nav-link" href="#tab">탭(Tab)</a>
+        <a class="m-item nav-link" href="#table">테이블(Table)</a>
+        <a class="m-item nav-link" href="#snb">사이드 네비게이션 바(SNB)</a>
+        <a class="m-item nav-link" href="#modal">모달(Modal)</a>
+        <a class="m-item nav-link" href="#navbar" >네비게이션 바(Navigation Bars)</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('.m-menu').hide();
+
+      function fnMove(seq){
+        var offset = $(seq).offset();
+        $('html, body').animate({scrollTop : offset.top - 40}, 400);
+      }
+
+      $('.h-title').on('click',function () {
+        $(this).addClass('active').next().slideToggle(300);
+        $(this).siblings().filter('.h-title').removeClass('active');
+        $('.h-title').not(this).next().slideUp(300);
+      })
+
+      $('.m-item').on('click',function () {
+
+        fnMove($(this).attr('href'))
+
+        $(this).addClass('active').css('color','#ffffff')
+          .siblings().removeClass('active').css('color','#333');
+      })
+
+    });
+  </script>
+
+</aside>
