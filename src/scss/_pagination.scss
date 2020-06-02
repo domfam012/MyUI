@@ -7,8 +7,8 @@
 .page-link {
   position: relative;
   display: block;
-  min-width: 30px;
-  height: 30px;
+  min-width: 45px;
+  height: 45px;
   padding: 0 5px;
   margin-left: -$pagination-border-width;
   line-height: $pagination-line-height;
@@ -17,6 +17,7 @@
   background-color: $pagination-bg;
   border-radius: 4px;
   margin-right: 10px;
+  font-size: 23px;
 
   &:hover {
     z-index: 2;
@@ -25,7 +26,7 @@
     background-color: $pagination-hover-bg;
     border-color: $pagination-hover-border-color;
     &.page-arrow {
-      color: $pagination-hover-color;
+      color: #878d99;
     }
   }
 
@@ -39,14 +40,15 @@
   }
   &.page-arrow {
     color: $pagination-border-color;
-    border: 1px solid $pagination-border-color;
-    font-size: 19px;
-    &:hover {
-      color: #333;
+    border: 1px solid $gray-300;
+    font-size: 24px;
+    line-height: 42px;
+    &:hover, &:focus {
+      color: #878d99;
       background: #C2C2C2;
     }
-    &:focus {
-      color: #333;
+    &:active {
+      color: #878d99;
       background: #ababab;
     }
   }
